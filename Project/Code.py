@@ -105,6 +105,8 @@ def CLanguagesChecking(text_raw_data,key="c"):
     index_decreased=index-1
     try:
         if(text_raw_data[index_increased]==","or text_raw_data[index_increased]=="/"):
+            if(text_raw_data[index_decreased]=="-"):
+                return False
             return True
         elif text_raw_data[index_increased]=="#" or text_raw_data[index_increased]=="+":
             return False
@@ -138,9 +140,13 @@ def ClassifyData(data,text_raw_data):
                         result+=data[key]+"; "
                 elif(CLanguagesChecking(text_raw_data,"c")and key=="c"):
                     result+=data[key]+"; "
-                elif(CLanguagesChecking(text_raw_data,"C")):
+                elif(CLanguagesChecking(text_raw_data,"C")and key=="C"):
                     result+=data[key]+"; "
             else:
+                if(key=="go"):
+                    index_find_Django=text_raw_data.find("Django")
+                    if(index!=-1):
+                        continue
                 if(key=="Java" or key=="java"):
                     try:
                         if(text_raw_data[index+4]=="s"or text_raw_data[index+4]=="S"):
@@ -185,7 +191,15 @@ def ClassifyData(data,text_raw_data):
             result+=data[key]+"; "
     return result
 #%%Executing
-raw_data["Frameworks / Libs"]=ClassifyData(data,raw_data["Your main technology / programming language"])#Them ham tra ve frameworks / libs
+list_Frameworks_Libraries=[]
+for x in range(num):
+    s=raw_data["Your main technology / programming language"][x]
+    if(isinstance(s, float)):
+        list_Frameworks_Libraries.append('No info')
+    else:
+        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        list_Frameworks_Libraries.append(p)
+raw_data["Frameworks / Libs"]=list_Frameworks_Libraries#Them ham tra ve frameworks / libs
 #%%3.7.3 Execute adding features and classify databases
 import json
 #Global variables
@@ -204,7 +218,15 @@ def ClassifyData(data,text_raw_data):
             result+=data[key]+"; "
     return result
 #%%Executing
-raw_data["Databases"]=ClassifyData(data,raw_data["Your main technology / programming language"])#Them ham tra ve databases
+list_Databases=[]
+for x in range(num):
+    s=raw_data["Your main technology / programming language"][x]
+    if(isinstance(s, float)):
+        list_Databases.append('No info')
+    else:
+        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        list_Databases.append(p)
+raw_data["Databases"]=list_Databases#Them ham tra ve databases
 #%%3.7.4 Execute adding features and classify designs
 import json
 #Global variables
@@ -223,7 +245,15 @@ def ClassifyData(data,text_raw_data):
             result+=data[key]+"; "
     return result
 #%%Executing
-raw_data["Design"]=ClassifyData(data,raw_data["Your main technology / programming language"])#Them ham tra ve design
+list_Design=[]
+for x in range(num):
+    s=raw_data["Your main technology / programming language"][x]
+    if(isinstance(s, float)):
+        list_Design.append('No info')
+    else:
+        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        list_Design.append(p)
+raw_data["Design"]=list_Design#Them ham tra ve design
 #%%3.7.5 Execute adding features and classify clouds
 import json
 #Global variables
@@ -242,7 +272,15 @@ def ClassifyData(data,text_raw_data):
             result+=data[key]+"; "
     return result
 #%%Executing
-raw_data["Clouds"]=raw_data["Your main technology / programming language"]#Them ham tra ve clouds
+list_CLouds=[]
+for x in range(num):
+    s=raw_data["Your main technology / programming language"][x]
+    if(isinstance(s, float)):
+        list_CLouds.append('No info')
+    else:
+        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        list_CLouds.append(p)
+raw_data["Clouds"]=list_CLouds#Them ham tra ve clouds
 #%%3.7.6 Execute adding features and classify platforms
 import json
 #Global variables
@@ -263,12 +301,19 @@ def ClassifyData(data,text_raw_data):
             result+=data[key]+"; "
     return result
 #%%Executing
-raw_data["Platform"]=raw_data["Your main technology / programming language"]#Them ham tra ve platforms
+list_Platforms=[]
+for x in range(num):
+    s=raw_data["Your main technology / programming language"][x]
+    if(isinstance(s, float)):
+        list_Platforms.append('No info')
+    else:
+        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        list_Platforms.append(p)
+raw_data["Platform"]=list_Platforms#Them ham tra ve platforms
 #%%3.7.7 Execute adding features and classify devops-tools
 import json
-#Global variables
 data=None
-file_path='Json_Files/ListFM.json'
+file_path='Json_Files/ListDevOps-Tools.json'
 # Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
@@ -282,7 +327,17 @@ def ClassifyData(data,text_raw_data):
             result+=data[key]+"; "
     return result
 #%%Executing
-raw_data["DevOps tools"]=raw_data["Your main technology / programming language"]#Them ham tra ve devops tools
+list_DevOps_Tools=[]
+for x in range(num):
+    s=raw_data["Your main technology / programming language"][x]
+    if(isinstance(s, float)):
+        list_DevOps_Tools.append('No info')
+    else:
+        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        list_DevOps_Tools.append(p)
+raw_data["DevOps tools"]=list_DevOps_Tools#Them ham tra ve devops tools
+#%%Export new DataSet
+raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\export_dataframe.csv', index = False, header=True)
 # In[04]: PREPARE THE DATA 
 # 4.1 Remove unused features
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 

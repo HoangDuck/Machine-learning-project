@@ -21,6 +21,8 @@ def CLanguagesChecking(text_raw_data,key="c"):
     index_decreased=index-1
     try:
         if(text_raw_data[index_increased]==","or text_raw_data[index_increased]=="/"):
+            if(text_raw_data[index_decreased]=="-"):
+                return False
             return True
         elif text_raw_data[index_increased]=="#" or text_raw_data[index_increased]=="+":
             return False
@@ -54,9 +56,13 @@ def ClassifyData(data,text_raw_data):
                         result+=data[key]+"; "
                 elif(CLanguagesChecking(text_raw_data,"c")and key=="c"):
                     result+=data[key]+"; "
-                elif(CLanguagesChecking(text_raw_data,"C")):
+                elif(CLanguagesChecking(text_raw_data,"C")and key=="C"):
                     result+=data[key]+"; "
             else:
+                if(key=="go"):
+                    index_find_Django=text_raw_data.find("Django")
+                    if(index!=-1):
+                        continue
                 if(key=="Java" or key=="java"):
                     try:
                         if(text_raw_data[index+4]=="s"or text_raw_data[index+4]=="S"):
@@ -67,7 +73,7 @@ def ClassifyData(data,text_raw_data):
                 result+=data[key]+"; "
     return result
 #%%Run
-result=ClassifyData(data,'Java')
+result=ClassifyData(data,'Swift, Objective-C, iOS')
 print(result)
 
 # %%
