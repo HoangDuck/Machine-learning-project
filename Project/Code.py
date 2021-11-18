@@ -112,14 +112,18 @@ def CLanguagesChecking(text_raw_data,key="c"):
             if((CheckAlphabet(text_raw_data[index_increased]) and CheckAlphabet(text_raw_data[index_decreased]))==False):
                 return True
             return False
+        elif(CheckAlphabet(text_raw_data[index_increased])):
+            return False
         elif((CheckAlphabet(text_raw_data[index_increased]) and CheckAlphabet(text_raw_data[index_decreased]))==False):
             return True
     except:
-        if(text_raw_data[index]=="c"or text_raw_data[index]=="C"):
+        if((text_raw_data[index]=="c"or text_raw_data[index]=="C")and text_raw_data[index-1]!="-"):
             return True
+        else:
+            return False
     return False
 def ClassifyData(data,text_raw_data):
-    result=""
+    result=''
     keys=data.keys()
     for key in keys:
         index=text_raw_data.find(key)
@@ -127,13 +131,23 @@ def ClassifyData(data,text_raw_data):
             if(key=="C" or key=="c" or key=="R"):
                 if(text_raw_data=="C" or text_raw_data=="c"):
                     result+=data[key]+"; "
-                elif(text_raw_data=="R"):
-                    result+=data[key]+"; "
+                elif(key=="R"):
+                    if text_raw_data=="R":
+                        result+=data[key]+"; "
+                    elif CheckAlphabet(text_raw_data[index+1])==False:
+                        result+=data[key]+"; "
                 elif(CLanguagesChecking(text_raw_data,"c")and key=="c"):
                     result+=data[key]+"; "
                 elif(CLanguagesChecking(text_raw_data,"C")):
                     result+=data[key]+"; "
             else:
+                if(key=="Java" or key=="java"):
+                    try:
+                        if(text_raw_data[index+4]=="s"or text_raw_data[index+4]=="S"):
+                            continue
+                    except:
+                        result+=data[key]+"; "
+                        continue
                 result+=data[key]+"; "
     return result
 #%%Executing
@@ -148,6 +162,7 @@ for x in range(num):
         p=ClassifyData(data,s)#Them ham tra ve ngon ngu
         list_Programming_Languages.append(p)
 raw_data["Programming languages"]=list_Programming_Languages
+raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\export_dataframe.csv', index = False, header=True)
 #%%Export files
 import json
 with open('ListTest.json', 'w') as f:
