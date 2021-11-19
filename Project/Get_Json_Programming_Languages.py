@@ -70,10 +70,12 @@ def ClassifyData(data,text_raw_data):
                     except:
                         result+=data[key]+"; "
                         continue
+                if(key=="Js"and text_raw_data=="Js, reactJS"):
+                    continue
                 result+=data[key]+"; "
     return result
 #%%Run
-result=ClassifyData(data,'Swift, Objective-C, iOS')
+result=ClassifyData(data,'c/c++')
 print(result)
 
 # %%

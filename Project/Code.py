@@ -154,6 +154,8 @@ def ClassifyData(data,text_raw_data):
                     except:
                         result+=data[key]+"; "
                         continue
+                if(key=="Js"and text_raw_data=="Js, reactJS "):
+                    continue
                 result+=data[key]+"; "
     return result
 #%%Executing
@@ -345,9 +347,10 @@ raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City",
                          "Yearly bonus + stocks in EUR", "Annual brutto salary (without bonus and stocks) one year ago. Only answer if staying in the same country",
                          "Annual bonus+stocks one year ago. Only answer if staying in same country","Number of vacation days",
                          "Main language at work","Have you lost your job due to the coronavirus outbreak?",
-                         "Have you been forced to have a shorter working week (Kurzarbeit)? If yes, how many hours per week"], inplace=True) 
-#Store dataset
-
+                         "Have you been forced to have a shorter working week (Kurzarbeit)? If yes, how many hours per week",
+                         "Your main technology / programming language"], inplace=True) 
+#%%Store dataset
+raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\DataSet_Filtered\export_dataset.csv', index = False, header=True)
 #%% 4.2 Split training-test set and NEVER touch test set until test phase
 method = 2
 if method == 1: # Method 1: Randomly select 20% of data for test set. Used when data set is large
