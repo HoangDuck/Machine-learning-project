@@ -410,54 +410,14 @@ cat_feat_names = ['QUẬN HUYỆN', 'HƯỚNG', 'GIẤY TỜ PHÁP LÝ'] # =list
 # 4.4.2 Pipeline for categorical features
 cat_pipeline = Pipeline([
     ('selector', ColumnSelector(cat_feat_names)),
-    ('imputer', SimpleImputer(missing_values=np.nan, strategy="constant", fill_value = "NO INFO", copy=True)), # complete missing values. copy=False: imputation will be done in-place 
+    ('imputer', SimpleImputer(missing_values=np.nan, strategy="constant", fill_value = "No info", copy=True)), # complete missing values. copy=False: imputation will be done in-place 
     ('cat_encoder', OneHotEncoder()) # convert categorical data into one-hot vectors
     ])    
-
-# INFO: Try the code below to understand how a pipeline works
-if 10:
-    trans_feat_values_1 = cat_pipeline.fit_transform(train_set)
-
-    # The above line of code is equavalent to the following code:     
-    selector  = ColumnSelector(cat_feat_names)
-    temp_feat_values = selector.fit_transform(train_set) 
-    imputer = SimpleImputer(missing_values=np.nan, strategy="constant", fill_value = "NO INFO", copy=True)
-    temp_feat_values = imputer.fit_transform(temp_feat_values) 
-    one_hot_encoder = OneHotEncoder()
-    trans_feat_values_2 = one_hot_encoder.fit_transform(temp_feat_values)
-    if 0: 
-        # See the encoded features
-        print(one_hot_encoder.categories_) # INFO: categories_ is an array of array: categories_[0] is the array of feature 1, categories_[1] is the array of feature 2,...
-        # NOTE: OneHotEncoder turns 1 features into N features, where N is the no. of values in that feature
-        # e.g., feature "HƯỚNG" having 5 values 'Đông', 'Tây', 'Nam', 'Bắc', 'NO INFO', will become 5 features corresponding with its values 
-        print(one_hot_encoder.get_feature_names(cat_feat_names))
-        print("No. of one-hot columns: " + str(one_hot_encoder.get_feature_names(cat_feat_names).shape[0]))
-        print(trans_feat_values_2[[0,1,2],:].toarray()) # toarray() convert sparse to dense array
-    
-    # Check if trans_feat_values_1 and trans_feat_values_2 are the same
-    #print(trans_feat_values_1.toarray() == trans_feat_values_2.toarray())
-    print(np.array_equal(trans_feat_values_1.toarray(), trans_feat_values_2.toarray()))
-
-# 4.4.3 Define MyFeatureAdder: a transformer for adding features "TỔNG SỐ PHÒNG",...  
-class MyFeatureAdder(BaseEstimator, TransformerMixin):
-    def __init__(self, add_TONG_SO_PHONG = True): # MUST NO *args or **kargs
-        self.add_TONG_SO_PHONG = add_TONG_SO_PHONG
-    def fit(self, feature_values, labels = None):
-        return self  # nothing to do here
-    def transform(self, feature_values, labels = None):
-        SO_PHONG_id, SO_TOILETS_id = 1, 2 # column indices in num_feat_names. can't use column names b/c the transformer SimpleImputer removed them
-        # NOTE: a transformer in a pipeline ALWAYS return dataframe.values (ie., NO header and row index)
-        
-        TONG_SO_PHONG = feature_values[:, SO_PHONG_id] + feature_values[:, SO_TOILETS_id]
-        if self.add_TONG_SO_PHONG:
-            feature_values = np.c_[feature_values, TONG_SO_PHONG] #concatenate np arrays
-        return feature_values
 
 # 4.4.4 Pipeline for numerical features
 num_pipeline = Pipeline([
     ('selector', ColumnSelector(num_feat_names)),
-    ('imputer', SimpleImputer(missing_values=np.nan, strategy="median", copy=True)), # copy=False: imputation will be done in-place 
-    ('attribs_adder', MyFeatureAdder(add_TONG_SO_PHONG = True)),
+    ('imputer', SimpleImputer(missing_values=np.nan, strategy=0, copy=True)), # copy=False: imputation will be done in-place 
     ('std_scaler', StandardScaler(with_mean=True, with_std=True, copy=True)) # Scale features to zero mean and unit variance
     ])  
 #feature scaling biến đổi khoảng giá trị các thuộc tính bằng nhau như thay vì 1-500 thì đưa về 0-1 hoặc -1 - 1  
@@ -472,20 +432,5 @@ print('\n____________________________________ Processed feature values _________
 print(processed_train_set_val[[0, 1, 2],:].toarray())
 print(processed_train_set_val.shape)
 print('We have %d numeric feature + 1 added features + 32 cols of onehotvector for categorical features.' %(len(num_feat_names)))
-
-# (optional) Add header to create dataframe. Just to see. We don't need header to run algorithms 
-if 0: 
-    onehot_cols = []
-    for val_list in full_pipeline.transformer_list[1][1].named_steps['cat_encoder'].categories_: 
-        onehot_cols = onehot_cols + val_list.tolist()
-    columns_header = train_set.columns.tolist() + ["TỔNG SỐ PHÒNG"] + onehot_cols
-    for name in cat_feat_names:
-        columns_header.remove(name)
-    processed_train_set = pd.DataFrame(processed_train_set_val.toarray(), columns = columns_header)
-    print('\n____________________________________ Processed dataframe ____________________________________')
-    print(processed_train_set.info())
-    print(processed_train_set.head())
-
-
 
 # %%
