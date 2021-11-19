@@ -404,8 +404,11 @@ class ColumnSelector(BaseEstimator, TransformerMixin):
     def transform(self, dataframe):
         return dataframe[self.feature_names].values         
 
-num_feat_names = ['DIỆN TÍCH - M2', 'SỐ PHÒNG', 'SỐ TOILETS'] # =list(train_set.select_dtypes(include=[np.number]))
-cat_feat_names = ['QUẬN HUYỆN', 'HƯỚNG', 'GIẤY TỜ PHÁP LÝ'] # =list(train_set.select_dtypes(exclude=[np.number])) 
+num_feat_names = ['Total years of experience', 'Yearly brutto salary (without bonus and stocks) in EUR', 
+'Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR'] # =list(train_set.select_dtypes(include=[np.number]))
+cat_feat_names = ['Position', 'Seniority level', 'Employment status',
+'Ð¡ontract duration','Company size','Company type','Programming languages','Frameworks / Libs',
+'Databases','Design','Clouds','Platform','DevOps tools'] # =list(train_set.select_dtypes(exclude=[np.number])) 
 
 # 4.4.2 Pipeline for categorical features
 cat_pipeline = Pipeline([
