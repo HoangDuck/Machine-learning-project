@@ -43,39 +43,39 @@ print(raw_data.describe())
 print('\n____________________________________ Get specific rows and cols ____________________________________')     
 print(raw_data.iloc[[0,5,20], [2, 7]] ) # Refer using column ID
 #%%Plot
-# # 3.2 Scatter plot b/w 2 features
-# if 1:
-#     raw_data.plot(kind="scatter", y="GIÁ - TRIỆU ĐỒNG", x="SỐ PHÒNG", alpha=0.2)
-#     plt.savefig('figures/scatter_1_feat.png', format='png', dpi=300)
-#     plt.show()      
-# if 1:
-#     raw_data.plot(kind="scatter", y="GIÁ - TRIỆU ĐỒNG", x="DIỆN TÍCH - M2", alpha=0.2)
-#     plt.show()
+# 3.2 Scatter plot b/w 2 features
+if 1:
+    raw_data.plot(kind="scatter", y="GIÁ - TRIỆU ĐỒNG", x="SỐ PHÒNG", alpha=0.2)
+    plt.savefig('figures/scatter_1_feat.png', format='png', dpi=300)
+    plt.show()      
+if 1:
+    raw_data.plot(kind="scatter", y="GIÁ - TRIỆU ĐỒNG", x="DIỆN TÍCH - M2", alpha=0.2)
+    plt.show()
 
-# # 3.3 Scatter plot b/w every pair of features
-# if 1:
-#     from pandas.plotting import scatter_matrix   
-#     features_to_plot = ["GIÁ - TRIỆU ĐỒNG", "SỐ PHÒNG", "SỐ TOILETS", "DIỆN TÍCH - M2"]
-#     scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
-#     plt.savefig('figures/scatter_mat_all_feat.png', format='png', dpi=300)
-#     plt.show()
+# 3.3 Scatter plot b/w every pair of features
+if 1:
+    from pandas.plotting import scatter_matrix   
+    features_to_plot = ["GIÁ - TRIỆU ĐỒNG", "SỐ PHÒNG", "SỐ TOILETS", "DIỆN TÍCH - M2"]
+    scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
+    plt.savefig('figures/scatter_mat_all_feat.png', format='png', dpi=300)
+    plt.show()
 
-# # 3.4 Plot histogram of 1 feature
-# if 1:
-#     from pandas.plotting import scatter_matrix   
-#     features_to_plot = ["SỐ PHÒNG"]
-#     scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
-#     plt.show()
+# 3.4 Plot histogram of 1 feature
+if 1:
+    from pandas.plotting import scatter_matrix   
+    features_to_plot = ["SỐ PHÒNG"]
+    scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
+    plt.show()
 
-# # 3.5 Plot histogram of numeric features
-# if 1:
-#     #raw_data.hist(bins=10, figsize=(10,5)) #bins: no. of intervals
-#     raw_data.hist(figsize=(10,5)) #bins: no. of intervals
-#     plt.rcParams['xtick.labelsize'] = 10
-#     plt.rcParams['ytick.labelsize'] = 10
-#     plt.tight_layout()
-#     plt.savefig('figures/hist_raw_data.png', format='png', dpi=300) # must save before show()
-#     plt.show()
+# 3.5 Plot histogram of numeric features
+if 1:
+    #raw_data.hist(bins=10, figsize=(10,5)) #bins: no. of intervals
+    raw_data.hist(figsize=(10,5)) #bins: no. of intervals
+    plt.rcParams['xtick.labelsize'] = 10
+    plt.rcParams['ytick.labelsize'] = 10
+    plt.tight_layout()
+    plt.savefig('figures/hist_raw_data.png', format='png', dpi=300) # must save before show()
+    plt.show()
 
 #%% 3.6 Compute correlations b/w features
 corr_matrix = raw_data.corr()
