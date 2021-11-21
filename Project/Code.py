@@ -338,6 +338,7 @@ for x in range(num):
         p=ClassifyData(data,s)#Them ham tra ve ngon ngu
         list_DevOps_Tools.append(p)
 raw_data["DevOps tools"]=list_DevOps_Tools#Them ham tra ve devops tools
+
 #%%Export new DataSet
 raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\export_dataframe.csv', index = False, header=True)
 # In[04]: PREPARE THE DATA 
