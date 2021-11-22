@@ -19,12 +19,11 @@ p=ClassifyData(data,'-')
 print(p)
 
 # %%
-a=1.5
+a="l"
 print(type(a))
 # %%
 import numpy as np
 list_Year_Experience=np.zeros
-list_Year_Experience[0]=2
-list_Year_Experience[5]=3
+
 
 # %%
