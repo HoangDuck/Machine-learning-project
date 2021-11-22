@@ -458,6 +458,36 @@ for x in range(num):
         list_Company_Type.append(raw_data["Company type"][x])
         continue
 raw_data["Company type"]=list_Company_Type
+#%%Classify additional support
+import json
+data=None
+file_path='Json_Files/Additional_monetary_support.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    return result
+#%%Executing
+list_Additional_Support=[]
+for x in range(num):
+    try:
+        s=raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Additional_Support.append(s)
+            continue
+        else:
+            list_Additional_Support.append(result)
+    except:
+        list_Additional_Support.append(raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"][x])
+        continue
+raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"]=list_Additional_Support
 # In[04]: PREPARE THE DATA 
 # 4.1 Remove unused features
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 

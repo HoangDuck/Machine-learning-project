@@ -403,7 +403,7 @@ Timestamp,Age,Gender,City,Position ,Total years of experience,Years of experienc
 24/11/2020 19:42:42,39,Male,Stuttgart,Software Engineer,11,3,Lead,PHP,"PHP, SQL, Kubernetes, Docker",75000,0,75000,0,30,Full-time employee,Unlimited contract,English,101-1000,Product,No,,
 24/11/2020 19:47:34,27,Female,Berlin,Data Scientist,3,3,Middle,Python,"Python, SQL, Google Cloud, Kubernetes, Docker",58000,1000,55000,0,24,Full-time employee,Unlimited contract,English,51-100,Product,No,,
 24/11/2020 19:48:24,50,Male,Berlin,Software Engineer,29,2,Lead,C++,"C/C++, PHP, SQL",28800,28800,28800,28800,30,Full-time employee,Unlimited contract,German,Nov-50,IT-Outsourcing,No,0,0
-24/11/2020 19:57:46,35,Female,Berlin,Designer (UI/UX),15,1,Middle,,,53000,65000,,,(no idea),Full-time employee,Unlimited contract,English,1000+,Product,No,,180€
+24/11/2020 19:57:46,35,Female,Berlin,Designer (UI/UX),15,1,Middle,,,53000,65000,,,(no idea),Full-time employee,Unlimited contract,English,1000+,Product,No,,18000
 24/11/2020 20:00:02,40,Male,Berlin,Architect,10,3,Middle,,"Python, R, Go",89000,10000,,,30,Full-time employee,Unlimited contract,English,101-1000,,No,,
 24/11/2020 20:01:18,35,Male,Helsinki,Backend Developer,11,2.5,Senior,python,"SQL, AWS, Docker",66000,2000,53000,56000,28,Full-time employee,Unlimited contract,English,101-1000,Product,No,37.5,500
 24/11/2020 20:02:15,29,Male,Berlin,Backend Developer,10,1,Senior,Ruby,Go,80000,0,,,30,Full-time employee,Unlimited contract,English,101-1000,Product,No,,
