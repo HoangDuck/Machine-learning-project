@@ -588,9 +588,7 @@ print('\n____________________________________ Processed feature values _________
 print(processed_train_set_val[[0, 1, 2],:].toarray())
 print(processed_train_set_val.shape)
 print('We have %d numeric feature + 1 added features + 32 cols of onehotvector for categorical features.' %(len(num_feat_names)))
-
-''' WEEK 04 '''
-
+processed_train_set_val.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\DataSet_Filtered\export_dataset_processed.csv', index = False, header=True)
 # In[5]: TRAIN AND EVALUATE MODELS 
 
 # 5.1 Try LinearRegression model
@@ -613,12 +611,12 @@ r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_label
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
         
-# 5.1.3 Predict labels for some training instances
+#%% 5.1.3 Predict labels for some training instances
 print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
-# 5.1.4 Store models to files, to compare latter
+#%% 5.1.4 Store models to files, to compare latter
 #from sklearn.externals import joblib 
 import joblib # new lib
 def store_model(model, model_name = ""):
@@ -636,7 +634,7 @@ def load_model(model_name):
 store_model(model)
 
 
-# 5.2 Try DecisionTreeRegressor model
+#%% 5.2 Try DecisionTreeRegressor model
 # Training
 from sklearn.tree import DecisionTreeRegressor
 model = DecisionTreeRegressor()
@@ -646,14 +644,14 @@ print('\n____________________________________ DecisionTreeRegressor ____________
 r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
-store_model(model)
+#store_model(model)
 # Predict labels for some training instances
-#print("Input data: \n", train_set.iloc[0:9])
+print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
 
-# 5.3 Try RandomForestRegressor model
+#%% 5.3 Try RandomForestRegressor model
 # Training (NOTE: may take time if train_set is large)
 from sklearn.ensemble import RandomForestRegressor
 model = RandomForestRegressor(n_estimators = 5, random_state=42) # n_estimators: no. of trees
@@ -663,14 +661,14 @@ print('\n____________________________________ RandomForestRegressor ____________
 r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
-store_model(model)      
+#store_model(model)      
 # Predict labels for some training instances
 #print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
 
-# 5.4 Try polinomial regression model
+#%% 5.4 Try polinomial regression model
 # NOTE: polinomial regression can be treated as (multivariate) linear regression where high-degree features x1^2, x2^2, x1*x2... are seen as new features x3, x4, x5... 
 # hence, to do polinomial regression, we add high-degree features to the data, then call linear regression
 # 5.5.1 Training. NOTE: may take a while 
@@ -681,7 +679,7 @@ new_training = 10
 if new_training:
     model = LinearRegression()
     model.fit(train_set_poly_added, train_set_labels)
-    store_model(model, model_name = "PolinomialRegression")      
+    #store_model(model, model_name = "PolinomialRegression")      
 else:
     model = load_model("PolinomialRegression")
 # 5.4.2 Compute R2 score and root mean squared error
@@ -694,7 +692,7 @@ print("Predictions: ", model.predict(train_set_poly_added[0:9]).round(decimals=1
 print("Labels:      ", list(train_set_labels[0:9]))
 
 
-# 5.5 Evaluate with K-fold cross validation 
+#%% 5.5 Evaluate with K-fold cross validation 
 from sklearn.model_selection import cross_val_score
 #from sklearn.model_selection import ShuffleSplit, StratifiedKFold, StratifiedShuffleSplit
 #from sklearn.model_selection import cross_val_predict
@@ -704,7 +702,7 @@ from sklearn.model_selection import cross_val_score
 #cv3 = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
 print('\n____________________________________ K-fold cross validation ____________________________________')
 
-run_evaluation = 0
+run_evaluation = 1
 if run_evaluation:
     # Evaluate LinearRegression
     model_name = "LinearRegression" 
