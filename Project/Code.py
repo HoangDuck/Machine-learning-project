@@ -18,7 +18,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer  
 from sklearn.preprocessing import OneHotEncoder      
-#from statistics import mean
+from statistics import mean
 
 
 # In[1]: LOOK AT THE BIG PICTURE (DONE)
