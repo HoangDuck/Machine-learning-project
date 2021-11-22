@@ -588,7 +588,7 @@ print('\n____________________________________ Processed feature values _________
 print(processed_train_set_val[[0, 1, 2],:].toarray())
 print(processed_train_set_val.shape)
 print('We have %d numeric feature + 1 added features + 32 cols of onehotvector for categorical features.' %(len(num_feat_names)))
-processed_train_set_val.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\DataSet_Filtered\export_dataset_processed.csv', index = False, header=True)
+
 # In[5]: TRAIN AND EVALUATE MODELS 
 
 # 5.1 Try LinearRegression model
@@ -644,7 +644,7 @@ print('\n____________________________________ DecisionTreeRegressor ____________
 r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
-#store_model(model)
+store_model(model)
 # Predict labels for some training instances
 print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
@@ -661,7 +661,7 @@ print('\n____________________________________ RandomForestRegressor ____________
 r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
-#store_model(model)      
+store_model(model)      
 # Predict labels for some training instances
 #print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
@@ -679,7 +679,7 @@ new_training = 10
 if new_training:
     model = LinearRegression()
     model.fit(train_set_poly_added, train_set_labels)
-    #store_model(model, model_name = "PolinomialRegression")      
+    store_model(model, model_name = "PolinomialRegression")      
 else:
     model = load_model("PolinomialRegression")
 # 5.4.2 Compute R2 score and root mean squared error
@@ -773,12 +773,12 @@ def print_search_result(grid_search, model_name = ""):
     for (mean_score, params) in zip(cv_results["mean_test_score"], cv_results["params"]):
         print('rmse =', np.sqrt(-mean_score).round(decimals=1), params) 
 
-method = 2
+method = 1
 # 6.1 Method 1: Grid search (try all combinations of hyperparams in param_grid)
 if method == 1:
     from sklearn.model_selection import GridSearchCV
     
-    run_new_search = 0      
+    run_new_search = 1      
     if run_new_search:
         # 6.1.1 Fine-tune RandomForestRegressor
         model = RandomForestRegressor(random_state=42)
