@@ -512,7 +512,7 @@ if method == 1: # Method 1: Randomly select 20% of data for test set. Used when 
 elif method == 2: # Method 2: Stratified sampling, to remain distributions of important features, see (Geron, 2019) page 56
     # Create new feature "KHOẢNG GIÁ": the distribution we want to remain
     raw_data["Salary_About"] = pd.cut(raw_data["Yearly brutto salary (without bonus and stocks) in EUR"],
-                                    bins=[0, 100000, 200000, 300000, 400000,500000,600000,700000,800000,900000, np.inf],
+                                    bins=[0, 100000, 200000, 300000, 400000,500000,600000,700000,800000, np.inf],
                                     labels=[1,2,3,4,5,6,7,8,9]) # use numeric labels to plot histogram
     
     # Create training and test set
@@ -559,7 +559,7 @@ class ColumnSelector(BaseEstimator, TransformerMixin):
 
 num_feat_names = ['Total years of experience', 
 'Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR'] # =list(train_set.select_dtypes(include=[np.number]))
-cat_feat_names = ['Position', 'Seniority level', 'Employment status',
+cat_feat_names = ['Position ', 'Seniority level', 'Employment status',
 'Contract duration','Company size','Company type','Programming languages','Frameworks / Libs',
 'Databases','Design','Clouds','Platform','DevOps tools'] # =list(train_set.select_dtypes(exclude=[np.number])) 
 
