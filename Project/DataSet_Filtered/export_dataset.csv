@@ -1,4 +1,4 @@
-Position ,Total years of experience,Seniority level,Yearly brutto salary (without bonus and stocks) in EUR,Employment status,Сontract duration,Company size,Company type,"Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR",Programming languages,Frameworks / Libs,Databases,Design,Clouds,Platform,DevOps tools
+Position ,Total years of experience,Seniority level,Yearly brutto salary (without bonus and stocks) in EUR,Employment status,Contract duration,Company size,Company type,"Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR",Programming languages,Frameworks / Libs,Databases,Design,Clouds,Platform,DevOps tools
 Software Engineer,5,Senior,80000.0,Full-time employee,Unlimited contract,51-100,Product,,TypeScript; ,,,,,,
 Backend Developer,7,Senior,80000.0,Full-time employee,Unlimited contract,101-1000,Product,,Ruby; ,,,,,,
 Software Engineer,12,Lead,120000.0,Self-employed (freelancer),Temporary contract,101-1000,Product,,JavaScript; TypeScript; ,,,,,,
@@ -573,7 +573,7 @@ Presales Engineer ,4,Middle,63000.0,Full-time employee,Unlimited contract,101-10
 Data Scientist,2,Middle,62000.0,Full-time employee,Unlimited contract,101-1000,Publisher,0,Python; ,,,,,,
 Data Scientist,1,Junior,51000.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Backend Developer,11,Senior,154000.0,Self-employed (freelancer),Temporary contract,Nov-50,Startup,,Scala; ,,,,,,
-Freelance AI lead / advisor,20,Head,200000.0,Self-employed (freelancer),0,up to 10,Consulting / Agency,,C; ,,,,,,
+Freelance AI lead / advisor,20,Head,200000.0,Self-employed (freelancer),No info,up to 10,Consulting / Agency,,C; ,,,,,,
 Data Scientist,6,Senior,78000.0,Full-time employee,Unlimited contract,1000+,E-commerce,,No info,No info,No info,No info,No info,No info,No info
 Data Scientist,1,Junior,300000.0,Full-time employee,,101-1000,Startup,,C++; ,,,,,,
 DevOps,10,Lead,78000.0,,,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info

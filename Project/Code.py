@@ -368,8 +368,37 @@ for x in range(num):
         list_Year_Experience.append(raw_data["Total years of experience"][x])
         continue
 raw_data["Total years of experience"]=list_Year_Experience
-#%%Export new DataSet
-raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\export_dataframe.csv', index = False, header=True)
+#%%Classify type of contract
+import json
+data=None
+file_path='Json_Files/TypeContract.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    return result
+#%%Executing
+list_Contract=[]
+for x in range(num):
+    try:
+        s=raw_data["Contract duration"][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Contract.append(s)
+            continue
+        else:
+            list_Contract.append(result)
+    except:
+        list_Contract.append(raw_data["Contract duration"][x])
+        continue
+
+raw_data["Contract duration"]=list_Contract
 # In[04]: PREPARE THE DATA 
 # 4.1 Remove unused features
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
