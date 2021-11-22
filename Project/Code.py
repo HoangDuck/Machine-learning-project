@@ -511,27 +511,28 @@ if method == 1: # Method 1: Randomly select 20% of data for test set. Used when 
                                                                                      # otherwise, when repeating training many times, your model may see all the data
 elif method == 2: # Method 2: Stratified sampling, to remain distributions of important features, see (Geron, 2019) page 56
     # Create new feature "KHOẢNG GIÁ": the distribution we want to remain
-    raw_data["KHOẢNG GIÁ"] = pd.cut(raw_data["GIÁ - TRIỆU ĐỒNG"],
-                                    bins=[0, 2000, 4000, 6000, 8000, np.inf],
-                                    labels=[2,4,6,8,100]) # use numeric labels to plot histogram
+    raw_data["Salary_About"] = pd.cut(raw_data["Yearly brutto salary (without bonus and stocks) in EUR"],
+                                    bins=[0, 100000, 200000, 300000, 400000,500000,600000,700000,800000,900000, np.inf],
+                                    labels=[1,2,3,4,5,6,7,8,9]) # use numeric labels to plot histogram
     
     # Create training and test set
     from sklearn.model_selection import StratifiedShuffleSplit  
     splitter = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42) # n_splits: no. of re-shuffling & splitting = no. of train-test sets 
                                                                                   # (if you want to run the algorithm n_splits times with different train-test set)
-    for train_index, test_index in splitter.split(raw_data, raw_data["KHOẢNG GIÁ"]): # Feature "KHOẢNG GIÁ" must NOT contain NaN
+    for train_index, test_index in splitter.split(raw_data, raw_data["Salary_About"]): # Feature "KHOẢNG GIÁ" must NOT contain NaN
         train_set = raw_data.loc[train_index]
         test_set = raw_data.loc[test_index]      
     
     # See if it worked as expected
     if 1:
-        raw_data["KHOẢNG GIÁ"].hist(bins=6, figsize=(5,5)); #plt.show();
-        test_set["KHOẢNG GIÁ"].hist(bins=6, figsize=(5,5)); plt.show()
+        raw_data["Salary_About"].hist(bins=6, figsize=(5,5)); #plt.show();
+        test_set["Salary_About"].hist(bins=6, figsize=(5,5)); plt.show()
 
-    # Remove the new feature
+    #Remove the new feature
     print(train_set.info())
     for _set_ in (train_set, test_set):
-        _set_.drop(columns="KHOẢNG GIÁ", inplace=True) 
+        #_set_.drop("income_cat", axis=1, inplace=True) # axis=1: drop cols, axis=0: drop rows
+        _set_.drop(columns="Salary_About", inplace=True) 
     print(train_set.info())
     print(test_set.info())
 print('\n____________________________________ Split training an test set ____________________________________')     
