@@ -338,7 +338,24 @@ for x in range(num):
         p=ClassifyData(data,s)#Them ham tra ve ngon ngu
         list_DevOps_Tools.append(p)
 raw_data["DevOps tools"]=list_DevOps_Tools#Them ham tra ve devops tools
-
+#%%Year of experiences
+import json
+data=None
+file_path='Json_Files/YearOfExperience.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+print(data)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    return result
+#%%Executing
+list_Year_Experience=np.zeros
 #%%Export new DataSet
 raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\export_dataframe.csv', index = False, header=True)
 # In[04]: PREPARE THE DATA 
