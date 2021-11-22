@@ -555,7 +555,7 @@ class ColumnSelector(BaseEstimator, TransformerMixin):
 num_feat_names = ['Total years of experience', 'Yearly brutto salary (without bonus and stocks) in EUR', 
 'Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR'] # =list(train_set.select_dtypes(include=[np.number]))
 cat_feat_names = ['Position', 'Seniority level', 'Employment status',
-'Ð¡ontract duration','Company size','Company type','Programming languages','Frameworks / Libs',
+'Contract duration','Company size','Company type','Programming languages','Frameworks / Libs',
 'Databases','Design','Clouds','Platform','DevOps tools'] # =list(train_set.select_dtypes(exclude=[np.number])) 
 
 # 4.4.2 Pipeline for categorical features
@@ -568,7 +568,7 @@ cat_pipeline = Pipeline([
 # 4.4.4 Pipeline for numerical features
 num_pipeline = Pipeline([
     ('selector', ColumnSelector(num_feat_names)),
-    ('imputer', SimpleImputer(missing_values=np.nan, strategy=0, copy=True)), # copy=False: imputation will be done in-place 
+    ('imputer', SimpleImputer(missing_values=np.nan, strategy="median", copy=True)), # copy=False: imputation will be done in-place 
     ('std_scaler', StandardScaler(with_mean=True, with_std=True, copy=True)) # Scale features to zero mean and unit variance
     ])  
 #feature scaling biến đổi khoảng giá trị các thuộc tính bằng nhau như thay vì 1-500 thì đưa về 0-1 hoặc -1 - 1  
