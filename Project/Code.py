@@ -552,7 +552,7 @@ class ColumnSelector(BaseEstimator, TransformerMixin):
     def transform(self, dataframe):
         return dataframe[self.feature_names].values         
 
-num_feat_names = ['Total years of experience', 'Yearly brutto salary (without bonus and stocks) in EUR', 
+num_feat_names = ['Total years of experience', 
 'Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR'] # =list(train_set.select_dtypes(include=[np.number]))
 cat_feat_names = ['Position', 'Seniority level', 'Employment status',
 'Contract duration','Company size','Company type','Programming languages','Frameworks / Libs',
