@@ -80,6 +80,8 @@ print(raw_data.iloc[[0,5,20], [2, 7]] ) # Refer using column ID
 #%% 3.6 Compute correlations b/w features
 corr_matrix = raw_data.corr()
 print(corr_matrix) # print correlation matrix
+#%%DATA FILTER
+#NULL , outliers
 #%% 3.7 Try add features and classify data
 #Function for classifying data:
 #%%3.7.1 Execute adding features and classify data programming languages
@@ -488,6 +490,7 @@ for x in range(num):
         list_Additional_Support.append(raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"][x])
         continue
 raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"]=list_Additional_Support
+
 # In[04]: PREPARE THE DATA 
 # 4.1 Remove unused features
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
@@ -499,6 +502,7 @@ raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City",
                          "Your main technology / programming language"], inplace=True) 
 #%%Store dataset
 raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\DataSet_Filtered\export_dataset.csv', index = False, header=True)
+
 #%% 4.2 Split training-test set and NEVER touch test set until test phase
 method = 2
 if method == 1: # Method 1: Randomly select 20% of data for test set. Used when data set is large
