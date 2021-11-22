@@ -397,8 +397,67 @@ for x in range(num):
     except:
         list_Contract.append(raw_data["Contract duration"][x])
         continue
-
 raw_data["Contract duration"]=list_Contract
+#%%Classify company size
+import json
+data=None
+file_path='Json_Files/CompanySize.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    return result
+#%%Executing
+list_Company_Size=[]
+for x in range(num):
+    try:
+        s=raw_data["Company size"][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Company_Size.append(s)
+            continue
+        else:
+            list_Company_Size.append(result)
+    except:
+        list_Company_Size.append(raw_data["Company size"][x])
+        continue
+raw_data["Company size"]=list_Company_Size
+#%%Classify company type
+import json
+data=None
+file_path='Json_Files/Company_type.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    return result
+#%%Executing
+list_Company_Type=[]
+for x in range(num):
+    try:
+        s=raw_data["Company type"][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Company_Type.append(s)
+            continue
+        else:
+            list_Company_Type.append(result)
+    except:
+        list_Company_Type.append(raw_data["Company type"][x])
+        continue
+raw_data["Company type"]=list_Company_Type
 # In[04]: PREPARE THE DATA 
 # 4.1 Remove unused features
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
