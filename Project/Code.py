@@ -10,8 +10,6 @@ from math import nan
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-# np.set_printoptions(threshold = np.inf)
-# pd.options.display.max_columns = 20
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import FeatureUnion
 from sklearn.pipeline import Pipeline
@@ -20,17 +18,15 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder      
 from statistics import mean
 
-
-# In[1]: LOOK AT THE BIG PICTURE (DONE)
+# In[1]: Overview:
 # Dự đoán lương của một người hoặc là làm một 
 # phần mềm, công cụ để dự đoán lương khi mik apply 
 # và mik sử dụng lương deal cho hợp lý
 
-# In[2]: GET THE DATA (DONE). LOAD DATA
+# In[2]: Get the data:
 raw_data = pd.read_csv('Raw_DataSet/IT Salary Survey EU  2020.csv')
 
-
-# In[3]: DISCOVER THE DATA TO GAIN INSIGHTS
+# In[3]: Discover the data:
 # 3.1 Quick view of the data
 print('\n____________________________________ Dataset info ____________________________________')
 print(raw_data.info())              
@@ -41,11 +37,11 @@ print(raw_data['Your main technology / programming language'].value_counts())
 print('\n____________________________________ Statistics of numeric features ____________________________________')
 print(raw_data.describe())    
 print('\n____________________________________ Get specific rows and cols ____________________________________')     
-print(raw_data.iloc[[0,5,20], [2, 7]] ) # Refer using column ID
+print(raw_data.iloc[[0,5,20], [7, 8]] ) # Refer using column ID
 #%%Plot
 # 3.2 Scatter plot b/w 2 features
 if 0:
-    raw_data.plot(kind="scatter", y="Yearly brutto salary (without bonus and stocks) in EUR", x="Total years of experience", alpha=0.2)
+    raw_data.plot(kind="scatter", y="Age", x="Seniority level", alpha=0.2)
     plt.savefig('figures/scatter_1_feat.png', format='png', dpi=300)
     plt.show()      
 if 0:
@@ -61,9 +57,9 @@ if 0:
     plt.show()
 
 # 3.4 Plot histogram of 1 feature
-if 0:
+if 1:
     from pandas.plotting import scatter_matrix   
-    features_to_plot = ["SỐ PHÒNG"]
+    features_to_plot = ["Age"]
     scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
     plt.show()
 
@@ -80,7 +76,7 @@ if 0:
 #%% 3.6 Compute correlations b/w features
 corr_matrix = raw_data.corr()
 print(corr_matrix) # print correlation matrix
-#%%DATA FILTER
+#%%  DATA FILTER
 #NULL , outliers
 #%% 3.7 Try add features and classify data
 #Function for classifying data:
@@ -340,7 +336,7 @@ for x in range(num):
         p=ClassifyData(data,s)#Them ham tra ve ngon ngu
         list_DevOps_Tools.append(p)
 raw_data["DevOps tools"]=list_DevOps_Tools#Them ham tra ve devops tools
-#%%Year of experiences
+#%%3.7.8. Year of experiences
 import json
 data=None
 file_path='Json_Files/YearOfExperience.json'
@@ -370,7 +366,7 @@ for x in range(num):
         list_Year_Experience.append(raw_data["Total years of experience"][x])
         continue
 raw_data["Total years of experience"]=list_Year_Experience
-#%%Classify type of contract
+#%%3.7.9. Classify type of contract
 import json
 data=None
 file_path='Json_Files/TypeContract.json'
@@ -400,7 +396,7 @@ for x in range(num):
         list_Contract.append(raw_data["Contract duration"][x])
         continue
 raw_data["Contract duration"]=list_Contract
-#%%Classify company size
+#%%3.7.10. Classify company size
 import json
 data=None
 file_path='Json_Files/CompanySize.json'
@@ -430,7 +426,7 @@ for x in range(num):
         list_Company_Size.append(raw_data["Company size"][x])
         continue
 raw_data["Company size"]=list_Company_Size
-#%%Classify company type
+#%%3.7.11. Classify company type
 import json
 data=None
 file_path='Json_Files/Company_type.json'
@@ -460,7 +456,7 @@ for x in range(num):
         list_Company_Type.append(raw_data["Company type"][x])
         continue
 raw_data["Company type"]=list_Company_Type
-#%%Classify additional support
+#%%3.7.12. Classify additional support
 import json
 data=None
 file_path='Json_Files/Additional_monetary_support.json'
@@ -491,7 +487,7 @@ for x in range(num):
         continue
 raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"]=list_Additional_Support
 
-# In[04]: PREPARE THE DATA 
+# In[04]: Prepare the data
 # 4.1 Remove unused features
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
                          "Years of experience in Germany", "Other technologies/programming languages you use often",
@@ -502,11 +498,6 @@ raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City",
                          "Your main technology / programming language"], inplace=True) 
 #%%Store dataset
 raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\DataSet_Filtered\export_dataset.csv', index = False, header=True)
-#%%
-if 0:
-    raw_data.plot(kind="scatter", y="Yearly brutto salary (without bonus and stocks) in EUR", x="Total years of experience", alpha=0.2)
-    plt.savefig('figures/scatter_1_feat.png', format='png', dpi=300)
-    plt.show()      
 #%% 4.2 Split training-test set and NEVER touch test set until test phase
 method = 2
 if method == 1: # Method 1: Randomly select 20% of data for test set. Used when data set is large
