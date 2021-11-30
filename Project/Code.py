@@ -494,10 +494,16 @@ raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\Da
 #%% 4.2 Tách tập dữ liệu trên thành tập train và tập test
 split = True
 if split: # Stratified sampling
+    '''
+        Cách tạo test set này thì lấy dữ liệu mức lương trong tập dữ liệu đưa về thành các khoản chung
+        Và sau đó lấy mỗi khoảng đã chia một ít dữ liệu 20%, mỗi tập dữ liệu nhỏ đại diện tốt cho khoảng đó.
+        Khi tập hợp các khoảng dữ liệu nhỏ ấy thì ta có tập test_set mà vẫn đảm bảo nó có tính ngẫu nhiên
+        và đại diện được cho cả tập dữ liệu.
+    '''
     # Tạo ra thuộc tính mới "Salary_About"
     raw_data["Salary_About"] = pd.cut(raw_data["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"],
                                     bins=[0, 100, 200, 300, 400, np.inf],
-                                    labels=[1,2,3,4,5]) # use numeric labels to plot histogram
+                                    labels=[100,200,300,400,500]) # use numeric labels to plot histogram
     
     # Tạo tập train và tập test; Tập test để đến bước cuối cùng
     from sklearn.model_selection import StratifiedShuffleSplit  
@@ -507,31 +513,32 @@ if split: # Stratified sampling
         train_set = raw_data.loc[train_index]
         test_set = raw_data.loc[test_index]      
     
-    # Vẽ biểu đồ
-    if 1:
+    # Vẽ biểu đồ lấy mẫu ở tập dữ liệu
+    if 0:
         raw_data["Salary_About"].hist(bins=6, figsize=(5,5)); #plt.show();
         test_set["Salary_About"].hist(bins=6, figsize=(5,5)); plt.show()
 
     #Loại bỏ thuộc tính salary_about
-    print(train_set.info())
     for _set_ in (train_set, test_set):
         _set_.drop(columns="Salary_About", inplace=True) 
     print(train_set.info())
     print(test_set.info())
 print('\n____________________________________ Split training an test set ____________________________________')     
 print(len(train_set), "train +", len(test_set), "test examples")
-print(train_set.head(4))
+#print(train_set.head(4))
 
-#%% 4.3 Separate labels from data, since we do not process label values
+#%% 4.3 Tiến hành tách cột label ở tập train và tập test và không xử lý cột label
+# Ở trong đồ án này thì label - output bài toán - là:
+# cột mức lương được tính bằng ngàn EUR.
 train_set_labels = train_set["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"].copy()
 train_set = train_set.drop(columns = "Yearly brutto salary (without bonus and stocks) in thoundsands EUR") 
 test_set_labels = test_set["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"].copy()
 test_set = test_set.drop(columns = "Yearly brutto salary (without bonus and stocks) in thoundsands EUR") 
 
-#%% 4.4 Define pipelines for processing data. 
+#%% 4.4 Cài đặt các Pipeline để tiến hành xử lý dữ liệu
 # INFO: Pipeline is a sequence of transformers (see Geron 2019, page 73). For step-by-step manipulation, see Details_toPipeline.py 
 
-# 4.4.1 Define ColumnSelector: a transformer for choosing columns
+# 4.4.1 Định nghĩa hàm chọn cột
 class ColumnSelector(BaseEstimator, TransformerMixin):
     def __init__(self, feature_names):
         self.feature_names = feature_names
@@ -539,12 +546,13 @@ class ColumnSelector(BaseEstimator, TransformerMixin):
         return self
     def transform(self, dataframe):
         return dataframe[self.feature_names].values         
-
+# Lưu tập list chứa cột dữ liệu dạng số:
 num_feat_names = ['Total years of experience', 
-'Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR'] # =list(train_set.select_dtypes(include=[np.number]))
+'Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR']
+# Lưu tập list chứa cột dữ liệu dạng chữ (Phân loại):
 cat_feat_names = ['Position ', 'Seniority level', 'Employment status',
 'Contract duration','Company size','Company type','Programming languages','Frameworks / Libs',
-'Databases','Design','Clouds','Platform','DevOps tools'] # =list(train_set.select_dtypes(exclude=[np.number])) 
+'Databases','Design','Clouds','Platform','DevOps tools']
 
 # 4.4.2 Pipeline for categorical features
 cat_pipeline = Pipeline([
@@ -741,8 +749,7 @@ else:
     print("Avg. rmse: ", mean(rmse_scores.round(decimals=1)),'\n')
 
 
-# In[6]: FINE-TUNE MODELS 
-# NOTE: this takes TIME
+# In[6]: FINE-TUNE CÁC MODELS 
 # INFO: find best hyperparams (param set before learning, e.g., degree of polynomial in poly reg, no. of trees in rand forest, no. of layers in neural net)
 # Here we fine-tune RandomForestRegressor and PolinomialRegression
 print('\n____________________________________ Fine-tune models ____________________________________')
@@ -776,17 +783,17 @@ if method == 1:
         joblib.dump(grid_search,'saved_objects/RandomForestRegressor_gridsearch.pkl')
         print_search_result(grid_search, model_name = "RandomForestRegressor")      
 
-        # 6.1.2 Fine-tune Polinomial regression          
-        model = Pipeline([ ('poly_feat_adder', PolynomialFeatures()), # add high-degree features
-                           ('lin_reg', LinearRegression()) ]) 
-        param_grid = [
-            # try 3 values of degree
-            {'poly_feat_adder__degree': [1, 2, 3]} ] # access param of a transformer: <transformer>__<parameter> https://scikit-learn.org/stable/modules/compose.html
-            # Train across 5 folds, hence a total of 3*5=15 rounds of training 
-        grid_search = GridSearchCV(model, param_grid, cv=5, scoring='neg_mean_squared_error', return_train_score=True)
-        grid_search.fit(processed_train_set_val, train_set_labels)
-        joblib.dump(grid_search,'saved_objects/PolinomialRegression_gridsearch.pkl') 
-        print_search_result(grid_search, model_name = "PolinomialRegression") 
+        # 6.1.2 Fine-tune Linear regression          
+        # model = Pipeline([ ('poly_feat_adder', PolynomialFeatures()), # add high-degree features
+        #                    ('lin_reg', LinearRegression()) ]) 
+        # param_grid = [
+        #     # try 3 values of degree
+        #     {'poly_feat_adder__degree': [1, 2, 3]} ] # access param of a transformer: <transformer>__<parameter> https://scikit-learn.org/stable/modules/compose.html
+        #     # Train across 5 folds, hence a total of 3*5=15 rounds of training 
+        # grid_search = GridSearchCV(model, param_grid, cv=5, scoring='neg_mean_squared_error', return_train_score=True)
+        # grid_search.fit(processed_train_set_val, train_set_labels)
+        # joblib.dump(grid_search,'saved_objects/PolinomialRegression_gridsearch.pkl') 
+        # print_search_result(grid_search, model_name = "PolinomialRegression") 
     else:
         # Load grid_search
         grid_search = joblib.load('saved_objects/RandomForestRegressor_gridsearch.pkl')
