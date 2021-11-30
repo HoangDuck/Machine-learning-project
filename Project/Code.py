@@ -554,43 +554,57 @@ cat_feat_names = ['Position ', 'Seniority level', 'Employment status',
 'Contract duration','Company size','Company type','Programming languages','Frameworks / Libs',
 'Databases','Design','Clouds','Platform','DevOps tools']
 
-# 4.4.2 Pipeline for categorical features
+# 4.4.2 Pipeline xử lý dữ liệu dạng chữ (phân loại):
 cat_pipeline = Pipeline([
     ('selector', ColumnSelector(cat_feat_names)),
-    ('imputer', SimpleImputer(missing_values=np.nan, strategy="constant", fill_value = "No info", copy=True)), # complete missing values. copy=False: imputation will be done in-place 
-    ('cat_encoder', OneHotEncoder()) # convert categorical data into one-hot vectors
+    #Điền chữ "No info" khi phát hiện chỗ dữ liệu chữ còn trống
+    ('imputer', SimpleImputer(missing_values=np.nan, strategy="constant", fill_value = "No info", copy=True)),
+     # chuyển đổi dữ liệu chữ qua one-hot vectors
+    ('cat_encoder', OneHotEncoder())
     ])    
 
-# 4.4.4 Pipeline for numerical features
+# 4.4.4 Pipeline xử lý dữ liệu dạng số:
 num_pipeline = Pipeline([
     ('selector', ColumnSelector(num_feat_names)),
-    ('imputer', SimpleImputer(missing_values=np.nan, strategy="median", copy=True)), # copy=False: imputation will be done in-place 
-    ('std_scaler', StandardScaler(with_mean=True, with_std=True, copy=True)) # Scale features to zero mean and unit variance
+    # Điền vào chỗ dữ liệu số còn trống bằng giá trị trung vị
+    ('imputer', SimpleImputer(missing_values=np.nan, strategy="median", copy=True)),
+    # Tiến hành fearture scaling để đưa các giá trị trong tập dữ liệu về các khoảng bằng nhau
+    ('std_scaler', StandardScaler(with_mean=True, with_std=True, copy=True))
     ])  
 #feature scaling biến đổi khoảng giá trị các thuộc tính bằng nhau như thay vì 1-500 thì đưa về 0-1 hoặc -1 - 1  
-# 4.4.5 Combine features transformed by two above pipelines
+# 4.4.5 Kết hợp hai pipeline trên với nhau
 full_pipeline = FeatureUnion(transformer_list=[
     ("num_pipeline", num_pipeline),
     ("cat_pipeline", cat_pipeline) ])  
 
-# 4.5 Run the pipeline to process training data           
+# 4.5 Tiến hành chạy pipeline xử lý chuyển đổi tập dữ liệu        
 processed_train_set_val = full_pipeline.fit_transform(train_set)
 print('\n____________________________________ Processed feature values ____________________________________')
 print(processed_train_set_val[[0, 1, 2],:].toarray())
 print(processed_train_set_val.shape)
 print('We have %d numeric feature + 1 added features + 32 cols of onehotvector for categorical features.' %(len(num_feat_names)))
 
-# In[5]: TRAIN AND EVALUATE MODELS 
-
-# 5.1 Try LinearRegression model
-# 5.1.1 Training: learn a linear regression hypothesis using training data 
+# In[5]: TRAINING MODELS VÀ VALIDATION TEST  
+'''
+    Ở bước này tiến hành chạy các model, đo độ chính xác và độ lệch ở mỗi model
+    Tiến hành chạy validation đảm bảo chọn model khách quan
+    Sau khi chọn model thì tiến hành bước fine-tune
+    Ở bước này những model được thực hiện:
+    + Linear Regression
+    + Decision tree
+    + Random Forest
+    + Polinomial
+    + SVM
+'''
+# 5.1 LinearRegression model
+# 5.1.1 Training: Học ra một linear regression hypothesis sử dụng training data 
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 model.fit(processed_train_set_val, train_set_labels)
 print('\n____________________________________ LinearRegression ____________________________________')
 print('Learned parameters: ', model.coef_)
 
-# 5.1.2 Compute R2 score and root mean squared error
+# 5.1.2 Tính R2 score và root mean squared error
 def r2score_and_rmse(model, train_data, labels): 
     r2score = model.score(train_data, labels)
     from sklearn.metrics import mean_squared_error
@@ -607,11 +621,9 @@ print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
-#%% 5.1.4 Store models to files, to compare latter
-#from sklearn.externals import joblib 
+#%% 5.1.4 Lưu trữ các models
 import joblib # new lib
 def store_model(model, model_name = ""):
-    # NOTE: sklearn.joblib faster than pickle of Python
     # INFO: can store only ONE object in a file
     if model_name == "": 
         model_name = type(model).__name__
@@ -620,7 +632,6 @@ def load_model(model_name):
     # Load objects into memory
     #del model
     model = joblib.load('saved_objects/' + model_name + '_model.pkl')
-    #print(model)
     return model
 store_model(model)
 
