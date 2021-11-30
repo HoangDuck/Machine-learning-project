@@ -479,7 +479,48 @@ for x in range(num):
         list_Additional_Support.append(raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"][x])
         continue
 raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"]=list_Additional_Support
-
+#%%3.7.13. Điều chỉnh dữ liệu các vị trí làm của nhân lực IT vùng châu Âu năm 2020
+import json
+data=None
+file_path='Json_Files/ListPositions.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    if(text_raw_data=="Analyst" or text_raw_data=="Marketing Analyst" or text_raw_data=="Product Analyst"):
+        result='Analytics engineer'
+        return result
+    elif(text_raw_data=="Consultant" or text_raw_data=="Application Consultant"
+     or text_raw_data=="BI Consultant" or text_raw_data=="BI IT Consultant"
+      or text_raw_data=="ERP Consultant" or text_raw_data=="SAP BW Senior Consultant" 
+      or text_raw_data=="SAP Consultant"):
+        result='Consultant'
+        return result
+    elif(text_raw_data=="Architect" or text_raw_data=="Data Architect"):
+        result='Architect'
+        return result
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    return result
+#%% Thực thi
+list_Positions=[]
+for x in range(num):
+    try:
+        s=raw_data["Position "][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Positions.append(s)
+            continue
+        else:
+            list_Positions.append(result)
+    except:
+        list_Positions.append(raw_data["Position "][x])
+        continue
+raw_data["Position "]=list_Positions
 # In[04]: PREPARE THE DATA
 # 4.1 Loại bỏ những cột không sử dụng
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
