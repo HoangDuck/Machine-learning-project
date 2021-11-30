@@ -759,8 +759,10 @@ else:
 
 
 # In[6]: FINE-TUNE CÁC MODELS 
-# INFO: find best hyperparams (param set before learning, e.g., degree of polynomial in poly reg, no. of trees in rand forest, no. of layers in neural net)
-# Here we fine-tune RandomForestRegressor and PolinomialRegression
+# INFO: Tìm ra hyperparams
+'''
+    Ở bước này tiến hành fine tune các model: Randomforest và Linear Regressor
+'''
 print('\n____________________________________ Fine-tune models ____________________________________')
 def print_search_result(grid_search, model_name = ""): 
     print("\n====== Fine-tune " + model_name +" ======")
