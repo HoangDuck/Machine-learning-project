@@ -362,7 +362,7 @@ Timestamp,Age,Gender,City,Position ,Total years of experience,Years of experienc
 24/11/2020 18:16:39,25,Male,Berlin,Backend Developer,5,0,Senior,Java,Python,60,5600,,,,,,,,,,,
 24/11/2020 18:19:49,38,Male,Köln,QA Engineer,7,2,Middle,,,54.5,,54500,,30,Full-time employee,Unlimited contract,German,Nov-50,Consulting / Agency,No,,1500
 24/11/2020 18:22:41,40,Male,Frankfurt,Software Engineer,22,3,Senior,Java,"Kotlin, Javascript / Typescript, Java / Scala, Kubernetes, Docker",72,5000,45000,45000,30,Full-time employee,Unlimited contract,German,1000+,Product,No,,
-24/11/2020 18:25:30,28,Male,Munich,"Fullstack engineer, ну или Software engineer",9,1,Senior,React/Typescript,MongoDB,60,0,,,28,Full-time employee,Unlimited contract,English,up to 10,Startup,No,20,
+24/11/2020 18:25:30,28,Male,Munich,"Fullstack engineer, Software engineer",9,1,Senior,React/Typescript,MongoDB,60,0,,,28,Full-time employee,Unlimited contract,English,up to 10,Startup,No,20,
 24/11/2020 18:27:22,29,Male,Berlin,Backend Developer,11,2,Senior,Python,"Python, Go, AWS, Kubernetes, Docker",85,4000,85000,4000,30,Full-time employee,Unlimited contract,English,51-100,Product,No,,
 24/11/2020 18:31:25,,Male,Berlin,Software Engineer,9,1,Lead,Java,"AWS, Docker",75,,,,24,Full-time employee,Unlimited contract,English,1000+,Startup,No,20,No
 24/11/2020 18:32:14,24,Male,Aachen,HiWi,3,2,Junior,Python,"Python, C/C++",10.164,,,,14,Part-time employee,Temporary contract,English,Nov-50,University,No,,
@@ -711,7 +711,7 @@ Timestamp,Age,Gender,City,Position ,Total years of experience,Years of experienc
 25/11/2020 23:01:28,35,Male,Berlin,QA Engineer,12,3,Senior,JS,"Javascript / Typescript, SQL",63,,56000,,30,Full-time employee,Unlimited contract,English,101-1000,Product,Yes,30,
 25/11/2020 23:03:43,41,Male,Munich,Software Engineer,19,5,Senior,Java,"PHP, Java / Scala, SQL, AWS, Docker",75,0,73000,0,27,Full-time employee,Unlimited contract,English,101-1000,Product,No,,
 25/11/2020 23:04:36,29,Male,Barcelona,Data Scientist,0,0,Junior,Python,"R, SQL",22,2000,11000,500,22,Full-time employee,Unlimited contract,English,51-100,Product,No,,
-25/11/2020 23:08:40,26,Female,Dusseldorf,BI Consultant SAP/ Data Engineer,5,5,Middle,ABAP,"Python, SQL",65,77000,46000,50000,30,Full-time employee,Unlimited contract,German,up to 10,Startup,No,,
+25/11/2020 23:08:40,26,Female,Dusseldorf,Data Engineer,5,5,Middle,ABAP,"Python, SQL",65,77000,46000,50000,30,Full-time employee,Unlimited contract,German,up to 10,Startup,No,,
 25/11/2020 23:20:02,32,Male,Paris,DevOps,12,3,Senior,,,62,,,,,Full-time employee,,English,1000+,,,,
 25/11/2020 23:30:07,30,Male,Berlin,Data Engineer,6,1,Middle,Python,AWS,65,1000,,,27,Full-time employee,Unlimited contract,English,1000+,Product,No,,600
 25/11/2020 23:32:29,26,Male,London,DevOps,3,0,Middle,"networking, linux, automation, cloud","Python, AWS",37,,,,25,Full-time employee,Unlimited contract,English,51-100,Product,No,,
@@ -1241,7 +1241,7 @@ Timestamp,Age,Gender,City,Position ,Total years of experience,Years of experienc
 18/01/2021 09:51:30,38,Male,Berlin,Head of Engineering,18,8,Head,,"Javascript / Typescript, SQL, Go, AWS, Google Cloud, Azure, Kubernetes",90,20000,90000,20000,26,Full-time employee,Unlimited contract,German,51-100,Product,No,,
 18/01/2021 11:50:02,34,Male,Zurich,Software Engineer,7,2,Senior,PHP,PHP,108.5,,90000,,25,Full-time employee,Unlimited contract,English,Nov-50,Startup,No,,
 18/01/2021 15:05:50,31,Male,Berlin,Backend Developer,9,5,Senior,Java,"Python, Javascript / Typescript, Java / Scala, SQL, AWS, Docker",70,72000,70000,72000,26,Full-time employee,Unlimited contract,English,51-100,Product,Yes,,
-18/01/2021 17:46:02,33,Male,Berlin,Researcher/ Consumer Insights Analyst ,10,1.5,Senior,consumer analysis,,60,3000,48000,2500,unlimited ,Full-time employee,Unlimited contract,English,1000+,Product,No,,0
+18/01/2021 17:46:02,33,Male,Berlin,Researcher,10,1.5,Senior,consumer analysis,,60,3000,48000,2500,unlimited ,Full-time employee,Unlimited contract,English,1000+,Product,No,,0
 18/01/2021 23:20:35,39,Male,Munich,IT Operations Manager,15,2,Lead,PHP,"Python, C/C++, Javascript / Typescript, Java / Scala, Perl, AWS, Docker, Networking, Data Center",110,0,90000,,28,Full-time employee,Unlimited contract,English,101-1000,eCommerce,No,,
 19/01/2021 10:17:58,26,Male,Saarbrücken,Frontend Developer,7,7,Middle,JavaScript,"Javascript / Typescript, Docker, HTML, CSS; Adobe XD",38.35,40950,33800,36400,27,Full-time employee,Unlimited contract,German,101-1000,Product,No,,0
 19/01/2021 12:01:11,26,Male,Berlin,DevOps,2,2,Middle,yaml,"Python, AWS, Kubernetes, Docker, terraform, ansible",65,6500,40000,0,30,Full-time employee,Unlimited contract,English,51-100,Startup,No,30,600

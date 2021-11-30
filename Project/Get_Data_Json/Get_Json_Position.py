@@ -1,7 +1,7 @@
 #%%Classify company type
 import json
 data=None
-file_path='../Json_Files/ListPositions.json'
+file_path='Json_Files/ListPositions.json'
 # Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
@@ -12,8 +12,8 @@ def ClassifyData(data,text_raw_data):
         return result
     elif(text_raw_data=="Consultant" or text_raw_data=="Application Consultant"
      or text_raw_data=="BI Consultant" or text_raw_data=="BI IT Consultant"
-      or text_raw_data=="ERP Consultant" or text_raw_data=="SAP BW Senior Consultant" 
-      or text_raw_data=="SAP Consultant"):
+     or text_raw_data=="ERP Consultant" or text_raw_data=="SAP BW Senior Consultant" 
+     or text_raw_data=="SAP Consultant"):
         result='Consultant'
         return result
     elif(text_raw_data=="Architect" or text_raw_data=="Data Architect"):
