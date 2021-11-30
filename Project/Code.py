@@ -81,19 +81,23 @@ print(corr_matrix)
 # Chuẩn hóa lại các dữ liệu (Sửa lỗi chính tả, lỗi phông và viết hoa thường đồng đều)
 #%% 3.7 Thêm các thuộc tính mới
 #Function for classifying data:
-#%%3.7.1 Execute adding features and classify data programming languages
+#%%3.7.1 Thực hiện thêm cột dữ liệu về ngôn ngữ lập trình 
+# và thêm dữ liệu ngôn ngữ lập trình và cột đó:
+# Cài thư viện json để đọc file json dưới dạng dữ liệu dictionaries
 import json
-#Global variables
+# Khai báo biến data chứa dữ liệu dạng dictionaries đọc từ file Json
 data=None
 file_path='Json_Files/ListofPL.json'
-# Opening JSON file
+# Mở file Json
 with open(file_path) as json_file:
     data = json.load(json_file)
+# Kiểm tra chữ đó thuộc bảng chữ cái
 def CheckAlphabet(text_check):
     if((text_check >= 'a' and text_check <= 'z') or (text_check >= 'A' and text_check <= 'Z')):
         return True
     else:
         return False
+# Kiểm tra ngôn ngữ đó là ngôn ngữ C
 def CLanguagesChecking(text_raw_data,key="c"):
     if(text_raw_data.find("Embedded C")!=-1):
         return True
@@ -123,6 +127,7 @@ def CLanguagesChecking(text_raw_data,key="c"):
         else:
             return False
     return False
+# Phân loại dữ liệu
 def ClassifyData(data,text_raw_data):
     result=''
     keys=data.keys()
@@ -157,26 +162,24 @@ def ClassifyData(data,text_raw_data):
                     continue
                 result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 n=raw_data.index
 num=len(n)
+# Biến chứa dữ liệu ngôn ngữ lập trình sau khi được xử lý 
+# và chuẩn bị chèn vào dataframe
 list_Programming_Languages=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_Programming_Languages.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_Programming_Languages.append(p)
+# Dữ liệu sau khi được xử lý và chèn vào dataframe
 raw_data["Programming languages"]=list_Programming_Languages
-raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\export_dataframe.csv', index = False, header=True)
-#%%Export files
+
+#%%3.7.2 Thêm cột dữ liệu và phân loại các frameworks hoặc libraries
 import json
-with open('ListTest.json', 'w') as f:
-    json.dump(list_Programming_Languages, f)
-#%%3.7.2 Execute adding features and classify frameworks or libraries
-import json
-#Global variables
 data=None
 file_path='Json_Files/ListFM.json'
 # Opening JSON file
@@ -191,22 +194,20 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 list_Frameworks_Libraries=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_Frameworks_Libraries.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_Frameworks_Libraries.append(p)
-raw_data["Frameworks / Libs"]=list_Frameworks_Libraries#Them ham tra ve frameworks / libs
-#%%3.7.3 Execute adding features and classify databases
+raw_data["Frameworks / Libs"]=list_Frameworks_Libraries
+#%%3.7.3 Thêm cột dữ liệu và phân loại dữ liệu của databases
 import json
-#Global variables
 data=None
 file_path='Json_Files/ListDB.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 
@@ -218,22 +219,20 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 list_Databases=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_Databases.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_Databases.append(p)
-raw_data["Databases"]=list_Databases#Them ham tra ve databases
-#%%3.7.4 Execute adding features and classify designs
+raw_data["Databases"]=list_Databases
+#%%3.7.4 Thêm cột dữ liệu và phân loại dữ liệu về công cụ, mô hình thiết kế
 import json
-#Global variables
 data=None
 file_path='Json_Files/ListDesign.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 
@@ -245,22 +244,20 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 list_Design=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_Design.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_Design.append(p)
-raw_data["Design"]=list_Design#Them ham tra ve design
-#%%3.7.5 Execute adding features and classify clouds
+raw_data["Design"]=list_Design
+#%%3.7.5 Thêm dữ liệu và phân loại dữ liệu về Cloud
 import json
-#Global variables
 data=None
 file_path='Json_Files/ListCloud.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 
@@ -272,22 +269,20 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 list_CLouds=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_CLouds.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_CLouds.append(p)
-raw_data["Clouds"]=list_CLouds#Them ham tra ve clouds
-#%%3.7.6 Execute adding features and classify platforms
+raw_data["Clouds"]=list_CLouds
+#%%3.7.6 Platforms
 import json
-#Global variables
 data=None
 file_path='Json_Files/ListPlatform.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 
@@ -301,21 +296,20 @@ def ClassifyData(data,text_raw_data):
                 continue
             result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 list_Platforms=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_Platforms.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_Platforms.append(p)
-raw_data["Platform"]=list_Platforms#Them ham tra ve platforms
-#%%3.7.7 Execute adding features and classify devops-tools
+raw_data["Platform"]=list_Platforms
+#%%3.7.7 Thêm dữ liệu cột dữ liệu của các công cụ DevOps
 import json
 data=None
 file_path='Json_Files/ListDevOps-Tools.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 
@@ -327,21 +321,20 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]+"; "
     return result
-#%%Executing
+#%%Thực thi
 list_DevOps_Tools=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
         list_DevOps_Tools.append('No info')
     else:
-        p=ClassifyData(data,s)#Them ham tra ve ngon ngu
+        p=ClassifyData(data,s)
         list_DevOps_Tools.append(p)
-raw_data["DevOps tools"]=list_DevOps_Tools#Them ham tra ve devops tools
-#%%3.7.8. Year of experiences
+raw_data["DevOps tools"]=list_DevOps_Tools
+#%%3.7.8. Điều chỉnh dữ liệu tổng số năm kinh nghiệm
 import json
 data=None
 file_path='Json_Files/YearOfExperience.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 def ClassifyData(data,text_raw_data):
@@ -352,7 +345,7 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]
     return result
-#%%Executing
+#%%Thực thi
 list_Year_Experience=[]
 for x in range(num):
     try:
@@ -367,7 +360,7 @@ for x in range(num):
         list_Year_Experience.append(raw_data["Total years of experience"][x])
         continue
 raw_data["Total years of experience"]=list_Year_Experience
-#%%3.7.9. Classify type of contract
+#%%3.7.9. Điều chỉnh dữ liệu các loại hợp đồng
 import json
 data=None
 file_path='Json_Files/TypeContract.json'
@@ -382,7 +375,7 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]
     return result
-#%%Executing
+#%%Thực thi
 list_Contract=[]
 for x in range(num):
     try:
@@ -397,7 +390,7 @@ for x in range(num):
         list_Contract.append(raw_data["Contract duration"][x])
         continue
 raw_data["Contract duration"]=list_Contract
-#%%3.7.10. Classify company size
+#%%3.7.10. Điều chỉnh dữ liệu quy mô công ty
 import json
 data=None
 file_path='Json_Files/CompanySize.json'
@@ -412,7 +405,7 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]
     return result
-#%%Executing
+#%%Thực thi
 list_Company_Size=[]
 for x in range(num):
     try:
@@ -427,7 +420,7 @@ for x in range(num):
         list_Company_Size.append(raw_data["Company size"][x])
         continue
 raw_data["Company size"]=list_Company_Size
-#%%3.7.11. Classify company type
+#%%3.7.11. Điều chỉnh dữ liệu kiểu công ty
 import json
 data=None
 file_path='Json_Files/Company_type.json'
@@ -442,7 +435,7 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]
     return result
-#%%Executing
+#%%Thực thi
 list_Company_Type=[]
 for x in range(num):
     try:
@@ -457,11 +450,10 @@ for x in range(num):
         list_Company_Type.append(raw_data["Company type"][x])
         continue
 raw_data["Company type"]=list_Company_Type
-#%%3.7.12. Classify additional support
+#%%3.7.12. Điều chỉnh dữ liệu tiền hỗ trợ, trợ cấp trong năm 2020
 import json
 data=None
 file_path='Json_Files/Additional_monetary_support.json'
-# Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
 def ClassifyData(data,text_raw_data):
@@ -472,7 +464,7 @@ def ClassifyData(data,text_raw_data):
         if(index!=-1):
             result+=data[key]
     return result
-#%%Executing
+#%%Thực thi
 list_Additional_Support=[]
 for x in range(num):
     try:
@@ -488,8 +480,8 @@ for x in range(num):
         continue
 raw_data["Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR"]=list_Additional_Support
 
-# In[04]: Prepare the data
-# 4.1 Remove unused features
+# In[04]: PREPARE THE DATA
+# 4.1 Loại bỏ những cột không sử dụng
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
                          "Years of experience in Germany", "Other technologies/programming languages you use often",
                          "Yearly bonus + stocks in EUR", "Annual brutto salary (without bonus and stocks) one year ago. Only answer if staying in the same country",
@@ -497,21 +489,17 @@ raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City",
                          "Main language at work","Have you lost your job due to the coronavirus outbreak?",
                          "Have you been forced to have a shorter working week (Kurzarbeit)? If yes, how many hours per week",
                          "Your main technology / programming language"], inplace=True) 
-#%%Store dataset
+#%%Lưu tập dữ liệu qua bước tiền xử lý
 raw_data.to_csv(r'C:\Users\ADMIN\Máy tính\AI\Machine_Learning\Final_Project\DataSet-FinalProject (Processing)\Project\DataSet_Filtered\export_dataset.csv', index = False, header=True)
-#%% 4.2 Split training-test set and NEVER touch test set until test phase
-method = 2
-if method == 1: # Method 1: Randomly select 20% of data for test set. Used when data set is large
-    from sklearn.model_selection import train_test_split
-    train_set, test_set = train_test_split(raw_data, test_size=0.2, random_state=42) # set random_state to get the same training set all the time, 
-                                                                                     # otherwise, when repeating training many times, your model may see all the data
-elif method == 2: # Method 2: Stratified sampling, to remain distributions of important features, see (Geron, 2019) page 56
-    # Create new feature "KHOẢNG GIÁ": the distribution we want to remain
+#%% 4.2 Tách tập dữ liệu trên thành tập train và tập test
+split = True
+if split: # Stratified sampling
+    # Tạo ra thuộc tính mới "Salary_About"
     raw_data["Salary_About"] = pd.cut(raw_data["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"],
-                                    bins=[0, 100000, 200000, 300000, 400000,500000,600000,700000,800000, np.inf],
-                                    labels=[1,2,3,4,5,6,7,8,9]) # use numeric labels to plot histogram
+                                    bins=[0, 100, 200, 300, 400, np.inf],
+                                    labels=[1,2,3,4,5]) # use numeric labels to plot histogram
     
-    # Create training and test set
+    # Tạo tập train và tập test; Tập test để đến bước cuối cùng
     from sklearn.model_selection import StratifiedShuffleSplit  
     splitter = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42) # n_splits: no. of re-shuffling & splitting = no. of train-test sets 
                                                                                   # (if you want to run the algorithm n_splits times with different train-test set)
@@ -519,15 +507,14 @@ elif method == 2: # Method 2: Stratified sampling, to remain distributions of im
         train_set = raw_data.loc[train_index]
         test_set = raw_data.loc[test_index]      
     
-    # See if it worked as expected
+    # Vẽ biểu đồ
     if 1:
         raw_data["Salary_About"].hist(bins=6, figsize=(5,5)); #plt.show();
         test_set["Salary_About"].hist(bins=6, figsize=(5,5)); plt.show()
 
-    #Remove the new feature
+    #Loại bỏ thuộc tính salary_about
     print(train_set.info())
     for _set_ in (train_set, test_set):
-        #_set_.drop("income_cat", axis=1, inplace=True) # axis=1: drop cols, axis=0: drop rows
         _set_.drop(columns="Salary_About", inplace=True) 
     print(train_set.info())
     print(test_set.info())
@@ -858,6 +845,4 @@ Gợi ý cả thiện:
 
 
 # In[8]: LAUNCH, MONITOR, AND MAINTAIN YOUR SYSTEM
-# Go to slide: see notes
-
-done = 1
+# Hướng phát triển
