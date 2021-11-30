@@ -697,14 +697,14 @@ from sklearn.model_selection import cross_val_score
 #from sklearn.model_selection import ShuffleSplit, StratifiedKFold, StratifiedShuffleSplit
 #from sklearn.model_selection import cross_val_predict
 
-#cv1 = ShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
+#cv1 = ShuffleSplit(n_splits=10, test_size=0.2, ran.dom_state=42); 
 #cv2 = StratifiedKFold(n_splits=10, random_state=42); 
 #cv3 = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
 print('\n____________________________________ K-fold cross validation ____________________________________')
 
 run_evaluation = 1
 if run_evaluation:
-    # Evaluate LinearRegression
+    # Model LinearRegression
     model_name = "LinearRegression" 
     model = LinearRegression()             
     nmse_scores = cross_val_score(model, processed_train_set_val, train_set_labels, cv=5, scoring='neg_mean_squared_error')
@@ -712,7 +712,7 @@ if run_evaluation:
     joblib.dump(rmse_scores,'saved_objects/' + model_name + '_rmse.pkl')
     print("LinearRegression rmse: ", rmse_scores.round(decimals=1))
 
-    # Evaluate DecisionTreeRegressor
+    # Model DecisionTreeRegressor
     model_name = "DecisionTreeRegressor" 
     model = DecisionTreeRegressor()
     nmse_scores = cross_val_score(model, processed_train_set_val, train_set_labels, cv=5, scoring='neg_mean_squared_error')
@@ -720,7 +720,7 @@ if run_evaluation:
     joblib.dump(rmse_scores,'saved_objects/' + model_name + '_rmse.pkl')
     print("DecisionTreeRegressor rmse: ", rmse_scores.round(decimals=1))
 
-    # Evaluate RandomForestRegressor
+    # Model RandomForestRegressor
     model_name = "RandomForestRegressor" 
     model = RandomForestRegressor()
     nmse_scores = cross_val_score(model, processed_train_set_val, train_set_labels, cv=5, scoring='neg_mean_squared_error')
@@ -728,7 +728,7 @@ if run_evaluation:
     joblib.dump(rmse_scores,'saved_objects/' + model_name + '_rmse.pkl')
     print("RandomForestRegressor rmse: ", rmse_scores.round(decimals=1))
     
-    # Evaluate Polinomial regression
+    # Model Polinomial regression
     model_name = "PolinomialRegression" 
     model = LinearRegression()
     nmse_scores = cross_val_score(model, train_set_poly_added, train_set_labels, cv=5, scoring='neg_mean_squared_error')
