@@ -616,7 +616,7 @@ r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_label
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
         
-#%% 5.1.3 Predict labels for some training instances
+#%% 5.1.3 Dự đoán một số dữ liệu của model Linear Regression
 print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
@@ -624,58 +624,56 @@ print("Labels:      ", list(train_set_labels[0:9]))
 #%% 5.1.4 Lưu trữ các models
 import joblib # new lib
 def store_model(model, model_name = ""):
-    # INFO: can store only ONE object in a file
     if model_name == "": 
         model_name = type(model).__name__
     joblib.dump(model,'saved_objects/' + model_name + '_model.pkl')
 def load_model(model_name):
-    # Load objects into memory
-    #del model
+    # Đưa model từ file vào bộ nhớ
     model = joblib.load('saved_objects/' + model_name + '_model.pkl')
     return model
-store_model(model)
+store_model(model)# để lưu một model thì chạy hàm này
 
 
-#%% 5.2 Try DecisionTreeRegressor model
+#%% 5.2 DecisionTreeRegressor model
 # Training
 from sklearn.tree import DecisionTreeRegressor
 model = DecisionTreeRegressor()
 model.fit(processed_train_set_val, train_set_labels)
-# Compute R2 score and root mean squared error
+# Tính R2 score và root mean squared error
 print('\n____________________________________ DecisionTreeRegressor ____________________________________')
 r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
 store_model(model)
-# Predict labels for some training instances
+# Dự đoán một số dữ liệu của model Decision tree
 print("Input data: \n", train_set.iloc[0:9])
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
 
-#%% 5.3 Try RandomForestRegressor model
-# Training (NOTE: may take time if train_set is large)
+#%% 5.3 RandomForestRegressor model
 from sklearn.ensemble import RandomForestRegressor
-model = RandomForestRegressor(n_estimators = 5, random_state=42) # n_estimators: no. of trees
+model = RandomForestRegressor(n_estimators = 5, random_state=42) # n_estimators: số lượng cây
 model.fit(processed_train_set_val, train_set_labels)
-# Compute R2 score and root mean squared error
+# Tính R2 score và root mean squared error
 print('\n____________________________________ RandomForestRegressor ____________________________________')
 r2score, rmse = r2score_and_rmse(model, processed_train_set_val, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
 store_model(model)      
-# Predict labels for some training instances
-#print("Input data: \n", train_set.iloc[0:9])
+# Dự đoán một số dữ liệu của model Random forest
 print("Predictions: ", model.predict(processed_train_set_val[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
 
-#%% 5.4 Try polinomial regression model
-# NOTE: polinomial regression can be treated as (multivariate) linear regression where high-degree features x1^2, x2^2, x1*x2... are seen as new features x3, x4, x5... 
-# hence, to do polinomial regression, we add high-degree features to the data, then call linear regression
-# 5.5.1 Training. NOTE: may take a while 
+#%% 5.4 Polinomial regression model
+'''
+    Ở model này đầu tiên phải biến đổi các features bậc cao 
+    đưa nó thành một feature mới với bậc một.
+    Sau khi biến đổi các features thì dùng model linear Regressor training.
+'''
 from sklearn.preprocessing import PolynomialFeatures
-poly_feat_adder = PolynomialFeatures(degree = 2) # add high-degree features to the data
+poly_feat_adder = PolynomialFeatures(degree = 2) # Thêm những thuộc tính bậc cao
 train_set_poly_added = poly_feat_adder.fit_transform(processed_train_set_val)
 new_training = 10
 if new_training:
@@ -684,12 +682,12 @@ if new_training:
     store_model(model, model_name = "PolinomialRegression")      
 else:
     model = load_model("PolinomialRegression")
-# 5.4.2 Compute R2 score and root mean squared error
+# 5.4.2 Tính R2 score và root mean squared error
 print('\n____________________________________ Polinomial regression ____________________________________')
 r2score, rmse = r2score_and_rmse(model, train_set_poly_added, train_set_labels)
 print('R2 score (on training data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
-# 5.4.3 Predict labels for some training instances
+# 5.4.3 Dự đoán một số dữ liệu của model Polinomial Regressor
 print("Predictions: ", model.predict(train_set_poly_added[0:9]).round(decimals=1))
 print("Labels:      ", list(train_set_labels[0:9]))
 
@@ -818,7 +816,7 @@ if method == 1:
 
 # 7.1 Pick the best model - the SOLUTION
 # Pick Random forest
-search = joblib.load('saved_objects/RandomForestRegressor_randsearch.pkl')
+search = joblib.load('saved_objects/RandomForestRegressor_gridsearch.pkl')
 best_model = search.best_estimator_
 # Pick Linear regression
 #best_model = joblib.load('saved_objects/LinearRegression_model.pkl')
@@ -829,17 +827,17 @@ store_model(best_model, model_name="SOLUION")
 
 # 7.2 Analyse the SOLUTION to get more insights about the data
 # NOTE: ONLY for rand forest
-if type(best_model).__name__ == "RandomForestRegressor":
-    # Print features and importance score  (ONLY on rand forest)
-    feature_importances = best_model.feature_importances_
-    onehot_cols = []
-    for val_list in full_pipeline.transformer_list[1][1].named_steps['cat_encoder'].categories_: 
-        onehot_cols = onehot_cols + val_list.tolist()
-    feature_names = train_set.columns.tolist() + ["TỔNG SỐ PHÒNG"] + onehot_cols
-    for name in cat_feat_names:
-        feature_names.remove(name)
-    print('\nFeatures and importance score: ')
-    print(*sorted(zip( feature_names, feature_importances.round(decimals=4)), key = lambda row: row[1], reverse=True),sep='\n')
+# if type(best_model).__name__ == "RandomForestRegressor":
+#     # Print features and importance score  (ONLY on rand forest)
+#     feature_importances = best_model.feature_importances_
+#     onehot_cols = []
+#     for val_list in full_pipeline.transformer_list[1][1].named_steps['cat_encoder'].categories_: 
+#         onehot_cols = onehot_cols + val_list.tolist()
+#     feature_names = train_set.columns.tolist() + ["TỔNG SỐ PHÒNG"] + onehot_cols
+#     for name in cat_feat_names:
+#         feature_names.remove(name)
+#     print('\nFeatures and importance score: ')
+#     print(*sorted(zip( feature_names, feature_importances.round(decimals=4)), key = lambda row: row[1], reverse=True),sep='\n')
 
 # 7.3 Run on test data
 processed_test_set = full_pipeline.transform(test_set)  
