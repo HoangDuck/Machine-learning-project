@@ -4,30 +4,42 @@ See https://github.com/ageron/handson-ml2/blob/master/02_end_to_end_machine_lear
 
 LAST REVIEW: Oct 2020
 '''
+'''
 
-# In[0]: IMPORTS 
+Ten de tai:
+
+'''
+# In[0]: CÀI ĐẶT THƯ VIỆN
 from math import nan
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import FeatureUnion
-from sklearn.pipeline import Pipeline
+from sklearn.pipeline import Pipeline #Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer  
 from sklearn.preprocessing import OneHotEncoder      
-from statistics import mean
+from statistics import mean 
 
-# In[1]: Overview:
+# In[1]: Tổng quan về đề tài:
 # Dự đoán lương của một người hoặc là làm một 
 # phần mềm, công cụ để dự đoán lương khi mik apply 
 # và mik sử dụng lương deal cho hợp lý
 
-# In[2]: Get the data:
+# In[2]: LẤY DỮ LIỆU
+'''
+    - Dữ liệu được lấy từ Kaggle
+    Nguồn: https://www.kaggle.com/parulpandey/2020-it-salary-survey-for-eu-region
+    - Tập dữ liệu chứa những thông tin khảo sát mức lương của những nhân lực làm việc cho mảng IT ở vùng châu Âu.
+    - Tập dữ liệu nhóm em sử dụng là các thông tin khảo sát của năm 2020.
+    - Tác giả: Parul Pandey
+    - Lần cập nhật cuối của tập dữ liệu là 10 tháng trước.
+'''
 raw_data = pd.read_csv('Raw_DataSet/IT Salary Survey EU  2020.csv')
 
-# In[3]: Discover the data:
-# 3.1 Quick view of the data
+# In[3]: KHÁM PHÁ DỮ LIỆU:
+# 3.1 Quan sát tập dữ liệu
 print('\n____________________________________ Dataset info ____________________________________')
 print(raw_data.info())              
 print('\n____________________________________ Some first data examples ____________________________________')
@@ -38,47 +50,36 @@ print('\n____________________________________ Statistics of numeric features ___
 print(raw_data.describe())    
 print('\n____________________________________ Get specific rows and cols ____________________________________')     
 print(raw_data.iloc[[0,5,20], [7, 8]] ) # Refer using column ID
-#%%Plot
-# 3.2 Scatter plot b/w 2 features
-if 0:
-    raw_data.plot(kind="scatter", y="Age", x="Seniority level", alpha=0.2)
+#%% Vẽ biểu đồ
+# 3.2. Biểu đồ scatter plot giữa độ tuổi và lương của nhân lực IT ở châu Âu năm 2020
+if 1:
+    raw_data.plot(kind="scatter", y="Yearly brutto salary (without bonus and stocks) in thoundsands EUR", x="Age", alpha=0.2)
     plt.savefig('figures/scatter_1_feat.png', format='png', dpi=300)
     plt.show()      
-if 0:
-    raw_data.plot(kind="scatter", y="Seniority level", x="Total years of experience", alpha=0.2)
-    plt.show()
 
-# 3.3 Scatter plot b/w every pair of features
-if 0:
-    from pandas.plotting import scatter_matrix   
-    features_to_plot = ["GIÁ - TRIỆU ĐỒNG", "SỐ PHÒNG", "SỐ TOILETS", "DIỆN TÍCH - M2"]
-    scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
-    plt.savefig('figures/scatter_mat_all_feat.png', format='png', dpi=300)
-    plt.show()
-
-# 3.4 Plot histogram of 1 feature
+# 3.3. Biểu đồ histogram thống kê giới tính nhân lực IT ở châu Âu năm 2020:
+if 1:
+    data = raw_data["Gender"]
+    plt.hist(data,color = 'r')
+# 3.4. Biểu đồ histogram về tuổi của nhân lực làm IT ở châu Âu năm 2020:
 if 1:
     from pandas.plotting import scatter_matrix   
     features_to_plot = ["Age"]
     scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
     plt.show()
 
-# 3.5 Plot histogram of numeric features
-if 0:
-    #raw_data.hist(bins=10, figsize=(10,5)) #bins: no. of intervals
-    raw_data.hist(figsize=(10,5)) #bins: no. of intervals
-    plt.rcParams['xtick.labelsize'] = 10
-    plt.rcParams['ytick.labelsize'] = 10
-    plt.tight_layout()
-    plt.savefig('figures/hist_raw_data.png', format='png', dpi=300) # must save before show()
-    plt.show()
+# 3.5 Biểu đồ histogram về lương của nhân lực IT (Chưa tính thêm tiền thưởng) ở châu Âu năm 2020:
+if 1:
+    data = raw_data["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"]
+    plt.hist(data,color = 'r')
 
-#%% 3.6 Compute correlations b/w features
+#%% 3.6 Tính toán độ tương quan giữa các thuộc tính
 corr_matrix = raw_data.corr()
-print(corr_matrix) # print correlation matrix
-#%%  DATA FILTER
-#NULL , outliers
-#%% 3.7 Try add features and classify data
+print(corr_matrix) 
+#%% Lọc dữ liệu
+# Loại bỏ các sample có quá nhiều giá trị null và các giá trị outliers
+# Chuẩn hóa lại các dữ liệu (Sửa lỗi chính tả, lỗi phông và viết hoa thường đồng đều)
+#%% 3.7 Thêm các thuộc tính mới
 #Function for classifying data:
 #%%3.7.1 Execute adding features and classify data programming languages
 import json
@@ -506,7 +507,7 @@ if method == 1: # Method 1: Randomly select 20% of data for test set. Used when 
                                                                                      # otherwise, when repeating training many times, your model may see all the data
 elif method == 2: # Method 2: Stratified sampling, to remain distributions of important features, see (Geron, 2019) page 56
     # Create new feature "KHOẢNG GIÁ": the distribution we want to remain
-    raw_data["Salary_About"] = pd.cut(raw_data["Yearly brutto salary (without bonus and stocks) in EUR"],
+    raw_data["Salary_About"] = pd.cut(raw_data["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"],
                                     bins=[0, 100000, 200000, 300000, 400000,500000,600000,700000,800000, np.inf],
                                     labels=[1,2,3,4,5,6,7,8,9]) # use numeric labels to plot histogram
     
@@ -535,10 +536,10 @@ print(len(train_set), "train +", len(test_set), "test examples")
 print(train_set.head(4))
 
 #%% 4.3 Separate labels from data, since we do not process label values
-train_set_labels = train_set["Yearly brutto salary (without bonus and stocks) in EUR"].copy()
-train_set = train_set.drop(columns = "Yearly brutto salary (without bonus and stocks) in EUR") 
-test_set_labels = test_set["Yearly brutto salary (without bonus and stocks) in EUR"].copy()
-test_set = test_set.drop(columns = "Yearly brutto salary (without bonus and stocks) in EUR") 
+train_set_labels = train_set["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"].copy()
+train_set = train_set.drop(columns = "Yearly brutto salary (without bonus and stocks) in thoundsands EUR") 
+test_set_labels = test_set["Yearly brutto salary (without bonus and stocks) in thoundsands EUR"].copy()
+test_set = test_set.drop(columns = "Yearly brutto salary (without bonus and stocks) in thoundsands EUR") 
 
 #%% 4.4 Define pipelines for processing data. 
 # INFO: Pipeline is a sequence of transformers (see Geron 2019, page 73). For step-by-step manipulation, see Details_toPipeline.py 
