@@ -1,12 +1,7 @@
-'''
-The following code is mainly from Chap 2, Géron 2019 
-See https://github.com/ageron/handson-ml2/blob/master/02_end_to_end_machine_learning_project.ipynb
 
-LAST REVIEW: Oct 2020
-'''
 '''
 
-Ten de tai:
+Tên đề tài dự đoán mức lương của nhân lực IT ở Châu Âu năm 2020
 
 '''
 # In[0]: CÀI ĐẶT THƯ VIỆN
@@ -803,12 +798,6 @@ print("Labels:      ", list(train_set_labels[0:9]))
 
 #%% 5.5 Evaluate with K-fold cross validation 
 from sklearn.model_selection import cross_val_score
-#from sklearn.model_selection import ShuffleSplit, StratifiedKFold, StratifiedShuffleSplit
-#from sklearn.model_selection import cross_val_predict
-
-#cv1 = ShuffleSplit(n_splits=10, test_size=0.2, ran.dom_state=42); 
-#cv2 = StratifiedKFold(n_splits=10, random_state=42); 
-#cv3 = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
 print('\n____________________________________ K-fold cross validation ____________________________________')
 
 run_evaluation = 1
@@ -884,7 +873,6 @@ def print_search_result(grid_search, model_name = ""):
         print('rmse =', np.sqrt(-mean_score).round(decimals=1), params) 
 
 method = 1
-# 6.1 Method 1: Grid search (try all combinations of hyperparams in param_grid)
 if method == 1:
     from sklearn.model_selection import GridSearchCV
     
@@ -915,7 +903,7 @@ if method == 1:
         # joblib.dump(grid_search,'saved_objects/PolinomialRegression_gridsearch.pkl') 
         # print_search_result(grid_search, model_name = "PolinomialRegression") 
     else:
-        # Load grid_search
+        # Load các model được lưu sẵn đã được tìm bằng phương pháp grid_search
         grid_search = joblib.load('saved_objects/RandomForestRegressor_gridsearch.pkl')
         print_search_result(grid_search, model_name = "RandomForestRegressor")         
         grid_search = joblib.load('saved_objects/PolinomialRegression_gridsearch.pkl')
@@ -937,39 +925,44 @@ print('SOLUTION: ' , best_model)
 store_model(best_model, model_name="SOLUION")   
 
 # 7.2 Analyse the SOLUTION to get more insights about the data
-# NOTE: ONLY for rand forest
-# if type(best_model).__name__ == "RandomForestRegressor":
-#     # Print features and importance score  (ONLY on rand forest)
-#     feature_importances = best_model.feature_importances_
-#     onehot_cols = []
-#     for val_list in full_pipeline.transformer_list[1][1].named_steps['cat_encoder'].categories_: 
-#         onehot_cols = onehot_cols + val_list.tolist()
-#     feature_names = train_set.columns.tolist() + ["TỔNG SỐ PHÒNG"] + onehot_cols
-#     for name in cat_feat_names:
-#         feature_names.remove(name)
-#     print('\nFeatures and importance score: ')
-#     print(*sorted(zip( feature_names, feature_importances.round(decimals=4)), key = lambda row: row[1], reverse=True),sep='\n')
 
 # 7.3 Run on test data
 processed_test_set = full_pipeline.transform(test_set)  
 # 7.3.1 Compute R2 score and root mean squared error
 r2score, rmse = r2score_and_rmse(best_model, processed_test_set, test_set_labels)
-print('\nPerformance on test data:')
+print('Performance on test data:')
 print('R2 score (on test data, best=1):', r2score)
 print("Root Mean Square Error: ", rmse.round(decimals=1))
 # 7.3.2 Predict labels for some test instances
-print("\nTest data: \n", test_set.iloc[0:9])
+print("Test data:", test_set.iloc[0:9])
 print("Predictions: ", best_model.predict(processed_test_set[0:9]).round(decimals=1))
 print("Labels:      ", list(test_set_labels[0:9]),'\n')
 
 
 '''
 Kết quả hiện chưa tốt. 
-Gợi ý cả thiện:
-1. Xóa các samples bất thường (giá quá cao, quá thấp)
-2. Xóa cột HƯỚNG, hoặc tốt nhất là thêm dữ liệu (2000+)
+1. Xóa các samples bất thường
+2. Thêm dữ liệu (2000+)
 '''
 
 
-# In[8]: LAUNCH, MONITOR, AND MAINTAIN YOUR SYSTEM
+# In[8]: ĐƯA RA SẢN PHẨM VÀ HƯỚNG PHÁT TRIỂN
 # Hướng phát triển
+'''
+1. Xóa các samples bất thường
+2. Thêm dữ liệu (2000+)
+3. Phát triển sử dụng thêm random search trong bước fine-tune
+
+'''
+#%%TƯ LIỆU THAM KHẢO
+'''
+Đoạn code trên được tham khảo từ Chap 2, Géron 2019 
+Nguồn: https://github.com/ageron/handson-ml2/blob/master/02_end_to_end_machine_learning_project.ipynb
+LAST REVIEW: Oct 2020
+'''
+'''
+Đoạn code xử lý JSON được tham khảo từ GeeksForGeeks
+Đoạn Example 1
+Nguồn: https://www.geeksforgeeks.org/convert-json-to-dictionary-in-python/
+
+'''
