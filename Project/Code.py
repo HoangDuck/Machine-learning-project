@@ -1,7 +1,7 @@
 
 '''
 
-Tên đề tài dự đoán mức lương của nhân lực IT ở Châu Âu năm 2020
+TÊN ĐỀ TÀI DỰ ĐOÁN MỨC LƯƠNG CỦA NHÂN LỰC IT Ở CHÂU ÂU NĂM 2020
 
 '''
 # In[0]: CÀI ĐẶT THƯ VIỆN
@@ -19,8 +19,9 @@ from statistics import mean
 
 # In[1]: Tổng quan về đề tài:
 # Dự đoán lương của một người hoặc là làm một 
-# phần mềm, công cụ để dự đoán lương khi mik apply 
-# và mik sử dụng lương deal cho hợp lý
+# phần mềm, công cụ để dự đoán lương khi apply 
+# và sử dụng lương deal cho hợp lý.
+# Dự đoán mức lương của một người với năng lực của họ (Ngôn ngữ lập trình, Framework, Cloud,...)
 
 # In[2]: LẤY DỮ LIỆU
 '''
@@ -928,18 +929,43 @@ print("Labels:      ", list(test_set_labels[0:9]),'\n')
 
 
 '''
+Nhận xét kết quả ở bước test:
 Kết quả hiện chưa tốt. 
 1. Xóa các samples bất thường
-2. Thêm dữ liệu (2000+)
+2. Thêm dữ liệu
 '''
 
 
-# In[8]: ĐƯA RA SẢN PHẨM VÀ HƯỚNG PHÁT TRIỂN
+# In[8]: NHẬN XÉT ĐÁNH GIÁ ĐỀ TÀI VÀ HƯỚNG PHÁT TRIỂN
+# Đánh giá đề tài
+
+'''
+Nhận xét và đánh giá về đề tài
+Kết quả đạt được:
+- Đề tài của nhóm đã thực hiện hết tất cả các bước End to End của một dự án Machine Learning.
+- Xử lý thành công các dữ liệu chưa chính xác về chính tả, tiền xử lý dữ liệu cho đồng bộ.
+- Sử dụng được một số model phổ biến trong machine learning.
+Hạn chế:
+- Việc tiền xử lý dữ liệu khá phức tạp và code xử lý dữ liệu chỉ có tác dụng với tập dữ liệu mà nhóm đang sử dụng.
+- Kết quả kiểm tra của tập test không được cao do đồ án của nhóm bị thiếu dữ liệu.
+- Nhóm vẫn chưa cài đặt model SVM – thuật toán machine learning phổ biến hiện nay.
+- Trong quá trình thực hiện đề tài thì model Linear Regressor trong bước đánh giá model thì nó là một model tốt. 
+Nhưng mà nhóm chưa đưa model Linear Regressor vào bước Fine-Tune.
+
+'''
+
 # Hướng phát triển
 '''
-1. Xóa các samples bất thường
-2. Thêm dữ liệu (2000+)
-3. Phát triển sử dụng thêm random search trong bước fine-tune
+- Hướng phát triển đề tài của nhóm em là sẽ nâng cao độ chính xác, hiệu suất của đồ án 
+để kết quả ở bước test có kết quả được tốt nhất, đồng thời cũng khắc phục những hạn chế mà 
+nhóm em đề cập ở phần trước. Để đạt được những điều này nhóm em sẽ thực hiện những bước như sau:
++ Xóa các sample bất thường.
++ Thêm nhiều dữ liệu cho data set.
++ Sử dụng thêm Random Search để tìm ra những hyperparameter tốt hơn.
++ Sử dụng thêm model SVM Regressor để tìm thêm những model tốt.
++ Fine-tune thêm model Linear Regressor.
+- Bên cạnh ngoài nâng cao độ chính xác trong bước test và khắc phục hạn chế hiện có. 
+Hướng phát triển đề tài của nhóm sẽ xây dựng thêm giao diện để sản phẩm được trực quan hơn, dễ sử dụng hơn.
 
 '''
 #%%TƯ LIỆU THAM KHẢO
