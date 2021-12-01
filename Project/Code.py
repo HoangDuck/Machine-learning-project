@@ -859,7 +859,7 @@ else:
 # In[6]: FINE-TUNE CÁC MODELS 
 # INFO: Tìm ra hyperparams
 '''
-    Ở bước này tiến hành fine tune các model: Randomforest và Linear Regressor
+    Ở bước này tiến hành fine tune các model: Randomforest
 '''
 print('\n____________________________________ Fine-tune models ____________________________________')
 def print_search_result(grid_search, model_name = ""): 
@@ -878,7 +878,7 @@ if method == 1:
     
     run_new_search = 1      
     if run_new_search:
-        # 6.1.1 Fine-tune RandomForestRegressor
+        # Fine-tune RandomForestRegressor
         model = RandomForestRegressor(random_state=42)
         param_grid = [
             # try 12 (3×4) combinations of hyperparameters (bootstrap=True: drawing samples with replacement)
@@ -890,18 +890,6 @@ if method == 1:
         grid_search.fit(processed_train_set_val, train_set_labels)
         joblib.dump(grid_search,'saved_objects/RandomForestRegressor_gridsearch.pkl')
         print_search_result(grid_search, model_name = "RandomForestRegressor")      
-
-        # 6.1.2 Fine-tune Linear regression          
-        # model = Pipeline([ ('poly_feat_adder', PolynomialFeatures()), # add high-degree features
-        #                    ('lin_reg', LinearRegression()) ]) 
-        # param_grid = [
-        #     # try 3 values of degree
-        #     {'poly_feat_adder__degree': [1, 2, 3]} ] # access param of a transformer: <transformer>__<parameter> https://scikit-learn.org/stable/modules/compose.html
-        #     # Train across 5 folds, hence a total of 3*5=15 rounds of training 
-        # grid_search = GridSearchCV(model, param_grid, cv=5, scoring='neg_mean_squared_error', return_train_score=True)
-        # grid_search.fit(processed_train_set_val, train_set_labels)
-        # joblib.dump(grid_search,'saved_objects/PolinomialRegression_gridsearch.pkl') 
-        # print_search_result(grid_search, model_name = "PolinomialRegression") 
     else:
         # Load các model được lưu sẵn đã được tìm bằng phương pháp grid_search
         grid_search = joblib.load('saved_objects/RandomForestRegressor_gridsearch.pkl')
