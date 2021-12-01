@@ -1,4 +1,17 @@
 {
     "eCommerce": "E-Commerce",
-    "Financial": "Finance"
+    "Financial": "Finance",
+    "Institute": "No info",
+    "service": "No info",
+    "Energy ": "No info",
+    "Automotive ": "No info",
+    "freelance": "No info",
+    "Old industry": "No info",
+    "consumer goods": "No info",
+    "IT-Outsourcing": "No info",
+    "Transport & Logistics": "No info",
+    "Non-tech retail": "No info",
+    "Consulting and Product": "No info",
+    "Outsorce": "Outsourse",
+    "Industry": "No info"
 }

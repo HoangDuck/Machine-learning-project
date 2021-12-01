@@ -910,7 +910,6 @@ Timestamp,Age,Gender,City,Position ,Total years of experience,Years of experienc
 29/11/2020 18:41:38,38,Male,Berlin,Software Engineer,12,6,Senior,Java,Kotlin,92,40000,85000,30000,Unlimited,Full-time employee,Unlimited contract,English,1000+,Product,No,,
 29/11/2020 18:51:15,30,Female,Jena,Software Engineer,4,4,Middle,JS,"Python, PHP, Javascript / Typescript, SQL, AWS",54,,,,,Full-time employee,Temporary contract,English,101-1000,Institute,No,,
 29/11/2020 19:42:21,24,Male,Berlin,ML Engineer,3,,,,,90,,,,,,,,,Startup,,,
-29/11/2020 20:04:23,34,Male,City in Russia,Software Architect,14,0,Lead,Haskell,"Python, C/C++, .NET, SQL",100,0,80000,0,30,Full-time employee,Temporary contract,English,51-100,Product,No,,
 29/11/2020 20:24:21,29,Male,Berlin,Frontend Developer,8,7,Senior,JavScript,"Javascript / Typescript, AWS, Docker",77.25,87250,65000,72000,27,Full-time employee,Unlimited contract,English,101-1000,Product,No,,600
 29/11/2020 20:53:17,27,Male,Berlin,Backend Developer,3,0,Middle,Java,,57,,,,,Full-time employee,Unlimited contract,English,51-100,Product,No,,
 29/11/2020 21:34:45,36,Male,Berlin,Software Engineer,5,1,Middle,JavaScript,Javascript / Typescript,60,0,60000,0,26,Full-time employee,Unlimited contract,English,101-1000,Startup,No,0,no

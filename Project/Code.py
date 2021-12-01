@@ -132,6 +132,8 @@ def ClassifyData(data,text_raw_data):
     result=''
     keys=data.keys()
     for key in keys:
+        if(result!=''):
+            return result
         index=text_raw_data.find(key)
         if(index!=-1):
             if(key=="C" or key=="c" or key=="R"):
@@ -190,6 +192,8 @@ def ClassifyData(data,text_raw_data):
     result=''
     keys=data.keys()
     for key in keys:
+        if(result!=''):
+            return result
         index=text_raw_data.find(key)
         if(index!=-1):
             result+=data[key]+"; "
@@ -199,7 +203,7 @@ list_Frameworks_Libraries=[]
 for x in range(num):
     s=raw_data["Your main technology / programming language"][x]
     if(isinstance(s, float)):
-        list_Frameworks_Libraries.append('No info')
+        list_Frameworks_Libraries.append('No info; ')
     else:
         p=ClassifyData(data,s)
         list_Frameworks_Libraries.append(p)

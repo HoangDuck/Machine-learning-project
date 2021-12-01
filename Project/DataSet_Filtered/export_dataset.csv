@@ -1,7 +1,7 @@
 Position ,Total years of experience,Seniority level,Yearly brutto salary (without bonus and stocks) in thoundsands EUR,Employment status,Contract duration,Company size,Company type,"Have you received additional monetary support from your employer due to Work From Home? If yes, how much in 2020 in EUR",Programming languages,Frameworks / Libs,Databases,Design,Clouds,Platform,DevOps tools
 Software Engineer,5,Senior,80.0,Full-time employee,Unlimited contract,51-100,Product,,TypeScript; ,,,,,,
 Backend Developer,7,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,Ruby; ,,,,,,
-Software Engineer,12,Lead,120.0,Self-employed (freelancer),Temporary contract,101-1000,Product,,JavaScript; TypeScript; ,,,,,,
+Software Engineer,12,Lead,120.0,Self-employed (freelancer),Temporary contract,101-1000,Product,,JavaScript; ,,,,,,
 Frontend Developer,4,Junior,54.0,Full-time employee,Unlimited contract,51-100,Startup,,JavaScript; ,,,,,,
 Backend Developer,17,Senior,62.0,Full-time employee,Unlimited contract,101-1000,Product,,C#; ,.NET; ,,,,,
 DevOps,5,Senior,76.0,Full-time employee,Unlimited contract,011-050,Startup,,Python; ,,,,AWS; GCP; ,,Kubernetes; 
@@ -13,13 +13,13 @@ Data Engineer,2,Junior,52.5,Full-time employee,Unlimited contract,101-1000,Consu
 Software Engineer,25,Senior,100.0,Self-employed (freelancer),Temporary contract,011-050,Product,,C++; ,,,,,,
 Software Engineer,,Lead,90.0,Full-time employee,Unlimited contract,1000+,,1000,PHP; ,,,,,,
 Software Engineer,14,Senior,70.0,Full-time employee,Unlimited contract,011-050,Startup,,TypeScript; ,,,,,,
-Designer (UI/UX),11,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),11,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,5,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,Kotlin; ,,,,,,
 Backend Developer,7,Middle,60.35,Full-time employee,Unlimited contract,1000+,Product,,Ruby; ,,,,,,
-Product Manager,18,Senior,78.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,18,Senior,78.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,8,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,PHP; ,,,,,,
 Mobile Developer,11,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Product,,Kotlin; ,,,,,,
-DevOps,13,Senior,103.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,13,Senior,103.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Architect,15,Lead,100.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,NodeJS; ,,,,,
 Software Engineer,5,Senior,65.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Backend Developer,30,Senior,69.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
@@ -27,31 +27,31 @@ Software Engineer,17,Lead,70.0,Full-time employee,Unlimited contract,101-1000,Pr
 Team Lead,18,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,iOS; ,
 DevOps,6,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,Kubernetes; 
 Software tester,6,Middle,47.4,Full-time employee,Unlimited contract,1000+,Media,,,,,,,,
-DevOps,14,Senior,67.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,14,Senior,67.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Product Manager,13,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,200,,,,,,,
 Software Engineer,6,Lead,85.0,Full-time employee,Unlimited contract,101-1000,Product,1100,Golang; ,,,,,,
 Backend Developer,5,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
-QA,7,Middle,45.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+QA,7,Middle,45.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,8,Senior,80.0,Full-time employee,Unlimited contract,51-100,Startup,,Java; ,,,,,,
 Software Engineer,8,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Data Scientist,5,Lead,150.0,Full-time employee,Unlimited contract,1000+,Product,1,Python; ,,,,,,
 Designer (UI/UX),7,Middle,45.0,Full-time employee,Unlimited contract,1000+,Product,,,,,Figma; ,,,
 Software Engineer,8,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Backend Developer,5,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Startup,,Kotlin; ,,,,,,
-DevOps,10,Senior,70.0,Full-time employee,Unlimited contract,51-100,Startup,,Golang; Python; ,,,,,,
+DevOps,10,Senior,70.0,Full-time employee,Unlimited contract,51-100,Startup,,Golang; ,,,,,,
 Frontend Developer,7,Senior,72.0,Full-time employee,Unlimited contract,1000+,Product,1000,,React; ,,,,,
 Software Engineer,15,Senior,67.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Frontend Developer,10,Senior,105.0,Self-employed (freelancer),Temporary contract,101-1000,Product,5000,TypeScript; ,,,,,,
 Software Engineer,12,Senior,88.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
 Software Engineer,6,Senior,74.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Software Engineer,25,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
-Designer (UI/UX),5,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),5,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,3,Middle,77.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
-Backend Developer,12,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Backend Developer,12,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,7,Lead,76.0,Full-time employee,Unlimited contract,101-1000,Startup,,Python; ,,,,,,
 Backend Developer,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,500,Ruby; ,,,,,,
 Designer (UI/UX),7,Middle,45.0,Full-time employee,Unlimited contract,1000+,Product,,,,,Figma; ,,,
-QA,8,Senior,60.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+QA,8,Senior,60.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,8,Senior,65.0,Full-time employee,Unlimited contract,011-050,Product,,PHP; ,,,,,,
 Backend Developer,12,Senior,68.0,Full-time employee,Unlimited contract,011-050,Product,,Java; ,,,,,,
 Software Engineer,,Senior,75.0,Full-time employee,,,,,PHP; ,,,,,,
@@ -65,7 +65,7 @@ Frontend Developer,5,Senior,73.5,Full-time employee,Unlimited contract,011-050,P
 Software Engineer,13,Lead,72.0,Full-time employee,Unlimited contract,51-100,Product,,,.NET; ,,,,,
 Frontend Developer,7,Senior,62.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,JavaScript; ,,,,,,
 Hardware Engineer,15,Lead,83.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
-Data Scientist,10,Head,110.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Data Scientist,10,Head,110.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,26,Senior,93.0,Full-time employee,Unlimited contract,1000+,Product,,C#; ,,,,,,
 Data Engineer,23,,110.0,Company Director,Temporary contract,0-10,Personal Ltd,,Golang; ,,,,GCP; ,,
 Software Engineer,3,Middle,55.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
@@ -75,14 +75,14 @@ Software Engineer,10,Senior,75.0,Full-time employee,Unlimited contract,1000+,Con
 Software Engineer,7,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,1000,JavaScript; ,,,,,,
 Engineering Manager,11,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Startup,200,Java; ,,,,,,
 Backend Developer,5,Middle,55.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
-DevOps,8,Middle,70.2,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,8,Middle,70.2,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,4,Middle,50.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,Java; ,,,,,,
 Software Engineer,5,Senior,78.0,Full-time employee,Unlimited contract,1000+,Startup,,Scala; ,,,,,,
 Data Scientist,6,Middle,60.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Software Engineer,8,Lead,85.0,Full-time employee,Unlimited contract,1000+,Product,,Golang; ,,,,,,
 Analytics engineer,6,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Startup,500,,,,,,,
 Software Engineer,10,Senior,72.0,Full-time employee,Unlimited contract,101-1000,Product,,Scala; ,,,,,,
-No info,17,Middle,68.5,Full-time employee,Unlimited contract,1000+,Product,8000,No info,No info,No info,No info,No info,No info,No info
+No info,17,Middle,68.5,Full-time employee,Unlimited contract,1000+,Product,8000,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,5,Senior,72.0,Full-time employee,Unlimited contract,1000+,Product,,Kotlin; ,,,,,,
 Software Engineer,5,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Software Engineer,9,Senior,60.0,Full-time employee,Unlimited contract,011-050,Startup,,C#; ,.NET; ,,,,,
@@ -92,8 +92,8 @@ DevOps,7,Lead,78.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,
 Data Scientist,4,Senior,81.0,Full-time employee,Unlimited contract,101-1000,Product,300,Python; ,,,,,,
 Hardware Engineer,5,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,VHDL; ,,,,,,
 No info,3,Middle,55.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
-Account Manager,6,Senior,50.0,Full-time employee,Temporary contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
-Product Manager,8,No level,55.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Account Manager,6,Senior,50.0,Full-time employee,Temporary contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
+Product Manager,8,No level,55.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 QA,5,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Software Engineer,8,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Agile Coach,14,Middle,80.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
@@ -115,8 +115,8 @@ Backend Developer,12,Lead,65.0,Full-time employee,Unlimited contract,101-1000,Pr
 QA,6,Middle,50.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Backend Developer,8,Senior,72.0,Full-time employee,Unlimited contract,101-1000,Startup,,Scala; ,,,,,,
 Software Engineer,5,Middle,79.0,Full-time employee,Unlimited contract,1000+,Product,900,C++; ,,,,,,
-QA,6,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,1600,No info,No info,No info,No info,No info,No info,No info
-Software Engineer,8,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; Scala; ,React; ,,,,,
+QA,6,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,1600,No info,No info; ,No info,No info,No info,No info,No info
+Software Engineer,8,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,React; ,,,,,
 Consultant,8,Senior,60.0,Full-time employee,Unlimited contract,0-10,Consulting / Agency,1500,,,,,,,
 Backend Developer,11,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,,PHP; ,,,,,,
 Mobile Developer,5,Senior,57.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,iOS; ,
@@ -124,42 +124,42 @@ Fullstack Developer,10,Middle,49.0,Full-time employee,Unlimited contract,51-100,
 Software Engineer,6,Senior,65.0,Full-time employee,Unlimited contract,011-050,Startup,,Java; ,,,,,,
 Data Scientist,3,Junior,70.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Mobile Developer,6,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Product,850,Swift; ,,,,,,
-Product Manager,18,Middle,72.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,18,Middle,72.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,9,Senior,60.0,Full-time employee,Unlimited contract,011-050,Startup,,C#; ,.NET; ,,,,,
 Frontend Developer,6,Senior,75.0,Full-time employee,Unlimited contract,51-100,Product,,JavaScript; ,,,,,,
-Frontend Developer,8,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Startup,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,8,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Startup,,JavaScript; ,,,,,,
 Backend Developer,12,Senior,62.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Software Engineer,10,Lead,78.0,Full-time employee,Unlimited contract,101-1000,Startup,,Python; ,,,,,,
 ,17,Lead,120.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,5000,Java; ,,,,,,
 Backend Developer,5,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Backend Developer,19,Senior,69.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Frontend Developer,7,Middle,54.0,Full-time employee,Unlimited contract,011-050,Product,,JavaScript; ,,,,,,
-Product Manager,6,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,6,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,13,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,20,Senior,80.0,Full-time employee,Unlimited contract,51-100,Product,,Ruby; ,Ruby on rails; ,,,,,
 QA,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
 Backend Developer,6,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Ruby; ,,,,,,
 Software Engineer,12,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,200,C#; ,,,,,,
 Cloud Engineer,10,Senior,120.0,Full-time employee,Unlimited contract,1000+,Cloud,1000,,,,,Azure; ,,
-Designer (UI/UX),10,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info,No info,No info,No info,No info,No info
-System Administrator,14,Middle,44.0,Full-time employee,Temporary contract,101-1000,Startup,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),10,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info; ,No info,No info,No info,No info,No info
+System Administrator,14,Middle,44.0,Full-time employee,Temporary contract,101-1000,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,7,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,Scala; ,,,,,,
 Data Scientist,5.5,Junior,48.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Frontend Developer,4,Middle,50.0,Full-time employee,Unlimited contract,101-1000,Product,500,JavaScript; ,,,,,,
 QA,7,Senior,68.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Software Engineer,12,Senior,66.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,1,Java; ,,,,,,
-Product Manager,3,Middle,51.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,3,Middle,51.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,4,Middle,60.0,Full-time employee,Unlimited contract,011-050,Startup,,Python; ,,,,,,
 QA,20,Middle,55.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
-Product Manager,7,Head,150.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,7,Head,150.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,20,Middle,54.0,Full-time employee,Unlimited contract,101-1000,Biergarten ,,Java; ,,,,,,
-Project Manager,14,Middle,62.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Project Manager,14,Middle,62.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,8,Junior,60.0,Full-time employee,Unlimited contract,51-100,Product,,Java; ,,,,,,
 Software Engineer,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,1500,Java; ,,,,,,
 Software Engineer,11,Senior,55.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Frontend Developer,4,Senior,60.0,Full-time employee,Unlimited contract,51-100,Product,,,,,,,,
-Software Engineer,7,Senior,62.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Java; JavaScript; ,,,,,,
-Data Scientist,12,Senior,77.5,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,7,Senior,62.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Java; ,,,,,,
+Data Scientist,12,Senior,77.5,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,5,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 DevOps,22,Lead,70.0,Full-time employee,Unlimited contract,1000+,Startup,,,,,yaml; ,,,
 Network Engineer,10,Senior,68.5,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
@@ -168,7 +168,7 @@ QA,6,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,
 No info,10,VP,100.0,Full-time employee,Unlimited contract,51-100,Product,,JavaScript; ,,,,,,
 Backend Developer,4,Middle,28.0,,,51-100,Startup,,Java; ,,,,,,
 Backend Developer,6,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,Java; ,,,,,,
-Agile Coach,4,Senior,82.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Agile Coach,4,Senior,82.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,9,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,1000,Python; ,,,,,,
 Mobile Developer,5,Lead,70.8,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,Swift; ,,,,,,
 Software Engineer,8,Middle,55.0,Full-time employee,Unlimited contract,011-050,Startup,,PHP; ,,,,,,
@@ -184,18 +184,18 @@ Software Engineer,14,Senior,80.0,Full-time employee,Unlimited contract,51-100,Pr
 Mobile Developer,8,Senior,66.0,Full-time employee,Unlimited contract,1000+,Product,,Kotlin; ,,,,,,
 DBA,12,Manager,89.2,Full-time employee,Unlimited contract,1000+,Construction,,Python; ,,,,,,
 Product Manager,10,Senior,90.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
-DevOps,20,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,20,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,10,Lead,115.0,Full-time employee,Unlimited contract,1000+,Product,100,Python; ,,,,,,
 Scrum Master,12,Senior,85.0,Full-time employee,Unlimited contract,1000+,Product,,,,,Agile; ,,,
 Mobile Developer,6,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,Kotlin; ,,,,,,
 Hardware Engineer,10,Senior,45.0,Full-time employee,Temporary contract,011-050,Product,,C; ,,,,,,
-Frontend Developer,12,Lead,85.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,12,Lead,85.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
 QA,5,Middle,50.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Software Engineer,13,Lead,140.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,,,,,,,
 Software Engineer,12,Senior,120.0,Self-employed (freelancer),Temporary contract,101-1000,Product,,JavaScript; ,,,,,,
-Software Engineer,7,Middle,42.0,Full-time employee,Unlimited contract,0-10,Product,,C; C++; Java; ,,,,,,
+Software Engineer,7,Middle,42.0,Full-time employee,Unlimited contract,0-10,Product,,C; ,,,,,,
 Architect,12,Lead,105.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
-Software Engineer,13,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,13,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 DBA,6,No info,68.0,Full-time employee,Unlimited contract,1000+,Product,,C; ,,,,,,
 Software Engineer,15,Senior,76.0,Full-time employee,Unlimited contract,1000+,Product,,C#; ,,,,,,
 Fullstack Developer,9,Senior,70.0,Full-time employee,Unlimited contract,011-050,Product,,Java; ,,,,,,
@@ -203,7 +203,7 @@ Software Engineer,8,Senior,70.0,Full-time employee,Unlimited contract,1000+,Prod
 Software Engineer,9,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 ML Engineer,10,Lead,96.0,Full-time employee,Unlimited contract,011-050,Product,,Scala; ,,,,,,
 Software Engineer,7,Senior,64.0,Full-time employee,Unlimited contract,101-1000,Startup,,Python; ,,,,,,
-Product Manager,10,Senior,60.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,10,Senior,60.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,10,Senior,65.0,Full-time employee,Unlimited contract,1000+,Product,,Swift; ,,,,,,
 Software Engineer,6,Middle,61.5,Full-time employee,Unlimited contract,1000+,Big commercial,,Java; ,,,,,,
 Software Engineer,20,Senior,79.0,Full-time employee,Unlimited contract,1000+,Product,500,Python; ,,,,,,
@@ -211,7 +211,7 @@ Software Engineer,16,Senior,65.0,Full-time employee,Unlimited contract,1000+,Pro
 Software Engineer,5,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Product,850,Scala; ,,,,,,
 Product Manager,3,Middle,62.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
 Software Engineer,12,Lead,95.0,Full-time employee,Unlimited contract,011-050,Product,1500,Python; ,,,,,,
-Designer (UI/UX),11,Senior,60.0,Full-time employee,Unlimited contract,011-050,Startup,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),11,Senior,60.0,Full-time employee,Unlimited contract,011-050,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,5,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Mobile Developer,3,Senior,58.0,Full-time employee,Unlimited contract,011-050,Startup,,Swift; ,,,,,,
 Data Scientist,5,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
@@ -219,7 +219,7 @@ QA,14,Lead,69.0,Full-time employee,Unlimited contract,011-050,Product,,Java; ,,,
 Backend Developer,5,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Mobile Developer,10,Lead,77.0,Full-time employee,Unlimited contract,101-1000,Product,,Swift; ,,,,,,
 Backend Developer,6,Senior,74.0,Full-time employee,Unlimited contract,51-100,Product,,Java; ,Angular; ,,,AWS; ,,
-Engineering Manager,7,Lead,80.0,Full-time employee,Unlimited contract,1000+,Product,1600,Objective-C; Swift; ,,,,,,
+Engineering Manager,7,Lead,80.0,Full-time employee,Unlimited contract,1000+,Product,1600,Objective-C; ,,,,,,
 QA,9,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,50,Java; ,,,,,,
 DevOps,14,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,Golang; ,,,,,,
 Backend Developer,10,Middle,56.0,Full-time employee,Unlimited contract,1000+,Product,,PHP; ,,,,,,
@@ -232,10 +232,10 @@ Software Engineer,11,Senior,60.0,Full-time employee,Unlimited contract,1000+,Con
 Software Engineer,3,Middle,58.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,JavaScript; ,NodeJS; ,,,,,
 Software Engineer,2,Middle,55.2,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,,,,,,iOS; ,
 Software Engineer,9,Senior,75.0,Full-time employee,Temporary contract,1000+,Product,,R; ,,,,,,
-Frontend Developer,15,Senior,50.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; JavaScript; ,,,,,,
+Frontend Developer,15,Senior,50.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 ML Engineer,1,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
-Engineering Manager,9,Lead,95.0,Full-time employee,Unlimited contract,1000+,Product,400,No info,No info,No info,No info,No info,No info,No info
-Software Engineer,8,Senior,67.2,Full-time employee,Unlimited contract,1000+,Outsorce,,C++; ,,,,,,
+Engineering Manager,9,Lead,95.0,Full-time employee,Unlimited contract,1000+,Product,400,No info,No info; ,No info,No info,No info,No info,No info
+Software Engineer,8,Senior,67.2,Full-time employee,Unlimited contract,1000+,Outsourse,,C++; ,,,,,,
 Backend Developer,,Senior,72.0,Full-time employee,Unlimited contract,101-1000,Product,400,Ruby; ,,,,,,
 Software Engineer,7,Senior,100.0,Full-time employee,Unlimited contract,1000+,Product,,C++; ,,,,,,
 Software Engineer,6,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Product,,,.NET; ,,,,,
@@ -249,20 +249,20 @@ Software Engineer,14,Senior,72.0,Full-time employee,Unlimited contract,101-1000,
 Team Lead,12,Head,90.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,Python; ,,,,,,
 Tech Lead,16,Lead,99.0,Full-time employee,,101-1000,Fintech,,,.NET; ,,,,,
 Network Engineer,9,Senior,61.2,Full-time employee,Unlimited contract,1000+,Automotive,,,,,,,,
-Security Engineer,14,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Security Engineer,14,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 QA,10,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
 Data Analyst,1,Junior,45.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Python; ,,,,,,
 Consultant,5,Middle,56.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
-Designer(UI/UX),11,Middle,32.0,Full-time employee,Temporary contract,101-1000,Startup,,No info,No info,No info,No info,No info,No info,No info
+Designer(UI/UX),11,Middle,32.0,Full-time employee,Temporary contract,101-1000,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,12,Lead,108.0,Self-employed (freelancer),Unlimited contract,0-10,Consulting / Agency,,PHP; ,,,,,,
 Backend Developer,8,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Frontend Developer,1,Junior,37.5,Full-time employee,Temporary contract,0-10,Startup,,JavaScript; ,,,,,,
 Mobile Developer,10,Middle,67.0,Full-time employee,Unlimited contract,1000+,Product,500,Swift; ,,,,,,
-No info,12,Senior,100.0,Full-time employee,Unlimited contract,101-1000,Bank,,No info,No info,No info,No info,No info,No info,No info
+No info,12,Senior,100.0,Full-time employee,Unlimited contract,101-1000,Bank,,No info,No info; ,No info,No info,No info,No info,No info
 Data Engineer,9,Senior,81.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Backend Developer,11,Senior,35.0,Founder,Unlimited contract,0-10,Startup,,JavaScript; ,,,,,,
 Cloud Engineer,15,Senior,72.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
-Product Manager,7,Middle,72.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,7,Middle,72.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,4,Junior,42.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Solutions architect,14,Head,95.0,Full-time employee,Unlimited contract,101-1000,Startup,400,,,,,,,
 Backend Developer,12,Senior,67.0,Full-time employee,Unlimited contract,101-1000,,,PHP; ,,,,,,
@@ -276,17 +276,17 @@ Software Engineer,6,Middle,49.0,Full-time employee,Unlimited contract,51-100,Sta
 QA,9,Middle,57.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
 QA,18,Lead,78.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Backend Developer,12,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Telecommunications,675,Java; ,,,,,,
-Frontend Developer,5,Middle,57.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; TypeScript; ,Angular; ,,,,,
+Frontend Developer,5,Middle,57.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,Angular; ,,,,,
 Backend Developer,7,Senior,72.0,Full-time employee,Unlimited contract,011-050,Product,,,,,,,,
-Product Manager,10,Lead,120.0,Full-time employee,Unlimited contract,1000+,Product,2000,No info,No info,No info,No info,No info,No info,No info
+Product Manager,10,Lead,120.0,Full-time employee,Unlimited contract,1000+,Product,2000,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,10,Senior,26.4,Self-employed (freelancer),Unlimited contract,0-10,Startup,,,.NET; ,,,,,
 Frontend Developer,8,Senior,68.0,Full-time employee,,,,,JavaScript; ,,,,,,
-QA,6.5,Senior,58.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+QA,6.5,Senior,58.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 ML Engineer,10,Lead,92.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,Python; ,,,,,,
 ML Engineer,20,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Data Analyst,6,Senior,55.0,Full-time employee,Unlimited contract,011-050,Product,,T-SQL; ,,,,,,
 Software Engineer,12,Senior,73.0,Full-time employee,Unlimited contract,51-100,Product,,Java; ,,,,,,
-QA,9,Senior,62.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info,No info,No info,No info,No info,No info
+QA,9,Senior,62.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,11,Senior,55.0,Full-time employee,Unlimited contract,011-050,Startup,,Kotlin; ,,,,,,
 Software Engineer,9,Lead,90.0,Full-time employee,Unlimited contract,101-1000,Product,0,JavaScript; ,,,,,,
 Backend Developer,21,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,0,Java; ,,,,,,
@@ -295,7 +295,7 @@ Software Engineer,25,Lead,75.0,Full-time employee,Unlimited contract,1000+,Produ
 DevOps,6,Middle,62.0,Full-time employee,Unlimited contract,1000+,Media,,Java; ,,,,,,
 Backend Developer,7,Senior,60.0,Full-time employee,Unlimited contract,011-050,Startup,,PHP; ,,,,,,
 Software Engineer,12,Senior,66.8,Full-time employee,Unlimited contract,51-100,Product,1000,,,,,,iOS; ,
-Software Engineer,25,Senior,55.0,Full-time employee,Unlimited contract,51-100,Product,,C#; Pascal; VB; VB.NET; ,.NET; ,,,,,
+Software Engineer,25,Senior,55.0,Full-time employee,Unlimited contract,51-100,Product,,C#; ,.NET; ,,,,,
 Business Analyst,10,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 ML Engineer,12,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,500,Python; ,,,,,,
 Backend Developer,7,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
@@ -305,14 +305,14 @@ Backend Developer,7,Senior,72.0,Full-time employee,Unlimited contract,011-050,Pr
 DevOps,12,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,1000,Java; ,,,,,,
 Support Engineer,10,Senior,63.5,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Frontend Developer,12,Middle,70.0,Full-time employee,Unlimited contract,101-1000,E-commerce,0,JavaScript; ,,,,,,
-Frontend Developer,10,Senior,68.0,Full-time employee,Unlimited contract,011-050,Startup,0,,React; Angular; ,,,,,
+Frontend Developer,10,Senior,68.0,Full-time employee,Unlimited contract,011-050,Startup,0,,React; ,,,,,
 Software Engineer,12,Lead,78.0,Full-time employee,Unlimited contract,1000+,Product,0,,.NET; ,,,,,
 Software Engineer,8,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Startup,1500,Elixir; ,,,,,,
 Software Engineer,13,Lead,89.57,Full-time employee,Unlimited contract,1000+,Product,500,Java; ,,,,,,
 Software Engineer,9,Senior,78.0,Full-time employee,Unlimited contract,101-1000,Product,,Kotlin; ,,,,,,
 Mobile Developer,7,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,iOS; ,
 Backend Developer,15,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,,Elixir; ,,,,,,
-Software Engineer,5,Middle,67.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; TypeScript; ,NodeJS; ,,,AWS; ,,
+Software Engineer,5,Middle,67.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,NodeJS; ,,,AWS; ,,
 Software Engineer,15,Senior,85.0,Full-time employee,Unlimited contract,1000+,Product,,Scala; ,,,,,,
 Software Engineer,22,Senior,76.0,Full-time employee,Unlimited contract,51-100,Startup,,Erlang; ,,,,,,
 Frontend Developer,9,Middle,66.0,Full-time employee,Unlimited contract,101-1000,Product,,TypeScript; ,,,,,,
@@ -323,10 +323,10 @@ Software Engineer,14,Senior,68.0,Full-time employee,Unlimited contract,51-100,Pr
 Software Engineer,4,Junior,46.0,Full-time employee,Unlimited contract,0-10,Product,,C#; ,,,,,,
 Software Engineer,15,Senior,56.4,Full-time employee,Unlimited contract,011-050,Product,,C#; ,,,,,,
 Backend Developer,11,Senior,81.2,Full-time employee,Unlimited contract,1000+,Product,,PHP; ,,,,,,
-Tech recruiting,11,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,1500,No info,No info,No info,No info,No info,No info,No info
+Tech recruiting,11,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,1500,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,7,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,12,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,1000,Golang; ,,,,,,
-Software tester,8,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,500,Java; JavaScript; ,,,,,,
+Software tester,8,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,500,Java; ,,,,,,
 Mobile Developer,5,Middle,55.0,Full-time employee,Unlimited contract,011-050,Product,,Objective-C; ,,,,,,
 Software Engineer,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Ruby; ,,,,,,
 Data Scientist,2,Middle,54.0,Full-time employee,Unlimited contract,51-100,Product,,Python; ,,,,,,
@@ -336,19 +336,19 @@ Data Scientist,2.5,Lead,20.0,Full-time employee,Unlimited contract,1000+,Bank,,P
 Software Engineer,7,Senior,80.0,Full-time employee,Unlimited contract,011-050,Startup,,TypeScript; ,,,,,,
 Software Engineer,10,Senior,78.0,Full-time employee,Unlimited contract,51-100,Product,,C#; ,,,,,,
 Backend Developer,4,Senior,65.0,Full-time employee,Unlimited contract,51-100,Product,,Ruby; ,,,,,,
-Software Engineer,22,Senior,46.0,Full-time employee,Unlimited contract,0-10,Product,1500,C++; C#; ,,,,,,
+Software Engineer,22,Senior,46.0,Full-time employee,Unlimited contract,0-10,Product,1500,C++; ,,,,,,
 Backend Developer,8,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Golang; ,,,,,,
 Software Engineer,5,Senior,67.0,Self-employed (freelancer),Unlimited contract,0-10,Startup,,C++; ,,,,,,
-Support Engineer,,Senior,61.0,Full-time employee,Unlimited contract,,,100,No info,No info,No info,No info,No info,No info,No info
+Support Engineer,,Senior,61.0,Full-time employee,Unlimited contract,,,100,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,2,Middle,48.0,Full-time employee,Unlimited contract,011-050,Product,,Python; ,,,,,,
 Software Engineer,9,Senior,70.8,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,ABAP; ,,,,,,
-Frontend Developer,3,Senior,70.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,3,Senior,70.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
 Software Engineer,3,Middle,48.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,Python; ,,,,,,
-Mobile Developer,8,Senior,65.4,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,Java; Kotlin; ,,,,,,
+Mobile Developer,8,Senior,65.4,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,Java; ,,,,,,
 Backend Developer,18,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,0,PHP; ,,,,,,
 Software Engineer,5,Senior,71.0,Full-time employee,Unlimited contract,1000+,Product,,TypeScript; ,Angular; ,,,,,
 Software Engineer,5,Senior,65.0,Full-time employee,Unlimited contract,51-100,Product,,JavaScript; ,,,,,,
-System Administrator,20,Senior,44.0,Full-time employee,Unlimited contract,011-050,Systemhaus,,No info,No info,No info,No info,No info,No info,No info
+System Administrator,20,Senior,44.0,Full-time employee,Unlimited contract,011-050,Systemhaus,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,3,Middle,27.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,PHP; ,,,,,,
 DevOps,9,Lead,90.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,Kubernetes; 
 Software Engineer,6,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Product,,,.NET; ,,,,,
@@ -356,11 +356,11 @@ Software Architect,8,Senior,73.0,Full-time employee,Unlimited contract,1000+,Pro
 Software Engineer,15,Senior,67.5,Full-time employee,Unlimited contract,1000+,Product,,ABAP; ,,,,,,
 SRE,6,Middle,66.0,Full-time employee,Unlimited contract,1000+,Product,0,,,,,,,Kubernetes; 
 Software Engineer,8,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Product,500,JavaScript; ,,,,,,
-Software Engineer,5,,55.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,5,,55.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,5,Middle,55.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,13,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,600,Ruby; ,,,,,,
 Backend Developer,5,Senior,60.0,,,,,,Java; ,,,,,,
-QA,7,Middle,54.5,Full-time employee,Unlimited contract,011-050,Consulting / Agency,1500,No info,No info,No info,No info,No info,No info,No info
+QA,7,Middle,54.5,Full-time employee,Unlimited contract,011-050,Consulting / Agency,1500,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,22,Senior,72.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Software Engineer,9,Senior,60.0,Full-time employee,Unlimited contract,0-10,Startup,,TypeScript; ,React; ,,,,,
 Backend Developer,11,Senior,85.0,Full-time employee,Unlimited contract,51-100,Product,,Python; ,,,,,,
@@ -369,10 +369,10 @@ No info,3,Junior,10.164,Part-time employee,Temporary contract,011-050,University
 Backend Developer,4,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Golang; ,,,,,,
 Software Engineer,11,Middle,75.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Software Engineer,28,Senior,78.5,Full-time employee,Unlimited contract,51-100,Product,,C#; ,,,,,,
-Product Manager,5,Senior,56.0,Full-time employee,Unlimited contract,101-1000,Product,0,No info,No info,No info,No info,No info,No info,No info
-Data Engineer,12,Senior,68.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,0,No info,No info,No info,No info,No info,No info,No info
+Product Manager,5,Senior,56.0,Full-time employee,Unlimited contract,101-1000,Product,0,No info,No info; ,No info,No info,No info,No info,No info
+Data Engineer,12,Senior,68.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,0,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,12,Senior,83.0,Full-time employee,Unlimited contract,1000+,Product,40,Java; ,,,,,,
-Software Engineer,4,Junior,53.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,4,Junior,53.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,8,Lead,65.0,Part-time employee,Unlimited contract,0-10,Product,10000,Python; ,,,,,,
 Software Engineer,10,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,500,,,,,,iOS; ,
 Software Engineer,10,Senior,68.5,Full-time employee,Unlimited contract,51-100,Startup,,Python; ,,,,,,
@@ -386,36 +386,36 @@ Software Engineer,19,Lead,95.5,Full-time employee,Unlimited contract,1000+,Produ
 Software Engineer,14,Senior,72.0,Full-time employee,Unlimited contract,101-1000,Product,,C++; ,,,,,,
 Software Engineer,7,Senior,72.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,TypeScript; ,,,,,,
 Mobile Developer,3,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Startup,,Kotlin; ,,,,,,
-Software Engineer,3,Middle,77.6,Full-time employee,Unlimited contract,1000+,Product,1000,C++; Java; ,,,,,,
-Software Engineer,13,Lead,95.0,Full-time employee,Unlimited contract,51-100,Startup,0,Python; Scala; ,,,,,,
+Software Engineer,3,Middle,77.6,Full-time employee,Unlimited contract,1000+,Product,1000,C++; ,,,,,,
+Software Engineer,13,Lead,95.0,Full-time employee,Unlimited contract,51-100,Startup,0,Python; ,,,,,,
 Software Engineer,7,Senior,50.4,Full-time employee,Unlimited contract,1000+,Product,,C++; ,,,,,,
 Backend Developer,5,Middle,80.0,Full-time employee,Unlimited contract,1000+,Startup,,Java; ,,,,,,
 Backend Developer,2,Middle,13.0,Full-time employee,Unlimited contract,51-100,Startup,,Python; ,,,,,,
-Project manager,20,Middle,130.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,300,No info,No info,No info,No info,No info,No info,No info
+Project manager,20,Middle,130.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,300,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,5,Middle,14.712,Full-time employee,Unlimited contract,101-1000,Product,0,C; ,,,,,,
-Product Manager,5,Senior,70.0,Full-time employee,,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,5,Senior,70.0,Full-time employee,,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 QA,11,Senior,74.4,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,15,Senior,70.0,Full-time employee,Temporary contract,011-050,Startup,,Java; ,,,,,,
-Backend Developer,10,Senior,82.0,Full-time employee,Unlimited contract,51-100,Product,500,Java; Scala; ,,,,,,
-Data Scientist,4,Senior,85.0,Full-time employee,Unlimited contract,1000+,consumer goods,0,Python; ,,,,,,
-Security Engineer,5,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Startup,0,No info,No info,No info,No info,No info,No info,No info
+Backend Developer,10,Senior,82.0,Full-time employee,Unlimited contract,51-100,Product,500,Java; ,,,,,,
+Data Scientist,4,Senior,85.0,Full-time employee,Unlimited contract,1000+,No info,0,Python; ,,,,,,
+Security Engineer,5,Lead,80.0,Full-time employee,Unlimited contract,101-1000,Startup,0,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,4,Middle,70.5,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Software Engineer,11,Lead,75.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Data Scientist,3,Middle,58.0,Full-time employee,Unlimited contract,51-100,Product,,Python; ,,,,,,
-Software Engineer,29,Lead,28.8,Full-time employee,Unlimited contract,011-050,IT-Outsourcing,0,C++; ,,,,,,
-Designer (UI/UX),15,Middle,53.0,Full-time employee,Unlimited contract,1000+,Product,18000,No info,No info,No info,No info,No info,No info,No info
-Architect,10,Middle,89.0,Full-time employee,Unlimited contract,101-1000,,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,29,Lead,28.8,Full-time employee,Unlimited contract,011-050,No info,0,C++; ,,,,,,
+Designer (UI/UX),15,Middle,53.0,Full-time employee,Unlimited contract,1000+,Product,18000,No info,No info; ,No info,No info,No info,No info,No info
+Architect,10,Middle,89.0,Full-time employee,Unlimited contract,101-1000,,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,11,Senior,66.0,Full-time employee,Unlimited contract,101-1000,Product,500,Python; ,,,,,,
 Backend Developer,10,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,Ruby; ,,,,,,
 Mobile Developer,8,Lead,75.0,Full-time employee,Unlimited contract,011-050,Startup,0,Swift; ,,,,,,
 Frontend Developer,3,Middle,44.0,Full-time employee,Unlimited contract,51-100,Product,0,JavaScript; ,,,,,,
 Software Engineer,8,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Backend Developer,9,Senior,60.0,Full-time employee,Unlimited contract,011-050,Product,0,PHP; ,,,,,,
-Designer (UI/UX),2,Middle,70.0,Full-time employee,Temporary contract,0-10,Startup,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),2,Middle,70.0,Full-time employee,Temporary contract,0-10,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,8,Senior,76.9,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
-Tech Lead,10,Lead,85.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info,No info,No info,No info,No info,No info
+Tech Lead,10,Lead,85.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,8,Middle,27.0,Full-time employee,Temporary contract,51-100,Product,0,,,,,,,
-Frontend Developer,4,Middle,55.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,4,Middle,55.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Software Engineer,4,Lead,95.0,Full-time employee,Unlimited contract,1000+,Startup,0,Java; ,,,,,,
 Software Engineer,4,Middle,56.0,Full-time employee,Unlimited contract,1000+,Product,0,Java; ,,,,,,
 Software Engineer,3,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Startup,,JavaScript; ,,,,,,
@@ -425,14 +425,14 @@ Backend Developer,4,Middle,46.0,Full-time employee,Unlimited contract,51-100,Sta
 DevOps,15,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Backend Developer,20,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,300,,.NET; ,,,,,
 Frontend Developer,8,Senior,105.0,Full-time employee,Unlimited contract,1000+,Startup,,TypeScript; ,React; ,,,,,
-Software Engineer,2,Junior,50.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,2,Junior,50.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,7,Senior,63.0,Full-time employee,Unlimited contract,1000+,Product,1100,Kotlin; ,,,,,,
-QA,4,Middle,52.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+QA,4,Middle,52.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,3,Lead,65.0,Full-time employee,Unlimited contract,51-100,Startup,,Swift; ,,,,,,
-Backend Developer,3,Middle,60.0,Full-time employee,Unlimited contract,011-050,,,No info,No info,No info,No info,No info,No info,No info
+Backend Developer,3,Middle,60.0,Full-time employee,Unlimited contract,011-050,,,No info,No info; ,No info,No info,No info,No info,No info
 ML Engineer,4,Middle,62.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
-Tech Lead,5,Lead,90.0,Full-time employee,Unlimited contract,011-050,Startup,0,JavaScript; Python; ,React; ,,,,,
-Frontend Developer,8,Senior,69.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; TypeScript; ,,,,,,
+Tech Lead,5,Lead,90.0,Full-time employee,Unlimited contract,011-050,Startup,0,JavaScript; ,React; ,,,,,
+Frontend Developer,8,Senior,69.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Software Engineer,10,Senior,88.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 DevOps,11,Senior,81.0,Full-time employee,Unlimited contract,101-1000,Startup,0,,,,,,,
 Frontend Developer,2,Middle,18.7,Full-time employee,Unlimited contract,1000+,Product,0,JavaScript; ,,,,,,
@@ -456,7 +456,7 @@ Frontend Developer,5,Senior,45.6,Full-time employee,Unlimited contract,0-10,Cons
 Software Engineer,,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,180,Java; ,,,,,,
 Backend Developer,2,Junior,50.0,Self-employed (freelancer),Unlimited contract,101-1000,Product,,Elixir; ,,,,,,
 Consultant,11,Senior,75.0,Full-time employee,Unlimited contract,1000+,Finance,,ABAP; ,,,,,,
-Software Engineer,10,Lead,62.0,Full-time employee,Unlimited contract,51-100,Product,,Golang; PHP; ,,,,,,
+Software Engineer,10,Lead,62.0,Full-time employee,Unlimited contract,51-100,Product,,Golang; ,,,,,,
 Mobile Developer,5,Senior,45.0,Full-time employee,Unlimited contract,011-050,Product,,Swift; ,,,,,,
 Software Engineer,16,Senior,83.0,Full-time employee,Unlimited contract,1000+,Startup,700,ABAP; ,,,,,,
 Software Engineer,12,Senior,66.3,Full-time employee,Unlimited contract,101-1000,Product,2000,Java; ,,,,,,
@@ -467,7 +467,7 @@ Software Engineer,9,Senior,60.0,Full-time employee,Unlimited contract,101-1000,C
 Software Engineer,14,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,0,C; ,,,,,,
 Software Engineer,10,Director,100.0,Full-time employee,Unlimited contract,1000+,Product,0,PHP; ,,,,,,
 No info,15,Senior,79.3,Full-time employee,Unlimited contract,1000+,Product,,,,,,AWS; ,,
-Product Manager,,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,5,Middle,48.0,Full-time employee,Unlimited contract,0-10,Consulting / Agency,0,C#; ,.NET; ,,,,,
 Software Engineer,6,Middle,60.0,Full-time employee,Unlimited contract,101-1000,E-commerce,0,PHP; ,,,,,,
 Software Engineer,4,Middle,34.0,Full-time employee,Temporary contract,0-10,Product,,PHP; ,,,,,,
@@ -476,17 +476,17 @@ Software Engineer,12,Middle,54.0,Full-time employee,Unlimited contract,101-1000,
 Software Engineer,10,Senior,60.0,Full-time employee,Unlimited contract,011-050,Product,,,.NET; ,,,,,
 Mobile Developer,7,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Startup,,,,,,,Android; ,
 Software Engineer,15,Senior,80.0,Full-time employee,Unlimited contract,51-100,Corporation,,JavaScript; ,,,,,,
-Frontend Developer,4,Middle,60.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,4,Middle,60.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
 Frontend Developer,6,Senior,66.0,Full-time employee,Unlimited contract,,,,JavaScript; ,,,,,,
 Software Engineer,3,Middle,60.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Software Engineer,10,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,,.NET; ,,,,,
 Engineering Manager,10,Middle,85.0,Full-time employee,Unlimited contract,101-1000,Product,700,JavaScript; ,,,,,,
 Frontend Developer,2,Junior,47.0,Full-time employee,Unlimited contract,1000+,Publishing and Technology,,JavaScript; ,,,,,,
 ML Engineer,4,Junior,62.0,Full-time employee,Unlimited contract,1000+,Product,0,Python; ,,,,,,
-Designer (UI/UX),6,Middle,56.0,Full-time employee,Unlimited contract,011-050,Startup,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),6,Middle,56.0,Full-time employee,Unlimited contract,011-050,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,1.5,Junior,50.0,Full-time employee,Unlimited contract,51-100,Startup,1200,JavaScript; ,,,,,,
 Software Engineer,17,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Startup,,Golang; ,,,,,,
-Product Manager,13,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,300,No info,No info,No info,No info,No info,No info,No info
+Product Manager,13,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,300,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,6,Middle,82.0,Full-time employee,Unlimited contract,1000+,Product,1300,Java; ,,,,,,
 Software Engineer,8,Middle,75.0,Full-time employee,Unlimited contract,1000+,Product,0,PHP; ,,,,,,
 Software Architect,18,Head,156.0,Self-employed (freelancer),Unlimited contract,011-050,Startup,,Golang; ,,,,,,
@@ -506,20 +506,20 @@ Mobile Developer,10,Senior,80.0,Full-time employee,Unlimited contract,1000+,Prod
 Data Scientist,2,Middle,54.0,Full-time employee,Unlimited contract,1000+,Market Research ,,Python; ,,,,,,
 Consultant ,21,Senior,72.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,0,Java; ,,,,,,
 Frontend Developer,14,Senior,78.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
-Software Engineer,9,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,JavaScript; TypeScript; ,,,,,,
+Software Engineer,9,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,JavaScript; ,,,,,,
 DevOps,1,Middle,60.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,Java; ,,,,,,
-Mobile Developer,1,Junior,50.0,Full-time employee,Unlimited contract,011-050,Startup,0,Java; Kotlin; ,,,,,,
+Mobile Developer,1,Junior,50.0,Full-time employee,Unlimited contract,011-050,Startup,0,Java; ,,,,,,
 Software Engineer,12,Lead,120.0,Full-time employee,Unlimited contract,101-1000,Product,0,Golang; ,,,,,,
 Data Analyst,2,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,
 QA,11,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
-Software Engineer,2,Middle,58.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,2,Middle,58.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Product Manager,17,Lead,81.0,Full-time employee,Unlimited contract,011-050,Product,1500,,,,,,Linux; ,
-DevOps,13,Lead,70.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,13,Lead,70.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Frontend Developer,6,Senior,80.0,Full-time employee,Unlimited contract,011-050,Product,0,JavaScript; ,,,,,,
 Data Scientist,7,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Startup,200,,,,,,,
 Software Engineer,6,Middle,63.7,Full-time employee,Unlimited contract,1000+,e-commerce,580,Java; ,,,,,,
 Software Engineer,4,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,,C#; ,,,,,,
-Product Manager,3,Junior,30.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,3,Junior,30.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,4,Middle,70.0,Full-time employee,Unlimited contract,101-1000,Product,250,Python; ,,,,,,
 Frontend Developer,10,Middle,48.0,Part-time employee,Unlimited contract,101-1000,Product,,,,,,,,
 Software tester,9,Lead,66.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
@@ -530,9 +530,9 @@ Software Architect,20,Lead,122.0,Full-time employee,Unlimited contract,1000+,Pro
 Software Engineer,15,Senior,150.0,Full-time employee,,,,,Java; ,,,,,,
 Frontend Developer,,Middle,40.8,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Software Engineer,6,Middle,58.0,Full-time employee,Temporary contract,1000+,Product,,PHP; ,,,,,,
-QA,6,Middle,69.2,Full-time employee,Unlimited contract,101-1000,SaaS,,Groovy; Java; ,,,,,,
+QA,6,Middle,69.2,Full-time employee,Unlimited contract,101-1000,SaaS,,Groovy; ,,,,,,
 Software Engineer,7,Senior,72.0,Full-time employee,Unlimited contract,011-050,Startup,1500,Python; ,,,,,,
-Account Manager,4,Key,57.0,Full-time employee,Unlimited contract,101-1000,Product,500,No info,No info,No info,No info,No info,No info,No info
+Account Manager,4,Key,57.0,Full-time employee,Unlimited contract,101-1000,Product,500,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,16,Lead,84.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Data Scientist,5,Middle,59.0,Full-time employee,Unlimited contract,101-1000,Startup,300,Python; ,,,,,,
 Frontend Developer,7,Middle,68.0,Full-time employee,Unlimited contract,101-1000,Startup,,TypeScript; ,,,,,,
@@ -562,20 +562,20 @@ QA,7,Senior,65.0,Full-time employee,Temporary contract,51-100,Startup,,Swift; ,,
 SRE,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,300,,,,,,,
 ML Engineer,2,Middle,36.0,Full-time employee,Unlimited contract,1000+,Product,0,Java; ,,,,,,
 Data Scientist,6,Senior,76.0,Full-time employee,Unlimited contract,1000+,Product,700,Python; ,,,,,,
-Data Engineer,5,Lead,90.0,Full-time employee,Unlimited contract,1000+,Product,700,No info,No info,No info,No info,No info,No info,No info
+Data Engineer,5,Lead,90.0,Full-time employee,Unlimited contract,1000+,Product,700,No info,No info; ,No info,No info,No info,No info,No info
 Data Engineer,2,Middle,54.0,Full-time employee,Unlimited contract,1000+,Product,700,Python; ,,,,,,
 Data Engineer,3,Senior,65.0,Full-time employee,Unlimited contract,1000+,Product,700,Scala; ,,,,,,
-Product Manager,3,Junior,30.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,3,Junior,30.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info; ,No info,No info,No info,No info,No info
 DevOps,4,Middle,66.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,,,,,AWS; ,,
-Product Manager,7,Head,60.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,7,Head,60.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Sales,4,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,.NET; ,,,,,
 Data Scientist,2,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Publisher,0,Python; ,,,,,,
 Data Scientist,1,Junior,51.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Backend Developer,11,Senior,154.0,Self-employed (freelancer),Temporary contract,011-050,Startup,,Scala; ,,,,,,
 AI,20,Head,200.0,Self-employed (freelancer),No info,0-10,Consulting / Agency,,C; ,,,,,,
-Data Scientist,6,Senior,78.0,Full-time employee,Unlimited contract,1000+,E-commerce,,No info,No info,No info,No info,No info,No info,No info
+Data Scientist,6,Senior,78.0,Full-time employee,Unlimited contract,1000+,E-commerce,,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,1,Junior,300.0,Full-time employee,,101-1000,Startup,,C++; ,,,,,,
-DevOps,10,Lead,78.0,,,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,10,Lead,78.0,,,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,5,Senior,57.0,Full-time employee,Temporary contract,0-10,Consulting / Agency,0,JavaScript; ,NodeJS; ,,,,,
 Data Scientist,4,Middle,45.0,Full-time employee,Temporary contract,101-1000,Startup,0,,,,,,,
 Frontend Developer,3,Middle,43.0,Full-time employee,Unlimited contract,51-100,Product,,,React; ,,,,,
@@ -583,20 +583,20 @@ No info,4,Middle,39.0,Full-time employee,Temporary contract,1000+,Startup,0,,,,,
 Frontend Developer,4,Senior,73.0,Full-time employee,Unlimited contract,101-1000,Product,0,TypeScript; ,,,,,,
 Frontend Developer,11,Senior,74.0,Full-time employee,Unlimited contract,1000+,Product,900,TypeScript; ,,,,,,
 Project Manager,10,Senior,86.0,Full-time employee,Unlimited contract,1000+,Product,4800,,,,,,,
-Frontend Developer,9,Senior,74.0,Full-time employee,Unlimited contract,1000+,Startup,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,9,Senior,74.0,Full-time employee,Unlimited contract,1000+,Startup,,JavaScript; ,,,,,,
 DevOps,10,Middle,55.0,Full-time employee,Unlimited contract,101-1000,Product,,Bash; ,,,,,,
 Researcher,4,Middle,40.0,Full-time employee,Temporary contract,0-10,University,,C++; ,,,,,,
-Product Manager,7,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Product,350,No info,No info,No info,No info,No info,No info,No info
+Product Manager,7,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Product,350,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,4,Middle,56.0,Full-time employee,Unlimited contract,1000+,Product,0,Python; ,,,,,,
 Software Engineer,7,Middle,70.0,Full-time employee,Unlimited contract,51-100,Product,,C++; ,,,,,,
 QA,10,Middle,68.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 QA,10,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,0,JavaScript; ,,,,,,
-Data Scientist,6,Senior,72.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info,No info,No info,No info,No info,No info
+Data Scientist,6,Senior,72.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Engineering manager,15,Head,80.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Software Engineer,15,Principal,77.0,Full-time employee,Unlimited contract,1000+,Product,,C++; ,,,,,,
-Software Engineer,8,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,,Java; Kotlin; ,,,,,,
+Software Engineer,8,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Data Scientist,15,Senior,56.0,Full-time employee,Unlimited contract,011-050,Product,0,Python; ,,,,,,
-Data Scientist,10,Senior,80.0,Full-time employee,Unlimited contract,1000+,Energy ,,R; ,,,,,,
+Data Scientist,10,Senior,80.0,Full-time employee,Unlimited contract,1000+,No info,,R; ,,,,,,
 Backend Developer,13,Senior,90.0,Full-time employee,Unlimited contract,0-10,Startup,,JavaScript; ,NodeJS; ,,,,,
 QA,5,Middle,54.0,Full-time employee,Unlimited contract,011-050,Product,,TypeScript; ,,,,,,
 Data Scientist,0,No info,20.0,Full-time employee,Temporary contract,1000+,Product,,Python; ,,,,,,
@@ -608,21 +608,21 @@ Software Engineer,10,Lead,75.0,Full-time employee,Unlimited contract,101-1000,St
 Software Engineer,3,Middle,63.0,Full-time employee,Unlimited contract,51-100,Product,,JavaScript; ,,,,,,
 Backend Developer,5,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,700,Java; ,,,,,,
 Backend Developer,3,Middle,80.0,Full-time employee,Unlimited contract,1000+,Product,400,Java; ,,,,,,
-ML Engineer,4.5,Middle,75.0,Full-time employee,Unlimited contract,011-050,Startup,0,,Pytorch; ,,,,,
+ML Engineer,4.5,Middle,75.0,Full-time employee,Unlimited contract,011-050,Startup,0,,No info; ,,,,,
 QA,10,Lead,85.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
 Backend Developer,30,Senior,55.0,Full-time employee,Unlimited contract,011-050,Startup,0,PHP; ,,,,,,
-Software Engineer,15,Senior,78.0,Full-time employee,Unlimited contract,1000+,Product,,C; C++; ,,,,,,
+Software Engineer,15,Senior,78.0,Full-time employee,Unlimited contract,1000+,Product,,C; ,,,,,,
 Software Engineer,9,Lead,99.0,Full-time employee,Unlimited contract,101-1000,Startup,,,,,,,,
 Backend Developer,15,Senior,90.0,Full-time employee,Unlimited contract,011-050,Product,0,Golang; ,,,,,,
 Product Manager,15,Lead,52.0,Full-time employee,Unlimited contract,011-050,Product,0,Java; ,,,,,,
 Software Engineer,16,Senior,36.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
-Data Analyst,4,Middle,45.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info,No info,No info,No info,No info,No info
+Data Analyst,4,Middle,45.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,14,Middle,75.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Team Lead,20,Lead,85.0,Full-time employee,Unlimited contract,1000+,Enterprise,300,C#; ,,,,,,
 Backend Developer,7,Senior,95.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Backend Developer,15,Senior,63.0,Full-time employee,Unlimited contract,51-100,Product,0,C; ,,,,,,
 Backend Developer,12,Senior,102.0,Full-time employee,Unlimited contract,101-1000,Startup,400,Java; ,,,,,,
-Software Engineer,10,Lead,95.0,Full-time employee,Unlimited contract,1000+,Product,0,C; C++; ,,,,,,
+Software Engineer,10,Lead,95.0,Full-time employee,Unlimited contract,1000+,Product,0,C; ,,,,,,
 Backend Developer,13,Senior,78.6,Full-time employee,Unlimited contract,101-1000,Product,0,Java; ,,,,,,
 Software Engineer,10,Lead,70.0,Full-time employee,Unlimited contract,101-1000,Product,1500,Java; ,,,,,,
 Software Engineer,4,Middle,67.0,Full-time employee,Unlimited contract,1000+,Product,0,Java; ,,,,,,
@@ -633,7 +633,7 @@ Software Engineer,3,Middle,53.0,Full-time employee,Unlimited contract,1000+,Prod
 Data Analyst,9,Senior,77.0,Full-time employee,Unlimited contract,101-1000,Startup,,Python; ,,,,,,
 Software Engineer,15,Senior,80.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,,.NET; ,,,,,
 DevOps,20,Senior,58.8,Full-time employee,Unlimited contract,1000+,Bloody enterprise,,,,,,,Linux; UNIX; ,
-DevOps,8,Senior,75.0,Full-time employee,Unlimited contract,1000+,service,500,,,,,AWS; ,,
+DevOps,8,Senior,75.0,Full-time employee,Unlimited contract,1000+,No info,500,,,,,AWS; ,,
 Data Engineer,13,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Startup,500,Python; ,,,,,,
 Software Engineer,15,Senior,70.0,Full-time employee,Unlimited contract,011-050,Product,,Java; ,,,,,,
 Software Engineer,10,Senior,78.0,Full-time employee,Unlimited contract,0-10,Product,0,PHP; ,,,,,,
@@ -656,11 +656,11 @@ Data Engineer,3,Middle,54.0,Full-time employee,Unlimited contract,1000+,Utilitie
 Backend Developer,7,Senior,65.0,Full-time employee,Unlimited contract,1000+,Product,0,C++; ,,,,,,
 Designer (UI/UX),6,Middle,42.0,Full-time employee,Unlimited contract,51-100,Product,,,,,Figma; Sketch; ,,,
 Data Scientist,6,Junior,51.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
-Product Manager,5,Lead,76.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,5,Lead,76.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,16,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Product,0,,,,,,iOS; ,
 Mobile Developer,13,Senior,85.0,Full-time employee,Unlimited contract,1000+,Bank,,Kotlin; ,,,,,,
-QA,9,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Product,500,No info,No info,No info,No info,No info,No info,No info
-Product Manager,13,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,300,No info,No info,No info,No info,No info,No info,No info
+QA,9,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Product,500,No info,No info; ,No info,No info,No info,No info,No info
+Product Manager,13,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,300,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,7,Senior,86.0,Full-time employee,Unlimited contract,1000+,Product,500,Java; ,,,,,,
 Software Engineer,8,Senior,60.0,Full-time employee,Unlimited contract,51-100,Product,0,JavaScript; ,,,,,,
 QA,10,Senior,81.0,Full-time employee,Unlimited contract,1000+,Product,1000,JavaScript; ,,,,,,
@@ -670,19 +670,19 @@ Backend Developer,10,Senior,57.6,Full-time employee,Unlimited contract,101-1000,
 Software Engineer,13,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
 QA,8,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Kotlin; ,,,,,,
 Software Engineer,11,Senior,65.0,Full-time employee,Unlimited contract,011-050,Product,0,Java; ,,,,,,
-Software Engineer,11,Lead,90.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,React; NodeJS; ,,,,,
-Software Engineer,30,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Python; VB; ,,,,,,
+Software Engineer,11,Lead,90.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,React; ,,,,,
+Software Engineer,30,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Python; ,,,,,,
 Software Engineer,8,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,,Golang; ,,,,,,
 Software Engineer,1,Junior,30.0,Full-time employee,Unlimited contract,0-10,Product,,,,,,,,
-ML Engineer,10,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
-Software Engineer,6,Middle,64.0,Full-time employee,Unlimited contract,101-1000,Product,,C; C++; ,,,,,,
-Mobile Developer,2,Middle,50.0,,,,,,No info,No info,No info,No info,No info,No info,No info
-Mobile Developer,2,Middle,44.0,Full-time employee,Unlimited contract,1000+,Product,,Objective-C; Swift; ,,,,,iOS; ,
-QA,1,No info,12.0,working student,Temporary contract,1000+,Product,,Ruby; ,,,,,,
+ML Engineer,10,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
+Software Engineer,6,Middle,64.0,Full-time employee,Unlimited contract,101-1000,Product,,C; ,,,,,,
+Mobile Developer,2,Middle,50.0,,,,,,No info,No info; ,No info,No info,No info,No info,No info
+Mobile Developer,2,Middle,44.0,Full-time employee,Unlimited contract,1000+,Product,,Objective-C; ,,,,,iOS; ,
+QA,1,No info,12.0,Working Student,Temporary contract,1000+,Product,,Ruby; ,,,,,,
 Backend Developer,10,Lead,80.0,Full-time employee,Unlimited contract,51-100,Product,,Ruby; ,,,,,,
 Software Engineer,9,Lead,73.0,Full-time employee,Unlimited contract,101-1000,Product,300,,,,,,,
 Architect ,9,Head,120.0,Full-time employee,Unlimited contract,1000+,Product,0,Golang; ,,,,,,
-Software Engineer,6,Senior,71.75,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; TypeScript; ,,,,,,
+Software Engineer,6,Senior,71.75,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Backend Developer,5,Middle,65.0,Full-time employee,Unlimited contract,51-100,Product,,Kotlin; ,,,,,,
 Frontend Developer,7,Senior,80.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
 QA,8,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,Java; ,,,,,,
@@ -691,40 +691,40 @@ Frontend Developer,13,Lead,85.0,Full-time employee,Unlimited contract,101-1000,P
 Data Scientist,10,Middle,65.0,Full-time employee,Unlimited contract,51-100,Product,0,Python; ,,,,,,
 Head of IT,20,Head,130.0,Full-time employee,Unlimited contract,1000+,Corporation,,Java; ,,,,,,
 Backend Developer,9,Senior,81.9,Full-time employee,Unlimited contract,1000+,Startup,,Java; ,,,,,,
-Product Manager,10,Senior,85.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,10,Senior,85.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 QA,8,Middle,45.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Consultant,20,Senior,82.0,Full-time employee,Unlimited contract,1000+,Product,,ABAP; ,,,,,,
 Data Scientist,15,Head,100.0,Full-time employee,Unlimited contract,101-1000,Startup,,Python; ,,,,,,
 DevOps,17,Lead,72.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,0,,,,,,,Kubernetes; 
-Product Manager,6,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
-Product Manager,6,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,6,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
+Product Manager,6,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 DevOps,10,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
-DevOps,21,Lead,83.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+DevOps,21,Lead,83.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,,Senior,70.0,Full-time employee,Unlimited contract,,,,C#; ,,,,,,
 Mobile Developer,17,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,500,Swift; ,,,,,,
 Software Engineer,8,Middle,71.0,Full-time employee,Unlimited contract,101-1000,Product,0,C++; ,,,,,,
 Mobile Developer,5,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,iOS; ,
 Software Engineer,18,Senior,120.0,Self-employed (freelancer),,0-10,Startup,,JavaScript; ,,,,,,
 Backend Developer,4,Middle,43.0,Full-time employee,Unlimited contract,0-10,Consulting / Agency,,PHP; ,,,,,,
-Software Engineer,18,Senior,81.0,Full-time employee,Unlimited contract,1000+,Product,0,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,18,Senior,81.0,Full-time employee,Unlimited contract,1000+,Product,0,No info,No info; ,No info,No info,No info,No info,No info
 Frontend Developer,6,Middle,55.0,Full-time employee,Unlimited contract,011-050,Product,,TypeScript; ,,,,,,
 QA,12,Senior,63.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Software Engineer,19,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Data Scientist,0,Junior,22.0,Full-time employee,Unlimited contract,51-100,Product,,Python; ,,,,,,
 Data Engineer,5,Middle,65.0,Full-time employee,Unlimited contract,0-10,Startup,,ABAP; ,,,,,,
-DevOps,12,Senior,62.0,Full-time employee,,1000+,,,No info,No info,No info,No info,No info,No info,No info
+DevOps,12,Senior,62.0,Full-time employee,,1000+,,,No info,No info; ,No info,No info,No info,No info,No info
 Data Engineer,6,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,600,Python; ,,,,,,
 DevOps,3,Middle,37.0,Full-time employee,Unlimited contract,51-100,Product,,,,,,,,
 Backend Developer,4,Middle,51.0,Full-time employee,Unlimited contract,101-1000,Insurance,,PHP; ,,,,,,
 Software Engineer,25,"no idea, there are no ranges in the firm ",70.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,Java; ,,,,,,
-Backend Developer,10,Head,93.0,Full-time employee,,101-1000,Startup,200,No info,No info,No info,No info,No info,No info,No info
+Backend Developer,10,Head,93.0,Full-time employee,,101-1000,Startup,200,No info,No info; ,No info,No info,No info,No info,No info
 Business Analyst,15,Head,60.0,Self-employed (freelancer),Unlimited contract,101-1000,Consulting / Agency,,,,,UML; ,,,
 Backend Developer,13,Senior,72.0,Full-time employee,Unlimited contract,51-100,Startup,,Python; ,,,,,,
 Frontend Developer,13,Senior,70.0,Full-time employee,Unlimited contract,011-050,Product,0,JavaScript; ,,,,,,
 Data Scientist,2,Lead,70.0,Full-time employee,Unlimited contract,1000+,Product,1000,,,,,,,
 Frontend Developer,8,Senior,65.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,React; ,,,,,
 Data Engineer,4,Middle,51.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,Scala; ,,,,,,
-DevOps,10,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,10,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 QA,1,Head,159.0,Full-time employee,Unlimited contract,1000+,Product,2000,Cobol; ,,,,,,
 Engineering Manager,20,Lead,105.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Software Engineer,11,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,600,JavaScript; ,,,,,,
@@ -742,13 +742,13 @@ Backend Developer,8,Middle,74.0,Full-time employee,Unlimited contract,1000+,Prod
 Backend Developer,8,Lead,67.0,Full-time employee,Unlimited contract,51-100,Startup,,Ruby; ,,,,,,
 DevOps,9,Middle,74.0,Full-time employee,Unlimited contract,101-1000,Product,0,,,,,AWS; GCP; ,,Kubernetes; 
 Frontend Developer,3,Middle,48.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,0,JavaScript; ,,,,,,
-Product Manager,8,Middle,57.76,Full-time employee,Unlimited contract,011-050,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,8,Middle,57.76,Full-time employee,Unlimited contract,011-050,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,13,Lead,103.0,Full-time employee,Unlimited contract,101-1000,Startup,1000,TypeScript; ,,,,,,
 Frontend Developer,10,Senior,74.0,Full-time employee,Unlimited contract,101-1000,Startup,200,JavaScript; ,,,,,,
 Backend Developer,13,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,500,Elixir; ,,,,,,
 Backend Developer,6,Senior,86.0,Full-time employee,Unlimited contract,101-1000,Startup,500,Golang; ,,,,,,
 QA,5,Middle,46.0,Full-time employee,Unlimited contract,51-100,Product,0,Java; ,,,,,,
-No info,3,Junior,23.0,Full-time employee,Temporary contract,51-100,Science Institute ,,Python; ,,,,,,
+No info,3,Junior,23.0,Full-time employee,Temporary contract,51-100,No info,,Python; ,,,,,,
 Backend Developer,14,Lead,135.0,Self-employed (freelancer),Temporary contract,101-1000,Product,0,,Spring; ,,,,,
 Software Engineer,11,Senior,80.0,Full-time employee,Temporary contract,101-1000,Research institute,,Python; ,,,,,,
 Team Lead,12,Head,75.0,Full-time employee,Unlimited contract,0-10,Startup,0,PHP; ,,,,,,
@@ -759,14 +759,14 @@ Backend Developer,8,Senior,75.0,Full-time employee,Temporary contract,011-050,Pr
 Backend Developer,2.5,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,6,Middle,70.0,Full-time employee,Unlimited contract,1000+,Product,600,Swift; ,,,,,,
 Software Engineer,5,Middle,55.0,Full-time employee,Unlimited contract,011-050,Startup,,PHP; ,,,,,,
-Software Engineer,8,Senior,36.0,Full-time employee,Unlimited contract,1000+,Product,,C; C++; ,,,,,,
-Hardware Engineer,12,Senior,56.0,Full-time employee,Unlimited contract,0-10,Product,1000,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,8,Senior,36.0,Full-time employee,Unlimited contract,1000+,Product,,C; ,,,,,,
+Hardware Engineer,12,Senior,56.0,Full-time employee,Unlimited contract,0-10,Product,1000,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,9,Head,85.0,Full-time employee,Unlimited contract,51-100,Startup,,Java; ,,,,,,
 ML Engineer,7,Middle,80.0,Full-time employee,Unlimited contract,1000+,Product,500,Python; ,,,,,,
 Mobile Developer,8,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
 Software Engineer,1,Junior,57.0,Full-time employee,Unlimited contract,1000+,Retail,0,,React; ,,,,,
 Software Engineer,16,Middle,65.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,0,,.NET; ,,,,,
-DevOps,7,Middle,80.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info,No info,No info,No info,No info,No info
+DevOps,7,Middle,80.0,Full-time employee,Unlimited contract,1000+,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,8,Senior,60.0,Self-employed (freelancer),Temporary contract,0-10,Consulting / Agency,0,Swift; ,,,,,,
 QA,1,Junior,11.0,,,,,,JavaScript; ,,,,,,
 Software Engineer,19,Senior,87.0,Full-time employee,Unlimited contract,011-050,Startup,500,Golang; ,,,,,,
@@ -777,10 +777,10 @@ Data Scientist,6,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product
 Data Scientist,4,Middle,60.0,Full-time employee,Unlimited contract,1000+,Ecommerce,180,Python; ,,,,,,
 Mobile Developer,7,Senior,64.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,Kotlin; ,,,,,,
 Software Engineer,12,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,500,Java; ,,,,,,
-Backend Developer,8,Senior,73.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+Backend Developer,8,Senior,73.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,10,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,700,Python; ,,,,,,
 Data Engineer,6,Middle,83.0,Full-time employee,Unlimited contract,1000+,Product,1500,Python; ,,,,,,
-Designer (UI/UX),7,Senior,42.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+Designer (UI/UX),7,Senior,42.0,Full-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,3,Middle,68.0,Full-time employee,Unlimited contract,51-100,E-Commerce,,Python; ,,,,,,
 Consultant,16,Senior,100.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Software Engineer,8,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,500,TypeScript; ,,,,,,
@@ -788,35 +788,35 @@ Software Engineer,13,Junior,48.0,Full-time employee,Unlimited contract,51-100,Pr
 Software Engineer,15,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,0,Golang; ,,,,,,
 Engineering Manager,9,Lead,85.0,Full-time employee,Unlimited contract,101-1000,Product,,Golang; ,,,,,,
 Backend Developer,13,Senior,110.0,Full-time employee,Unlimited contract,101-1000,Product,400,Java; ,,,,,,
-DevOps,7,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,0,No info,No info,No info,No info,No info,No info,No info
+DevOps,7,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,0,No info,No info; ,No info,No info,No info,No info,No info
 Fullstack Developer,6,Senior,75.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,,,,,,
 Data Engineer,9,Senior,90.0,Full-time employee,Unlimited contract,51-100,Startup,,Python; ,,,,,,
 Frontend Developer,10,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Frontend Developer,6,Senior,110.0,Full-time employee,Unlimited contract,011-050,Product,,TypeScript; ,Angular; ,,,,,
 Software Engineer,10,Senior,110.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,
 QA,8,Senior,68.0,Full-time employee,Unlimited contract,51-100,Startup,,Python; ,,,,,,
-DevOps,11,Lead,93.0,Part-time employee,Unlimited contract,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,11,Lead,93.0,Part-time employee,Unlimited contract,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Analytics engineer,2,Junior,45.0,Full-time employee,Unlimited contract,1000+,Product,,R; ,,,,,,
 Software Engineer,15,Senior,80.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,C#; ,,,,,,
 Software Engineer,20,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Startup,,PHP; ,,,,,,
-IT Manager,6,Middle,65.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+IT Manager,6,Middle,65.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 QA,9,Middle,60.0,Full-time employee,Unlimited contract,1000+,Product,0,Java; ,,,,,,
 Mobile Developer,5,Lead,240.0,Full-time employee,Unlimited contract,1000+,Product,0,C#; ,,,,,,
 QA,1,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,250,Python; ,,,,,,
-Head of IT,15,Head,80.0,Full-time employee,Unlimited contract,101-1000,Product,300,No info,No info,No info,No info,No info,No info,No info
+Head of IT,15,Head,80.0,Full-time employee,Unlimited contract,101-1000,Product,300,No info,No info; ,No info,No info,No info,No info,No info
 Engineering Manager,20,Lead,85.0,Full-time employee,Unlimited contract,011-050,Product,500,Golang; ,,,,,,
 Software Engineer,14,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,C++; ,,,,,,
 Software Engineer,11,Senior,73.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
-Backend Developer,12,Lead,90.0,Full-time employee,Unlimited contract,011-050,Product,,Kotlin; PHP; ,,,,,,
+Backend Developer,12,Lead,90.0,Full-time employee,Unlimited contract,011-050,Product,,Kotlin; ,,,,,,
 Mobile Developer,9,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,600,,,,,,iOS; ,
 Data Scientist,1,Junior,42.0,Full-time employee,Unlimited contract,0-10,Startup,,Python; ,,,,,,
 Software Engineer,20,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,500,C++; ,,,,,,
-Product Manager,13,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
-QA,8,Middle,54.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,13,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
+QA,8,Middle,54.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,8,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,1700,Python; ,,,,,,
 Frontend Developer,6,Senior,33.0,Full-time employee,Unlimited contract,101-1000,Product,0,JavaScript; ,,,,,,
 Software Engineer,13,Middle,70.0,Full-time employee,Unlimited contract,1000+,Product,0,C++; ,,,,,,
-DevOps,11,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,11,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,13,Lead,65.0,Full-time employee,Unlimited contract,51-100,Product,,C#; ,,,,,,
 Software Engineer,15,Senior,85.0,Full-time employee,Unlimited contract,011-050,Product,,Java; ,,,,,,
 Backend Developer,4,Senior,70.0,Full-time employee,Unlimited contract,011-050,Startup,,Golang; ,,,,,,
@@ -840,7 +840,7 @@ ML Engineer,3,Middle,48.0,Full-time employee,Unlimited contract,101-1000,Product
 ML Engineer,1,Junior,57.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
 Data Scientist,11,Senior,80.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Python; ,,,,,,
 ML Engineer,3,Middle,65.0,Full-time employee,Temporary contract,1000+,Product,0,Python; ,,,,,,
-Product Manager,13,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,300,No info,No info,No info,No info,No info,No info,No info
+Product Manager,13,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,300,No info,No info; ,No info,No info,No info,No info,No info
 Mobile Developer,5,Senior,50.0,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,Swift; ,,,,,,
 Data Scientist,2,Junior,52.0,Full-time employee,Unlimited contract,0-10,Consulting / Agency,0,R; ,,,,,,
 ML Engineer,5,Middle,51.0,Full-time employee,Unlimited contract,011-050,Startup,,Python; ,,,,,,
@@ -851,7 +851,7 @@ ML Engineer,5,Senior,70.0,,,,,,Python; ,,,,,,
 Data Scientist,4,Middle,61.5,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,Python; ,,,,,,
 Software Engineer,4,Middle,78.0,Full-time employee,Unlimited contract,1000+,Semiconductor,,R; ,,,,,,
 Backend Developer,1,Junior,42.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
-CTO,8,No info,150.0,Full-time employee,Unlimited contract,101-1000,Media,0,Java; PHP; ,,,,,,
+CTO,8,No info,150.0,Full-time employee,Unlimited contract,101-1000,Media,0,Java; ,,,,,,
 Software Engineer,14,Head,84.0,Full-time employee,Unlimited contract,0-10,Product,0,TypeScript; ,,,,,,
 Data Scientist,10,Lead,100.0,Full-time employee,Unlimited contract,011-050,Product,0,Python; ,,,,,,
 Data Analyst,5,Middle,49.0,Full-time employee,Unlimited contract,101-1000,Product,400,R; ,,,,,,
@@ -862,10 +862,10 @@ Backend Developer,10,Senior,70.0,Full-time employee,Unlimited contract,011-050,C
 Software Engineer,12,Lead,95.0,Full-time employee,Unlimited contract,101-1000,Product,250,Java; ,,,,,,
 Data Analyst,1,Junior,48.0,Full-time employee,Unlimited contract,101-1000,Startup,,,,,,,,
 Software Engineer,10,Lead,115.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,200,,,,,,,
-Software Engineer,4,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,300,Java; Kotlin; ,,,,,,
+Software Engineer,4,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,300,Java; ,,,,,,
 ML Engineer,1,Junior,49.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Frontend Developer,2,Junior,40.0,Full-time employee,Unlimited contract,101-1000,Startup,0,,React; ,,,,,
-Software Engineer,14,Senior,81.5,Full-time employee,Unlimited contract,1000+,Product,460,C; C++; ,,,,,,
+Software Engineer,14,Senior,81.5,Full-time employee,Unlimited contract,1000+,Product,460,C; ,,,,,,
 Data Engineer,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,
 DevOps,12,Lead,94.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,Kubernetes; 
 ML Engineer,4,Senior,100.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
@@ -875,15 +875,15 @@ Frontend Developer,14,Senior,80.0,Full-time employee,Unlimited contract,011-050,
 Software Engineer,8,Senior,67.0,Full-time employee,Unlimited contract,011-050,Product,1500,C#; ,,,,,,
 Backend Developer,12,Middle,56.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Data Scientist,3,Middle,32.0,Full-time employee,Unlimited contract,011-050,Startup,,Python; ,,,,,,
-ML Engineer,13,Junior,45.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+ML Engineer,13,Junior,45.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,5,Senior,77.0,Full-time employee,Unlimited contract,1000+,Product,40,Python; ,,,,,,
 Data Scientist,2,Junior,55.0,Full-time employee,Unlimited contract,1000+,,600,,,,,,,
 Software Engineer,12,Lead,95.0,Full-time employee,Unlimited contract,101-1000,Product,250,Java; ,,,,,,
 Backend Developer,3,Middle,10.001,Part-time employee,Temporary contract,011-050,Consulting / Agency,,,.NET; ,,,,,
 Product Manager,5,Middle,70.0,Full-time employee,Temporary contract,1000+,Product,,,,,,,,
 Scrum Master,7,Lead,90.0,Full-time employee,Unlimited contract,1000+,Product,0,C++; ,,,,,,
-QA,9,Senior,64.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
-Backend Developer,9,Senior,67.473,Full-time employee,Unlimited contract,101-1000,Product,,Groovy; ,Grails; ,,,,,
+QA,9,Senior,64.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
+Backend Developer,9,Senior,67.473,Full-time employee,Unlimited contract,101-1000,Product,,Groovy; ,No info; ,,,,,
 Software Engineer,12,Lead,95.0,Full-time employee,Unlimited contract,101-1000,Product,250,Java; ,,,,,,
 Head of IT,7,Head,100.0,Full-time employee,Unlimited contract,101-1000,Startup,,Python; ,,,,,,
 QA,10,Lead,65.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
@@ -891,7 +891,7 @@ Software Engineer,16,Lead,91.0,Full-time employee,Unlimited contract,101-1000,St
 Data Scientist,15,Middle,60.0,Full-time employee,Temporary contract,101-1000,Product,0,C++; ,,,,,,
 SRE,10,Senior,79.0,Full-time employee,Unlimited contract,1000+,Product,0,PHP; ,,,,,,
 Project Manager,12,Senior,65.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,PHP; ,,,,,,
-Project Manager,13,Senior,108.0,Full-time employee,Unlimited contract,1000+,Automotive ,,No info,No info,No info,No info,No info,No info,No info
+Project Manager,13,Senior,108.0,Full-time employee,Unlimited contract,1000+,No info,,No info,No info; ,No info,No info,No info,No info,No info
 support engineer,2,Middle,45.0,Full-time employee,Unlimited contract,1000+,Startup,,Python; ,,,,,,
 Frontend Developer,4,Middle,66.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Software Engineer,8,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,,.NET; ,,,,,
@@ -904,13 +904,12 @@ Software Engineer,10,Senior,62.0,Full-time employee,Unlimited contract,1000+,,0,
 Data Engineer,6,Middle,74.0,Full-time employee,Unlimited contract,1000+,Product,200,Python; ,,,,,,
 QA,5,Middle,56.7,Full-time employee,Unlimited contract,101-1000,Product,0,Java; ,,,,,,
 Software Engineer,7,Middle,54.0,Full-time employee,Temporary contract,51-100,Startup,0,Ruby; ,,,,,,
-Security engineer,7,Middle,72.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info,No info,No info,No info,No info,No info
+Security engineer,7,Middle,72.0,Full-time employee,Unlimited contract,101-1000,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,8,Senior,85.0,Full-time employee,Unlimited contract,1000+,Utilities,,Python; ,,,,,,
 DevOps,2,Junior,65.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Python; ,,,,,,
 Software Engineer,12,Senior,92.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
-Software Engineer,4,Middle,54.0,Full-time employee,Temporary contract,101-1000,Institute,,JavaScript; ,,,,,,
-ML Engineer,3,,90.0,,,,Startup,,No info,No info,No info,No info,No info,No info,No info
-Software Architect,14,Lead,100.0,Full-time employee,Temporary contract,51-100,Product,,Haskell; ,,,,,,
+Software Engineer,4,Middle,54.0,Full-time employee,Temporary contract,101-1000,No info,,JavaScript; ,,,,,,
+ML Engineer,3,,90.0,,,,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Frontend Developer,8,Senior,77.25,Full-time employee,Unlimited contract,101-1000,Product,600,JavaScript; ,,,,,,
 Backend Developer,3,Middle,57.0,Full-time employee,Unlimited contract,51-100,Product,,Java; ,,,,,,
 Software Engineer,5,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Startup,0,JavaScript; ,,,,,,
@@ -919,13 +918,13 @@ Frontend Developer,10,Lead,80.0,Full-time employee,Unlimited contract,011-050,St
 ML Engineer,0,Junior,48.0,Full-time employee,Unlimited contract,011-050,Startup,0,Python; ,,,,,,
 Software Engineer,20,Lead,74.0,Full-time employee,Unlimited contract,1000+,Finance,0,Java; ,,,,,,
 Data Scientist,14,Middle,70.0,Full-time employee,Unlimited contract,1000+,Product,0,R; ,,,,,,
-QA,3,Middle,55.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+QA,3,Middle,55.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,2,Junior,25.0,Full-time employee,Unlimited contract,011-050,Product,,PHP; ,,,,,,
 Data Scientist,2,Junior,48.0,Full-time employee,Temporary contract,51-100,Fintech,,Python; ,,,,,,
 Software Engineer,6,Head,90.0,Full-time employee,Unlimited contract,1000+,Product,,C++; ,,,,,,
 Data Scientist,0,Junior,58.0,Full-time employee,Unlimited contract,1000+,Handel ,,Python; ,,,,,,
-Data Engineer,3,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Consulting and Product,,Python; ,,,,,,
-Designer (UI/UX),10,Senior,50.4,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,No info,No info,No info,No info,No info,No info,No info
+Data Engineer,3,Middle,65.0,Full-time employee,Unlimited contract,101-1000,No info,,Python; ,,,,,,
+Designer (UI/UX),10,Senior,50.4,Full-time employee,Unlimited contract,011-050,Consulting / Agency,0,No info,No info; ,No info,No info,No info,No info,No info
 Business Analyst,7,Senior,68.5,Full-time employee,Unlimited contract,51-100,Consulting / Agency,350,,,,,,,
 Software Engineer,5,Middle,69.0,Full-time employee,Unlimited contract,101-1000,Product,800,Python; ,Django; ,,,,,
 QA,7,Senior,48.0,Full-time employee,Unlimited contract,51-100,Product,,Python; ,,,,,,
@@ -981,25 +980,25 @@ Software Engineer,15,Senior,59.0,Full-time employee,Unlimited contract,0-10,Prod
 Backend Developer,3,Middle,10.001,Self-employed (freelancer),Unlimited contract,0-10,Startup,0,PHP; ,,,,,,
 Data Scientist,3,Middle,50.0,Self-employed (freelancer),Unlimited contract,101-1000,Product,0,Python; ,,,,,,
 Data Scientist,5,Senior,75.0,Full-time employee,Unlimited contract,011-050,Startup,0,Python; ,,,,,,
-Frontend Developer,5,Senior,54.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,5,Senior,54.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Frontend Developer,5,Middle,58.0,Full-time employee,Unlimited contract,101-1000,Startup,,JavaScript; ,Angular; ,,,,,
 ML Engineer,3,Senior,70.0,Full-time employee,Temporary contract,101-1000,Product,0,Python; ,,,,,,
 Software Engineer,2,Junior,48.0,Full-time employee,Unlimited contract,101-1000,Product,,C; ,,,,,,
 Software Engineer,9,Middle,88.0,Full-time employee,Unlimited contract,1000+,Product,0,C; ,,,,,,
-Product Manager,5,Middle,57.75,Full-time employee,Unlimited contract,101-1000,Startup,340,No info,No info,No info,No info,No info,No info,No info
+Product Manager,5,Middle,57.75,Full-time employee,Unlimited contract,101-1000,Startup,340,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,1,Junior,45.0,Full-time employee,Unlimited contract,011-050,Product,0,C++; ,,,,,,
-Data Scientist,5,Senior,75.0,Full-time employee,Unlimited contract,1000+,Bank,1500,Python; SAS; ,,,,,,
+Data Scientist,5,Senior,75.0,Full-time employee,Unlimited contract,1000+,Bank,1500,Python; ,,,,,,
 Software Engineer,9,Senior,113.0,Full-time employee,Unlimited contract,1000+,Corporation ,1800,TypeScript; ,,,,,,
 Product Manager,12,Senior,74.0,Full-time employee,Unlimited contract,1000+,Product,,,NodeJS; ,,,,,
 Data Engineer,7,Senior,82.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Data Scientist,10,Senior,82.0,Full-time employee,Unlimited contract,101-1000,Product,200,Python; ,,,,,,
-DevOps,6,Senior,64.8,Full-time employee,Unlimited contract,011-050,Startup,1000,JavaScript; PHP; Python; ,,,,,,Docker; 
-Software Engineer,7,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,0,C; Matlab; ,,,,,,
+DevOps,6,Senior,64.8,Full-time employee,Unlimited contract,011-050,Startup,1000,JavaScript; ,,,,,,Docker; 
+Software Engineer,7,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,0,C; ,,,,,,
 Software Engineer,16,Senior,72.0,Full-time employee,Unlimited contract,1000+,Product,,C++; ,,,,,,
 Software Engineer,12,Lead,82.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
-Team Lead,10,Lead,80.0,Full-time employee,Unlimited contract,1000+,Transport & Logistics,,Java; ,,,,,,
+Team Lead,10,Lead,80.0,Full-time employee,Unlimited contract,1000+,No info,,Java; ,,,,,,
 Backend Developer,5,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
-Software Engineer,9,Middle,77.0,Full-time employee,Unlimited contract,1000+,Product,500,Kotlin; TypeScript; ,,,,,,
+Software Engineer,9,Middle,77.0,Full-time employee,Unlimited contract,1000+,Product,500,Kotlin; ,,,,,,
 Data Scientist,5,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,0,Python; ,,,,,,
 Software Engineer,8,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,C++; ,,,,,,
 Software Engineer,5,Middle,59.064,Full-time employee,Unlimited contract,51-100,Product,0,Java; ,,,,,,
@@ -1007,24 +1006,24 @@ Software Engineer,10,Senior,90.0,Full-time employee,Unlimited contract,1000+,Pro
 Sales,12,Senior,150.0,Full-time employee,Unlimited contract,1000+,Product,200,,,,,,,
 QA,8,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
 Backend Developer,5,Middle,53.5,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
-Software Engineer,9,Lead,90.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info,No info,No info,No info,No info,No info
-Software Engineer,4,Middle,75.0,Full-time employee,Unlimited contract,101-1000,Startup,,JavaScript; TypeScript; ,,,,,,
-Product Manager,4,Senior,65.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
+Software Engineer,9,Lead,90.0,Full-time employee,Unlimited contract,011-050,Product,,No info,No info; ,No info,No info,No info,No info,No info
+Software Engineer,4,Middle,75.0,Full-time employee,Unlimited contract,101-1000,Startup,,JavaScript; ,,,,,,
+Product Manager,4,Senior,65.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,8,,60.0,Full-time employee,Unlimited contract,101-1000,Product,,TypeScript; ,,,,,,
 Software Engineer,16,Senior,62.4,Full-time employee,Unlimited contract,1000+,Product,0,,,,,,,
-DevOps,8,,62.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,8,,62.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info; ,No info,No info,No info,No info,No info
 No info,1,Middle,30.0,Full-time employee,Temporary contract,0-10,Biergarten ,,,,,,,,
 Software Engineer,16,Senior,90.0,Full-time employee,Unlimited contract,101-1000,Product,,,.NET; ,,,,,
 Product Manager,2,No info,35.0,Working Student,Temporary contract,0-10,Startup,0,Python; ,,,,,,
 Data Scientist,3,Senior,62.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
-Frontend Developer,9,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; TypeScript; ,,,,,,
+Frontend Developer,9,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Backend Developer,10,Middle,65.6,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Mobile Developer,14,Senior,80.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
-QA,2,Middle,32.0,Full-time employee,Unlimited contract,1000+,Non-tech retail,,,,,,,,
+QA,2,Middle,32.0,Full-time employee,Unlimited contract,1000+,No info,,,,,,,,
 Data Analyst,3,Middle,53.0,Full-time employee,Unlimited contract,101-1000,Product,1500,,,,,,,
 Software Engineer,6,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,40,Scala; ,,,,,,
 Data Scientist,6,Lead,78.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,Python; ,,,,,,
-QA,4,Middle,55.5,Full-time employee,,51-100,Startup,400,Kotlin; Swift; ,,,,,,
+QA,4,Middle,55.5,Full-time employee,,51-100,Startup,400,Kotlin; ,,,,,,
 Software Engineer,20,Senior,100.0,Full-time employee,Unlimited contract,1000+,Product,,JavaScript; ,,,,,,
 Data Scientist,1,Junior,38.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,0,Python; ,,,,,,
 Data analyst ,1,Junior,36.0,Full-time employee,Unlimited contract,1000+,Startup,500,,,,,,,
@@ -1043,18 +1042,18 @@ QA,11,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,,,,,,,,
 DevOps,8,Senior,67.5,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,
 Software Engineer,13,Head,90.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 DevOps,17,Head,124.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
-QA,16,Middle,65.0,Full-time employee,Unlimited contract,011-050,Startup,,No info,No info,No info,No info,No info,No info,No info
+QA,16,Middle,65.0,Full-time employee,Unlimited contract,011-050,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,7,Senior,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,8,Senior,57.0,Full-time employee,Unlimited contract,51-100,Product,0,PHP; ,,,,,,
 Software Engineer,8,Senior,57.0,Full-time employee,Unlimited contract,51-100,Product,0,PHP; ,,,,,,
 Backend Developer,16,Lead,120.0,Full-time employee,Unlimited contract,101-1000,Startup,,Scala; ,,,,,,
 Frontend Developer,2,Junior,24.0,Full-time employee,Unlimited contract,011-050,Product,0,JavaScript; ,,,,,,
-Backend Developer,7,Senior,60.0,Full-time employee,Unlimited contract,0-10,Product,,No info,No info,No info,No info,No info,No info,No info
+Backend Developer,7,Senior,60.0,Full-time employee,Unlimited contract,0-10,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,4,Middle,58.0,Full-time employee,Unlimited contract,101-1000,Product,500,Python; ,,,,,,
 Software Engineer,12,Middle,75.0,Full-time employee,Unlimited contract,1000+,Product,,Kotlin; ,,,,,,
 Software Engineer,10,Middle,71.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,iOS; ,
 DevOps,15,Junior,52.5,Full-time employee,Unlimited contract,011-050,Product,,Bash; ,,,,,,
-Team lead,,Lead,85.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info,No info,No info,No info,No info,No info
+Team lead,,Lead,85.0,Full-time employee,Unlimited contract,51-100,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,5,Middle,50.0,Full-time employee,Unlimited contract,101-1000,Product,0,Java; ,,,,,,
 Backend Developer,19,Senior,66.0,Full-time employee,Unlimited contract,101-1000,Product,,PHP; ,,,,,,
 Backend Developer,14,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,300,Kotlin; ,,,,,,
@@ -1070,17 +1069,17 @@ Data Scientist,4,Middle,73.7,Full-time employee,Unlimited contract,1000+,Product
 Data Scientist,10,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,300,Python; ,,,,,,
 Data Scientist,10,Senior,87.55,Full-time employee,Unlimited contract,101-1000,Product,600,Python; ,,,,,,
 Software Engineer,16,Senior,80.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
-Backend Developer,9,Senior,65.0,Full-time employee,Unlimited contract,51-100,Startup,0,JavaScript; TypeScript; ,NodeJS; ,,,,,
+Backend Developer,9,Senior,65.0,Full-time employee,Unlimited contract,51-100,Startup,0,JavaScript; ,NodeJS; ,,,,,
 Backend Developer,15,Middle,40.7,Full-time employee,Unlimited contract,011-050,Consulting / Agency,,PHP; ,,MySQL; ,,,,
-Product Manager,3,Senior,48.0,Full-time employee,Unlimited contract,1000+,Product,0,No info,No info,No info,No info,No info,No info,No info
+Product Manager,3,Senior,48.0,Full-time employee,Unlimited contract,1000+,Product,0,No info,No info; ,No info,No info,No info,No info,No info
 ML Engineer,2,Middle,60.0,Full-time employee,Unlimited contract,011-050,Product,,Python; ,,,,,,
 Frontend Developer,13,Middle,47.745,"full-time, but 32 hours per week (it was my request, I'm a student)",Unlimited contract,1000+,Product,0,TypeScript; ,Angular; ,,,,,
 Data Scientist,2.5,Junior,60.0,Full-time employee,Unlimited contract,0-10,corporate incubator,0,Python; ,,,,,,
 Software Engineer,1,Junior,43.5,Full-time employee,Unlimited contract,51-100,Startup,,C#; ,,,,,,
 Software Engineer,7,Senior,60.0,Full-time employee,Unlimited contract,51-100,Product,0,Java; ,,,,,,
-CTO,27,Head,90.0,Founder,Unlimited contract,011-050,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
-Designer (UI/UX),5,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info,No info,No info,No info,No info,No info
-Data architect,19,Senior,90.0,Full-time employee,Unlimited contract,1000+,Multinational ,100,No info,No info,No info,No info,No info,No info,No info
+CTO,27,Head,90.0,Founder,Unlimited contract,011-050,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
+Designer (UI/UX),5,Senior,60.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,No info,No info; ,No info,No info,No info,No info,No info
+Data architect,19,Senior,90.0,Full-time employee,Unlimited contract,1000+,Multinational ,100,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,15,Senior,120.0,Full-time employee,Unlimited contract,1000+,Product,700,C; ,,,,,,
 Software Engineer,14,Senior,98.0,Full-time employee,Unlimited contract,1000+,Product,400,C++; ,,,,,,
 ML Engineer,2,Middle,51.0,Full-time employee,Temporary contract,0-10,Startup,,Python; ,,,,,,
@@ -1089,7 +1088,7 @@ Data Scientist,6,Middle,57.0,Full-time employee,Unlimited contract,1000+,Product
 Data Scientist,1.5,Middle,49.85,Full-time employee,Unlimited contract,011-050,Startup,150,Python; ,,,,,,
 Backend Developer,2,Middle,50.0,Full-time employee,Unlimited contract,101-1000,Product,12000,PHP; ,,,,,,
 Software Engineer,12,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,200,PHP; ,,,,,,
-IT Manager,5,Middle,73.0,Full-time employee,Unlimited contract,1000+,Industry,150,No info,No info,No info,No info,No info,No info,No info
+IT Manager,5,Middle,73.0,Full-time employee,Unlimited contract,1000+,No info,150,No info,No info; ,No info,No info,No info,No info,No info
 ML Engineer,4,Middle,37.5,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,Python; ,,,,AWS; ,,
 Backend Developer,3,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,0,Python; ,,,,,,
 Backend Developer,4,Middle,42.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,750,Java; ,,,,,,
@@ -1104,22 +1103,22 @@ Data Scientist,5,Middle,55.0,Full-time employee,Unlimited contract,101-1000,Prod
 Data Engineer,15,Lead,90.0,Full-time employee,,101-1000,Product,0,,,,,,,
 Data Scientist,5,Senior,75.0,Full-time employee,,101-1000,Product,,Python; ,,,,,,
 Backend Developer,10,Senior,80.0,Full-time employee,Unlimited contract,011-050,Startup,,JavaScript; ,NodeJS; ,,,,,
-Software Engineer,5,Senior,61.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,1500,C; C++; ,,,,,,
+Software Engineer,5,Senior,61.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,1500,C; ,,,,,,
 Data Engineer,4,Middle,50.0,Full-time employee,Unlimited contract,101-1000,Product,200,Python; ,,,,,,
-Business Analyst,5,Middle,69.0,Full-time employee,Unlimited contract,0-10,Product,,No info,No info,No info,No info,No info,No info,No info
+Business Analyst,5,Middle,69.0,Full-time employee,Unlimited contract,0-10,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,10,Lead,75.0,Full-time employee,Unlimited contract,101-1000,Product,,Swift; ,,,,,,
-QA,12,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,800,No info,No info,No info,No info,No info,No info,No info
+QA,12,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,800,No info,No info; ,No info,No info,No info,No info,No info
 Frontend Developer,7,Senior,70.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,JavaScript; ,,,,,,
 Software Engineer,10,Senior,74.0,Full-time employee,Unlimited contract,1000+,Product,,C++; ,,,,,,
 Data Scientist,5,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,1500,Python; ,,,,,,
 Data Scientist,5,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,1500,Python; ,,,,,,
-DevOps,10,Lead,85.0,Full-time employee,Unlimited contract,1000+,Product,0,No info,No info,No info,No info,No info,No info,No info
-Product Manager,8,Lead,110.0,,,1000+,Product,,No info,No info,No info,No info,No info,No info,No info
+DevOps,10,Lead,85.0,Full-time employee,Unlimited contract,1000+,Product,0,No info,No info; ,No info,No info,No info,No info,No info
+Product Manager,8,Lead,110.0,,,1000+,Product,,No info,No info; ,No info,No info,No info,No info,No info
 DevOps,3,Junior,77.0,Full-time employee,Unlimited contract,1000+,FAANG,,Golang; ,,,,,,
 Software Engineer,10,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,,Java; ,,,,,,
 DevOps,6,Middle,60.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,JavaScript; ,NodeJS; ,,,,,
 Software Engineer,2,Junior,68.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
-Fullstack Developer,1,Junior,45.5,Full-time employee,Unlimited contract,51-100,Startup,,JavaScript; TypeScript; ,,,,,,
+Fullstack Developer,1,Junior,45.5,Full-time employee,Unlimited contract,51-100,Startup,,JavaScript; ,,,,,,
 DevOps,12,Middle,72.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Data Scientist,4,Senior,67.0,Full-time employee,Unlimited contract,51-100,Product,,Python; ,,,,,,
 DevOps,17,Senior,85.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,,,,,,Linux; ,
@@ -1127,12 +1126,12 @@ Backend Developer,10,Senior,75.0,Full-time employee,Unlimited contract,101-1000,
 Backend Developer,13,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,,Java; ,,,,,,
 DevOps,7,Senior,82.0,Full-time employee,Unlimited contract,101-1000,Consulting / Agency,500,,,,,,,Kubernetes; 
 Software Engineer,15,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
-Software Engineer,11,Senior,70.0,Full-time employee,Unlimited contract,51-100,Startup,,C; C++; ,,,,,,
-Product Manager,4,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info,No info,No info,No info,No info,No info
-Frontend Developer,4,Middle,45.0,Full-time employee,Unlimited contract,101-1000,Product,0,JavaScript; TypeScript; ,,,,,,
-ML Engineer,0.8,Junior,11.5,Werkstudent,Temporary contract,011-050,Consulting / Agency,,Python; ,,,,,,
+Software Engineer,11,Senior,70.0,Full-time employee,Unlimited contract,51-100,Startup,,C; ,,,,,,
+Product Manager,4,Middle,60.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info; ,No info,No info,No info,No info,No info
+Frontend Developer,4,Middle,45.0,Full-time employee,Unlimited contract,101-1000,Product,0,JavaScript; ,,,,,,
+ML Engineer,0.8,Junior,11.5,Working Student,Temporary contract,011-050,Consulting / Agency,,Python; ,,,,,,
 CTO,14,Lead,84.0,Full-time employee,Unlimited contract,011-050,Product,,C#; ,,,,,,
-Data Scientist,2,Senior,80.0,Full-time employee,Unlimited contract,1000+,Old industry,0,Python; ,,,,,,
+Data Scientist,2,Senior,80.0,Full-time employee,Unlimited contract,1000+,No info,0,Python; ,,,,,,
 QA,7,Middle,46.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Mobile Developer,8,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,Swift; ,,,,,,
 Mobile Developer,8,Middle,40.0,Self-employed (freelancer),Temporary contract,101-1000,Product,,C++; ,,,,,,
@@ -1140,8 +1139,8 @@ Software Engineer,15,Head,100.0,Founder,Unlimited contract,011-050,Consulting / 
 Product Manager,18,Lead,115.0,Full-time employee,Unlimited contract,1000+,Product,800,,.NET; ,,,,,
 Software Engineer,15,Senior,99.0,Full-time employee,Unlimited contract,1000+,Product,,Kotlin; ,,,,,,
 Backend Developer,8,Lead,90.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,NodeJS; ,,,,,
-QA,15,Lead,72.0,Full-time employee,Unlimited contract,011-050,Product,,Java; JavaScript; ,,,,,,
-ML Engineer,5,Middle,54.0,Full-time employee,Unlimited contract,0-10,Startup,0,Python; ,Pytorch; ,,,,,
+QA,15,Lead,72.0,Full-time employee,Unlimited contract,011-050,Product,,Java; ,,,,,,
+ML Engineer,5,Middle,54.0,Full-time employee,Unlimited contract,0-10,Startup,0,Python; ,No info; ,,,,,
 Designer (UI/UX),10,Senior,45.0,Full-time employee,Unlimited contract,0-10,Product,0,,React; ,,Sketch; ,,,
 Software Engineer,10,Senior,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Python; ,,,,,,
 Backend Developer,20,Lead,80.0,Full-time employee,Unlimited contract,1000+,Startup,,Java; ,,,,,,
@@ -1149,7 +1148,7 @@ No info,3,Middle,45.0,Full-time employee,Unlimited contract,0-10,Startup,0,C++; 
 ML Engineer,2.5,Middle,60.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
 Software Engineer,15,Lead,75.0,Full-time employee,Unlimited contract,51-100,Startup,,Java; ,,,,,,
 Data Scientist,6,Senior,92.0,Full-time employee,Unlimited contract,0-10,Startup,0,Python; ,,,,,,
-DevOps,15,Lead,90.0,Full-time employee,Unlimited contract,101-1000,Startup,1200,No info,No info,No info,No info,No info,No info,No info
+DevOps,15,Lead,90.0,Full-time employee,Unlimited contract,101-1000,Startup,1200,No info,No info; ,No info,No info,No info,No info,No info
 Backend Developer,3,Middle,17.5,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Java; ,,,,,,
 Software Engineer,2,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Product,100,JavaScript; ,,,,,,
 Software Engineer,4,Middle,65.0,Full-time employee,Unlimited contract,101-1000,Product,,Scala; ,Apache Spark; ,,,,,
@@ -1160,12 +1159,12 @@ Software Engineer,5,Senior,70.0,Full-time employee,Unlimited contract,1000+,Prod
 Software Engineer,5,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 QA,6,Middle,70.0,Full-time employee,Unlimited contract,1000+,Product,1000,Python; ,,,,,,
 Software Engineer,6,Senior,70.0,Full-time employee,Unlimited contract,1000+,Product,600,Python; ,,,,,,
-Mobile Developer,3.5,Middle,70.0,Full-time employee,Unlimited contract,1000+,Product,140,Objective-C; Swift; ,,,,,,
+Mobile Developer,3.5,Middle,70.0,Full-time employee,Unlimited contract,1000+,Product,140,Objective-C; ,,,,,,
 Data Engineer,0,Junior,40.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,Python; ,,,,,,
-Frontend Developer,7,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; TypeScript; ,React; ,,,,,
+Frontend Developer,7,Middle,62.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,React; ,,,,,
 Data Engineer,14,Middle,57.0,Full-time employee,Unlimited contract,101-1000,Product,,,,DWH; ,ETL; ,,,
 Backend Developer,9,Senior,90.0,Full-time employee,Unlimited contract,101-1000,Product,650,Scala; ,,,,,,
-Product Manager,5,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info,No info,No info,No info,No info,No info
+Product Manager,5,Senior,60.0,Full-time employee,Unlimited contract,101-1000,Startup,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,11,Senior,72.5,Full-time employee,Unlimited contract,1000+,Product,600,Scala; ,,,,,,
 Backend Developer,9,Senior,75.0,Full-time employee,Unlimited contract,1000+,Startup,,Scala; ,,,,,,
 Backend Developer,9,Senior,85.0,Full-time employee,Unlimited contract,1000+,Product,600,Scala; ,,,,,,
@@ -1194,7 +1193,7 @@ Software Engineer,9,Senior,85.0,Full-time employee,Unlimited contract,011-050,St
 Software Engineer,10,Middle,66.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,,C#; ,,,,,,
 DevOps,17,Senior,90.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,0,,,,,AWS; ,,
 Consultant,3,Middle,58.0,Full-time employee,Unlimited contract,101-1000,Startup,400,Java; ,,,,,,
-Software Engineer,11,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,40,Java; Scala; ,,,,,,
+Software Engineer,11,Senior,90.0,Full-time employee,Unlimited contract,1000+,Product,40,Java; ,,,,,,
 QA,5,Senior,35.0,Full-time employee,Temporary contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,10,Senior,47.5,Full-time employee,Unlimited contract,011-050,Outsourse,0,Java; ,,,,,,
 Backend Developer,10,Lead,65.0,Full-time employee,Unlimited contract,011-050,Startup,0,,,,,,,
@@ -1211,19 +1210,19 @@ Backend Developer,5,Senior,75.0,Full-time employee,Unlimited contract,101-1000,P
 Software Engineer,14,Lead,95.0,Full-time employee,Unlimited contract,1000+,Product,,Java; ,,,,,,
 Backend Developer,10,Lead,82.0,Full-time employee,Unlimited contract,101-1000,Startup,,Java; ,,,,,,
 Backend Developer,14,Lead,90.0,Full-time employee,Unlimited contract,1000+,Product,,C#; ,,,,,,
-Software Engineer,8,Senior,52.0,Full-time employee,Unlimited contract,011-050,Product,0,C++; C#; ,,,,,,
+Software Engineer,8,Senior,52.0,Full-time employee,Unlimited contract,011-050,Product,0,C++; ,,,,,,
 Mobile Developer,5,Middle,65.0,Full-time employee,Unlimited contract,51-100,Startup,,Kotlin; ,,,,,,
 Software Engineer,12,Lead,100.0,Full-time employee,Unlimited contract,51-100,Product,1670,Python; ,,,,,,
 Software Architect,20,Head,95.0,Full-time employee,Unlimited contract,101-1000,Product,,Java; ,,,,,,
 Software Engineer,3.5,Junior,55.0,Full-time employee,Unlimited contract,1000+,Consulting / Agency,,C++; ,,,,,,
-Software Engineer,20,No info,200.0,Self-employed (freelancer),,0-10,freelance,0,C++; ,.NET; ,,,,,
+Software Engineer,20,No info,200.0,Self-employed (freelancer),,0-10,No info,0,C++; ,.NET; ,,,,,
 Backend Developer,10,Senior,85.0,Full-time employee,Unlimited contract,101-1000,Startup,,Ruby; ,Ruby on rails; ,,,,,
 Frontend Developer,5,Senior,68.25,Full-time employee,Unlimited contract,101-1000,Product,,TypeScript; ,,,,,,
 Software Engineer,7,Middle,63.0,Full-time employee,Unlimited contract,51-100,Consulting / Agency,200,,.NET; ,,,,,
 Frontend Developer,6,Middle,63.0,Full-time employee,,101-1000,Startup,0,JavaScript; ,,,,,,
 Software Engineer,7,Middle,63.0,Full-time employee,Unlimited contract,101-1000,Product,0,Java; ,,,,,,
 ML Engineer,5,Middle,65.0,Full-time employee,Unlimited contract,1000+,Product,500,Scala; ,,,,,,
-Software Engineer,12,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,,Angular; .NET; ,,,,,
+Software Engineer,12,Senior,75.0,Full-time employee,Unlimited contract,1000+,Product,,,Angular; ,,,,,
 Software Engineer,,Lead,100.0,Self-employed (freelancer),Temporary contract,0-10,Consulting / Agency,,,,,,,,
 Software tester,10,Junior,60.0,Full-time employee,Unlimited contract,1000+,Product,0,Java; ,,,,,,
 Project Manager,5,Middle,20.0,Full-time employee,Unlimited contract,1000+,Product,,Python; ,,,,,,
@@ -1231,14 +1230,14 @@ Project Manager,5,Middle,20.0,Full-time employee,Unlimited contract,1000+,Produc
 QA,7,Senior,76.0,Full-time employee,Unlimited contract,1000+,Product,0,Java; ,,,,,,
 Mobile Developer,15,Senior,84.7,Full-time employee,Unlimited contract,101-1000,Product,1200,,,,,,Android; ,
 Software Engineer,3,Middle,52.0,Full-time employee,Unlimited contract,011-050,Product,,,,,,,,
-Data Analyst,16,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,1000,No info,No info,No info,No info,No info,No info,No info
+Data Analyst,16,Senior,95.0,Full-time employee,Unlimited contract,1000+,Product,1000,No info,No info; ,No info,No info,No info,No info,No info
 Data Scientist,4,Middle,50.5,,Unlimited contract,1000+,Product,500,,,,,,,
 SRE,10,,68.0,Full-time employee,Unlimited contract,101-1000,Product,,,,,,,,Kubernetes; 
 Consultant,10,Lead,130.0,Full-time employee,Unlimited contract,1000+,Product,0,,,,,,,
 QA,8,Senior,55.0,,,011-050,Product,0,Java; ,,,,,,
 Software Engineer,10,Head,95.0,Full-time employee,Unlimited contract,011-050,Startup,,Scala; ,,,,,,
 Frontend Developer,5,Middle,55.0,Full-time employee,Unlimited contract,101-1000,Product,,JavaScript; ,,,,,,
-Head of IT,18,Head,90.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info,No info,No info,No info,No info,No info
+Head of IT,18,Head,90.0,Full-time employee,Unlimited contract,51-100,Product,,No info,No info; ,No info,No info,No info,No info,No info
 Software Engineer,7,Senior,108.5,Full-time employee,Unlimited contract,011-050,Startup,,PHP; ,,,,,,
 Backend Developer,9,Senior,70.0,Full-time employee,Unlimited contract,51-100,Product,,Java; ,,,,,,
 Researcher,10,Senior,60.0,Full-time employee,Unlimited contract,1000+,Product,0,,,,,,,
