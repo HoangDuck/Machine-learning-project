@@ -521,10 +521,42 @@ for x in range(num):
         list_Positions.append(raw_data["Position "][x])
         continue
 raw_data["Position "]=list_Positions
-#%%3.7.14. Điều chỉnh dữ liệu của Seniority Level:
+#%%3.7.14. Điều chỉnh dữ liệu của employment
 import json
 data=None
-file_path='/Json_Files/ListSeniorityLevel.json'
+file_path='Json_Files/ListEmployment.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    if(result==''):
+        return text_raw_data
+    return result
+#%%Thực thi
+list_Employment=[]
+for x in range(num):
+    try:
+        s=raw_data["Employment status"][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Employment.append(s)
+            continue
+        else:
+            list_Employment.append(result)
+    except:
+        list_Employment.append(raw_data["Employment status"][x])
+        continue
+raw_data["Employment status"]=list_Employment
+#%%3.7.15. Điều chỉnh dữ liệu của Seniority Level:
+import json
+data=None
+file_path='Json_Files/ListSeniorityLevel.json'
 # Opening JSON file
 with open(file_path) as json_file:
     data = json.load(json_file)
