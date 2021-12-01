@@ -521,6 +521,38 @@ for x in range(num):
         list_Positions.append(raw_data["Position "][x])
         continue
 raw_data["Position "]=list_Positions
+#%%3.7.14. Điều chỉnh dữ liệu của Seniority Level:
+import json
+data=None
+file_path='/Json_Files/ListSeniorityLevel.json'
+# Opening JSON file
+with open(file_path) as json_file:
+    data = json.load(json_file)
+def ClassifyData(data,text_raw_data):
+    result=''
+    keys=data.keys()
+    for key in keys:
+        index=text_raw_data.find(key)
+        if(index!=-1):
+            result+=data[key]
+    if(result==''):
+        return text_raw_data
+    return result
+#%% Thực thi
+list_Seniority_Level=[]
+for x in range(num):
+    try:
+        s=raw_data["Seniority level"][x]
+        result=ClassifyData(data,s)
+        if(result==''):
+            list_Seniority_Level.append(s)
+            continue
+        else:
+            list_Seniority_Level.append(result)
+    except:
+        list_Seniority_Level.append(raw_data["Seniority level"][x])
+        continue
+raw_data["Seniority level"]=list_Seniority_Level
 # In[04]: PREPARE THE DATA
 # 4.1 Loại bỏ những cột không sử dụng
 raw_data.drop(columns = ["Timestamp", "Age", "Gender", "City", 
