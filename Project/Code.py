@@ -687,7 +687,6 @@ processed_train_set_val = full_pipeline.fit_transform(train_set)
 print('\n____________________________________ Processed feature values ____________________________________')
 print(processed_train_set_val[[0, 1, 2],:].toarray())
 print(processed_train_set_val.shape)
-print('We have %d numeric feature + 1 added features + 32 cols of onehotvector for categorical features.' %(len(num_feat_names)))
 
 # In[5]: TRAINING MODELS VÀ VALIDATION TEST  
 '''
